@@ -1,0 +1,11 @@
+[
+    {
+        "flight": "658",
+        "departure_airport": "SVO",
+        "arrival_airport": "LED",
+        "plan_departure": "2023-10-05T12:00:00+03:00",
+        "plan_arrival": "2023-10-05T14:30:00+03:00",
+        "fact_departure": "2023-10-05T12:15:00+03:00",
+        "fact_arrival": "2023-10-05T14:45:00+03:00"
+    }
+]
