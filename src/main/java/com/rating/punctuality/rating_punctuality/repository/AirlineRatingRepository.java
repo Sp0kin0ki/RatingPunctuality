@@ -3,7 +3,8 @@ import java.util.List;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import com.rating.punctuality.rating_punctuality.model.AirlineRating;
+
+import com.rating.punctuality.rating_punctuality.model.internal.AirlineRating;
 
 @Repository
 public class AirlineRatingRepository {
@@ -14,7 +15,7 @@ public class AirlineRatingRepository {
         this.jdbcTemplate = jdbcTemplate;
     }
     
-    public List<AirlineRating> findTopThreeAirlines() {
+    public List<AirlineRating> findTopAirlines(int limit) {
         String sql = """
             WITH latest_ratings AS (
                 SELECT DISTINCT ON (airline_iata_code) 
@@ -31,10 +32,12 @@ public class AirlineRatingRepository {
             FROM latest_ratings lr
             JOIN airlines a ON lr.airline_iata_code = a.iata_code
             ORDER BY lr.rating_departure DESC, lr.rating_arrival DESC, lr.created_at DESC
-            LIMIT 3;
+            LIMIT ?;
             """;
             
-        return jdbcTemplate.query(sql, (rs, rowNum) -> new AirlineRating(
+        return jdbcTemplate.query(sql, ps -> {
+            ps.setInt(1, limit);
+        }, (rs, rowNum) -> new AirlineRating(
             rs.getString("airline_iata_code"),
             rs.getString("airline_name"),
             rs.getDouble("rating_departure"),

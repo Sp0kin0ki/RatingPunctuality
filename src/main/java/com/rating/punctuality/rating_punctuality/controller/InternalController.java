@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
-import com.rating.punctuality.rating_punctuality.model.AirlineDirection;
-import com.rating.punctuality.rating_punctuality.model.AirlinePunctuality;
-import com.rating.punctuality.rating_punctuality.model.AirlineRating;
-import com.rating.punctuality.rating_punctuality.model.AirlineRatingResponse;
-import com.rating.punctuality.rating_punctuality.model.Airport;
-import com.rating.punctuality.rating_punctuality.model.CancellationsDistribution;
+import com.rating.punctuality.rating_punctuality.model.internal.AirlineDirection;
+import com.rating.punctuality.rating_punctuality.model.internal.AirlinePunctuality;
+import com.rating.punctuality.rating_punctuality.model.internal.AirlineRating;
+import com.rating.punctuality.rating_punctuality.model.internal.AirlineRatingResponse;
+import com.rating.punctuality.rating_punctuality.model.internal.Airport;
+import com.rating.punctuality.rating_punctuality.model.internal.CancellationsDistribution;
 import com.rating.punctuality.rating_punctuality.repository.AirlineRatingRepository;
 import com.rating.punctuality.rating_punctuality.repository.AirportRepository;
 import com.rating.punctuality.rating_punctuality.repository.CancellationsDistributionRepository;
@@ -41,7 +41,7 @@ public class InternalController {
 
     @GetMapping("/get_top3")
     public List<AirlineRatingResponse> getTopThree() {
-        List<AirlineRating> ratings = ratingRepository.findTopThreeAirlines();
+        List<AirlineRating> ratings = ratingRepository.findTopAirlines(3);
         
         return ratings.stream()
                 .map(this::convertToResponse)
@@ -148,7 +148,7 @@ public class InternalController {
     }
 
 
-    private String formatDateTime(LocalDateTime dateTime) {
+    public static String formatDateTime(LocalDateTime dateTime) {
         if (dateTime == null) {
             return null;
         }

@@ -1,16 +1,16 @@
-package com.rating.punctuality.rating_punctuality.model;
+package com.rating.punctuality.rating_punctuality.model.internal;
+
+import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
-public class AirlineRatingResponse {
+public class AirlineRating {
     private String airlineIataCode;
     private String airlineName;
     private Double ratingDeparture;
     private Double ratingArrival;
-    private String createdAt;
+    private LocalDateTime createdAt;
 }

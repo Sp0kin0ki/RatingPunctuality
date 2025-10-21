@@ -1,4 +1,4 @@
-package com.rating.punctuality.rating_punctuality.model;
+package com.rating.punctuality.rating_punctuality.model.internal;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

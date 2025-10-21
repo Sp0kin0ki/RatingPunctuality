@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.rating.punctuality.rating_punctuality.model.Airport;
+import com.rating.punctuality.rating_punctuality.model.internal.Airport;
 
 @Repository
 public class AirportRepository {
