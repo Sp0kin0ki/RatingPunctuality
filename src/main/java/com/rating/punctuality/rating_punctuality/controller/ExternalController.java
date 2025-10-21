@@ -9,12 +9,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.rating.punctuality.rating_punctuality.model.external.DelayStats;
+import com.rating.punctuality.rating_punctuality.model.external.FlightDetails;
 import com.rating.punctuality.rating_punctuality.model.internal.AirlineRating;
 import com.rating.punctuality.rating_punctuality.model.internal.AirlineRatingResponse;
 import com.rating.punctuality.rating_punctuality.model.external.Airport;
 import com.rating.punctuality.rating_punctuality.repository.external.AirportRepository;
 import com.rating.punctuality.rating_punctuality.repository.external.AirportStatRepository;
 import com.rating.punctuality.rating_punctuality.repository.external.DelayStatsRepository;
+import com.rating.punctuality.rating_punctuality.repository.external.FlightDetailsRepository;
 import com.rating.punctuality.rating_punctuality.repository.internal.AirlineRatingRepository;
 
 @RestController
@@ -23,13 +25,16 @@ public class ExternalController {
     private final AirportStatRepository airportStatRepository;
     private final DelayStatsRepository delayStatsRepository;
     private final AirportRepository airportRepository;
+    private final FlightDetailsRepository flightDetailsRepository;
 
     public ExternalController(AirlineRatingRepository airlineRating, AirportStatRepository airportStatRepository,
-            DelayStatsRepository delayStatsRepository, AirportRepository airportRepository) {
+            DelayStatsRepository delayStatsRepository, AirportRepository airportRepository,
+            FlightDetailsRepository flightDetailsRepository) {
         this.airlineRating = airlineRating;
         this.airportStatRepository = airportStatRepository;
         this.delayStatsRepository = delayStatsRepository;
         this.airportRepository = airportRepository;
+        this.flightDetailsRepository = flightDetailsRepository;
     }
 
     @GetMapping("/airlines/top")
@@ -64,6 +69,15 @@ public class ExternalController {
         @RequestParam(defaultValue = "default") String city
     ){
         return airportRepository.getAirports(city);
+    }
+
+    @GetMapping("/flights/{flightId}")
+    public List<FlightDetails> getFlightDetails(
+        @PathVariable("flightId") int flightId
+    ){
+        List<FlightDetails> flightDetails = flightDetailsRepository.getDetails(flightId);
+
+        return flightDetails;
     }
 
     private AirlineRatingResponse convertToResponse(AirlineRating rating) {
