@@ -1,14 +1,17 @@
 package com.rating.punctuality.rating_punctuality.controller;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.rating.punctuality.rating_punctuality.model.external.DelayStats;
+import com.rating.punctuality.rating_punctuality.model.external.Flight;
 import com.rating.punctuality.rating_punctuality.model.external.FlightDetails;
 import com.rating.punctuality.rating_punctuality.model.internal.AirlineRating;
 import com.rating.punctuality.rating_punctuality.model.internal.AirlineRatingResponse;
@@ -17,6 +20,7 @@ import com.rating.punctuality.rating_punctuality.repository.external.AirportRepo
 import com.rating.punctuality.rating_punctuality.repository.external.AirportStatRepository;
 import com.rating.punctuality.rating_punctuality.repository.external.DelayStatsRepository;
 import com.rating.punctuality.rating_punctuality.repository.external.FlightDetailsRepository;
+import com.rating.punctuality.rating_punctuality.repository.external.FlightRepository;
 import com.rating.punctuality.rating_punctuality.repository.internal.AirlineRatingRepository;
 
 @RestController
@@ -26,15 +30,17 @@ public class ExternalController {
     private final DelayStatsRepository delayStatsRepository;
     private final AirportRepository airportRepository;
     private final FlightDetailsRepository flightDetailsRepository;
+    private final FlightRepository flightRepository;
 
     public ExternalController(AirlineRatingRepository airlineRating, AirportStatRepository airportStatRepository,
             DelayStatsRepository delayStatsRepository, AirportRepository airportRepository,
-            FlightDetailsRepository flightDetailsRepository) {
+            FlightDetailsRepository flightDetailsRepository, FlightRepository flightRepository) {
         this.airlineRating = airlineRating;
         this.airportStatRepository = airportStatRepository;
         this.delayStatsRepository = delayStatsRepository;
         this.airportRepository = airportRepository;
         this.flightDetailsRepository = flightDetailsRepository;
+        this.flightRepository = flightRepository;
     }
 
     @GetMapping("/airlines/top")
@@ -69,6 +75,22 @@ public class ExternalController {
         @RequestParam(defaultValue = "default") String city
     ){
         return airportRepository.getAirports(city);
+    }
+
+    @GetMapping("/flights")
+    public List<Flight> searchFlights(
+            @RequestParam(required = false) String airline,
+            @RequestParam(required = false) String departureAirport,
+            @RequestParam(required = false) String arrivalAirport,
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate dateFrom,
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate dateTo,
+            @RequestParam(required = false) Integer minDelay,
+            @RequestParam(required = false) Integer maxDelay,
+            @RequestParam(defaultValue = "100") int limit
+    ) {
+        return flightRepository.searchFlights(airline, 
+            departureAirport, arrivalAirport, dateFrom, 
+            dateTo, minDelay, maxDelay, limit);
     }
 
     @GetMapping("/flights/{flightId}")
