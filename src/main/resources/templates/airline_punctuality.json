@@ -1,34 +1,29 @@
-[
-  {
-    "code": "WZ",
-    "airline": "Red Wings Airlines",
-    "departure": 95.1,
-    "arrival": 95.0,
-    "cancel": 0.0,
-    "count_of_flights": 29051
-  },
-  {
-    "code": "SU",
-    "airline": "Аэрофлот - Российские авиалинии",
-    "departure": 95.1,
-    "arrival": 95.0,
-    "cancel": 0.0,
-    "count_of_flights": 60777
-  },
-  {
-    "code": "S7",
-    "airline": "S7 Airlines (Сибирь)",
-    "departure": 95.1,
-    "arrival": 95.0,
-    "cancel": 0.0,
-    "count_of_flights": 56074
-  },
-  {
-    "code": "UT",
-    "airline": "ЮТэйр",
-    "departure": 94.8,
-    "arrival": 94.8,
-    "cancel": 0.0,
-    "count_of_flights": 52563
-  }
-]
+[ {
+  "iata_code" : "WZ",
+  "airline_name" : "Red Wings Airlines",
+  "total_flights" : 29051,
+  "departure_percentage" : 95.1,
+  "arrival_percentage" : 95.0,
+  "cancellation_percentage" : 0.0
+}, {
+  "iata_code" : "SU",
+  "airline_name" : "Аэрофлот - Российские авиалинии",
+  "total_flights" : 60777,
+  "departure_percentage" : 95.1,
+  "arrival_percentage" : 95.0,
+  "cancellation_percentage" : 0.0
+}, {
+  "iata_code" : "S7",
+  "airline_name" : "S7 Airlines (Сибирь)",
+  "total_flights" : 56070,
+  "departure_percentage" : 95.1,
+  "arrival_percentage" : 95.0,
+  "cancellation_percentage" : 0.0
+}, {
+  "iata_code" : "UT",
+  "airline_name" : "ЮТэйр",
+  "total_flights" : 52563,
+  "departure_percentage" : 94.8,
+  "arrival_percentage" : 94.8,
+  "cancellation_percentage" : 0.0
+} ]

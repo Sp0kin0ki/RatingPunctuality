@@ -1,2792 +1,2473 @@
-[
-  {
-    "airport1": "AAQ",
-    "airport2": "EGO",
-    "total_flights": 732,
-    "on_time_arrivals": 700,
-    "on_time_percentage": 95.6,
-    "avg_delay_minutes": 11.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AAQ",
-    "airport2": "NOZ",
-    "total_flights": 106,
-    "on_time_arrivals": 99,
-    "on_time_percentage": 93.4,
-    "avg_delay_minutes": 13.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AAQ",
-    "airport2": "SVO",
-    "total_flights": 731,
-    "on_time_arrivals": 696,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ABA",
-    "airport2": "ARH",
-    "total_flights": 104,
-    "on_time_arrivals": 102,
-    "on_time_percentage": 98.1,
-    "avg_delay_minutes": 6.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ABA",
-    "airport2": "DME",
-    "total_flights": 209,
-    "on_time_arrivals": 199,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ABA",
-    "airport2": "GRV",
-    "total_flights": 105,
-    "on_time_arrivals": 102,
-    "on_time_percentage": 97.1,
-    "avg_delay_minutes": 8.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ABA",
-    "airport2": "KYZ",
-    "total_flights": 210,
-    "on_time_arrivals": 201,
-    "on_time_percentage": 95.7,
-    "avg_delay_minutes": 11.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ABA",
-    "airport2": "OVB",
-    "total_flights": 1464,
-    "on_time_arrivals": 1382,
-    "on_time_percentage": 94.4,
-    "avg_delay_minutes": 13.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ABA",
-    "airport2": "TOF",
-    "total_flights": 732,
-    "on_time_arrivals": 693,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AER",
-    "airport2": "DME",
-    "total_flights": 1,
-    "on_time_arrivals": 1,
-    "on_time_percentage": 100.0,
-    "avg_delay_minutes": 13.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AER",
-    "airport2": "EGO",
-    "total_flights": 1463,
-    "on_time_arrivals": 1362,
-    "on_time_percentage": 93.1,
-    "avg_delay_minutes": 16.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AER",
-    "airport2": "GOJ",
-    "total_flights": 314,
-    "on_time_arrivals": 306,
-    "on_time_percentage": 97.5,
-    "avg_delay_minutes": 8.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AER",
-    "airport2": "IAR",
-    "total_flights": 104,
-    "on_time_arrivals": 96,
-    "on_time_percentage": 92.3,
-    "avg_delay_minutes": 17.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AER",
-    "airport2": "IWA",
-    "total_flights": 209,
-    "on_time_arrivals": 202,
-    "on_time_percentage": 96.7,
-    "avg_delay_minutes": 9.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AER",
-    "airport2": "KGP",
-    "total_flights": 105,
-    "on_time_arrivals": 99,
-    "on_time_percentage": 94.3,
-    "avg_delay_minutes": 14.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AER",
-    "airport2": "KJA",
-    "total_flights": 208,
-    "on_time_arrivals": 200,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 10.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AER",
-    "airport2": "KUF",
-    "total_flights": 732,
-    "on_time_arrivals": 692,
-    "on_time_percentage": 94.5,
-    "avg_delay_minutes": 13.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AER",
-    "airport2": "NOZ",
-    "total_flights": 209,
-    "on_time_arrivals": 197,
-    "on_time_percentage": 94.3,
-    "avg_delay_minutes": 13.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AER",
-    "airport2": "PEZ",
-    "total_flights": 732,
-    "on_time_arrivals": 696,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AER",
-    "airport2": "ROV",
-    "total_flights": 1463,
-    "on_time_arrivals": 1388,
-    "on_time_percentage": 94.9,
-    "avg_delay_minutes": 13.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AER",
-    "airport2": "SVO",
-    "total_flights": 730,
-    "on_time_arrivals": 702,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 10.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "AER",
-    "airport2": "VKO",
-    "total_flights": 731,
-    "on_time_arrivals": 697,
-    "on_time_percentage": 95.3,
-    "avg_delay_minutes": 11.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ARH",
-    "airport2": "DME",
-    "total_flights": 732,
-    "on_time_arrivals": 702,
-    "on_time_percentage": 95.9,
-    "avg_delay_minutes": 10.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ARH",
-    "airport2": "HMA",
-    "total_flights": 208,
-    "on_time_arrivals": 205,
-    "on_time_percentage": 98.6,
-    "avg_delay_minutes": 5.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ARH",
-    "airport2": "IKT",
-    "total_flights": 104,
-    "on_time_arrivals": 97,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 14.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ARH",
-    "airport2": "NNM",
-    "total_flights": 732,
-    "on_time_arrivals": 702,
-    "on_time_percentage": 95.9,
-    "avg_delay_minutes": 10.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ARH",
-    "airport2": "PEE",
-    "total_flights": 1462,
-    "on_time_arrivals": 1393,
-    "on_time_percentage": 95.3,
-    "avg_delay_minutes": 12.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ARH",
-    "airport2": "TJM",
-    "total_flights": 314,
-    "on_time_arrivals": 297,
-    "on_time_percentage": 94.6,
-    "avg_delay_minutes": 13.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ARH",
-    "airport2": "TOF",
-    "total_flights": 208,
-    "on_time_arrivals": 200,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 10.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ASF",
-    "airport2": "BAX",
-    "total_flights": 208,
-    "on_time_arrivals": 194,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 16.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ASF",
-    "airport2": "CNN",
-    "total_flights": 105,
-    "on_time_arrivals": 99,
-    "on_time_percentage": 94.3,
-    "avg_delay_minutes": 11.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ASF",
-    "airport2": "DME",
-    "total_flights": 731,
-    "on_time_arrivals": 691,
-    "on_time_percentage": 94.5,
-    "avg_delay_minutes": 13.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ASF",
-    "airport2": "SVO",
-    "total_flights": 732,
-    "on_time_arrivals": 691,
-    "on_time_percentage": 94.4,
-    "avg_delay_minutes": 14.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "BAX",
-    "airport2": "DME",
-    "total_flights": 314,
-    "on_time_arrivals": 302,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 10.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "BAX",
-    "airport2": "KJA",
-    "total_flights": 732,
-    "on_time_arrivals": 694,
-    "on_time_percentage": 94.8,
-    "avg_delay_minutes": 12.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "BAX",
-    "airport2": "SVO",
-    "total_flights": 208,
-    "on_time_arrivals": 198,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "BAX",
-    "airport2": "VKO",
-    "total_flights": 314,
-    "on_time_arrivals": 299,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 11.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "BAX",
-    "airport2": "YKS",
-    "total_flights": 104,
-    "on_time_arrivals": 97,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 16.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "BQS",
-    "airport2": "KHV",
-    "total_flights": 732,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 94.9,
-    "avg_delay_minutes": 12.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "BTK",
-    "airport2": "DME",
-    "total_flights": 732,
-    "on_time_arrivals": 708,
-    "on_time_percentage": 96.7,
-    "avg_delay_minutes": 8.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "BZK",
-    "airport2": "DME",
-    "total_flights": 2194,
-    "on_time_arrivals": 2087,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "BZK",
-    "airport2": "EGO",
-    "total_flights": 732,
-    "on_time_arrivals": 697,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "BZK",
-    "airport2": "SVO",
-    "total_flights": 2193,
-    "on_time_arrivals": 2104,
-    "on_time_percentage": 95.9,
-    "avg_delay_minutes": 10.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "BZK",
-    "airport2": "VKO",
-    "total_flights": 2195,
-    "on_time_arrivals": 2088,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CEE",
-    "airport2": "LED",
-    "total_flights": 1462,
-    "on_time_arrivals": 1395,
-    "on_time_percentage": 95.4,
-    "avg_delay_minutes": 11.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CEE",
-    "airport2": "NOZ",
-    "total_flights": 104,
-    "on_time_arrivals": 100,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 10.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CEK",
-    "airport2": "DME",
-    "total_flights": 732,
-    "on_time_arrivals": 693,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CEK",
-    "airport2": "IKT",
-    "total_flights": 209,
-    "on_time_arrivals": 194,
-    "on_time_percentage": 92.8,
-    "avg_delay_minutes": 16.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CEK",
-    "airport2": "PEE",
-    "total_flights": 732,
-    "on_time_arrivals": 692,
-    "on_time_percentage": 94.5,
-    "avg_delay_minutes": 13.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CEK",
-    "airport2": "SGC",
-    "total_flights": 1463,
-    "on_time_arrivals": 1387,
-    "on_time_percentage": 94.8,
-    "avg_delay_minutes": 13.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CEK",
-    "airport2": "STW",
-    "total_flights": 314,
-    "on_time_arrivals": 298,
-    "on_time_percentage": 94.9,
-    "avg_delay_minutes": 12.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CEK",
-    "airport2": "SWT",
-    "total_flights": 732,
-    "on_time_arrivals": 694,
-    "on_time_percentage": 94.8,
-    "avg_delay_minutes": 13.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CEK",
-    "airport2": "VOG",
-    "total_flights": 731,
-    "on_time_arrivals": 693,
-    "on_time_percentage": 94.8,
-    "avg_delay_minutes": 12.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CNN",
-    "airport2": "DME",
-    "total_flights": 106,
-    "on_time_arrivals": 103,
-    "on_time_percentage": 97.2,
-    "avg_delay_minutes": 8.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CNN",
-    "airport2": "LED",
-    "total_flights": 105,
-    "on_time_arrivals": 98,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 16.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CNN",
-    "airport2": "MJZ",
-    "total_flights": 1464,
-    "on_time_arrivals": 1386,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CNN",
-    "airport2": "PEE",
-    "total_flights": 104,
-    "on_time_arrivals": 98,
-    "on_time_percentage": 94.2,
-    "avg_delay_minutes": 14.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CSY",
-    "airport2": "LED",
-    "total_flights": 732,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 94.9,
-    "avg_delay_minutes": 12.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CSY",
-    "airport2": "NBC",
-    "total_flights": 731,
-    "on_time_arrivals": 689,
-    "on_time_percentage": 94.3,
-    "avg_delay_minutes": 13.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CSY",
-    "airport2": "SVO",
-    "total_flights": 732,
-    "on_time_arrivals": 689,
-    "on_time_percentage": 94.1,
-    "avg_delay_minutes": 14.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CSY",
-    "airport2": "VKO",
-    "total_flights": 732,
-    "on_time_arrivals": 691,
-    "on_time_percentage": 94.4,
-    "avg_delay_minutes": 13.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "CSY",
-    "airport2": "VOG",
-    "total_flights": 732,
-    "on_time_arrivals": 690,
-    "on_time_percentage": 94.3,
-    "avg_delay_minutes": 13.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "DYR",
-    "total_flights": 106,
-    "on_time_arrivals": 101,
-    "on_time_percentage": 95.3,
-    "avg_delay_minutes": 10.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "EGO",
-    "total_flights": 731,
-    "on_time_arrivals": 690,
-    "on_time_percentage": 94.4,
-    "avg_delay_minutes": 13.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "ESL",
-    "total_flights": 731,
-    "on_time_arrivals": 693,
-    "on_time_percentage": 94.8,
-    "avg_delay_minutes": 12.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "EYK",
-    "total_flights": 106,
-    "on_time_arrivals": 101,
-    "on_time_percentage": 95.3,
-    "avg_delay_minutes": 11.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "GDZ",
-    "total_flights": 314,
-    "on_time_arrivals": 300,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 11.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "GRV",
-    "total_flights": 731,
-    "on_time_arrivals": 697,
-    "on_time_percentage": 95.3,
-    "avg_delay_minutes": 12.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "HMA",
-    "total_flights": 732,
-    "on_time_arrivals": 692,
-    "on_time_percentage": 94.5,
-    "avg_delay_minutes": 13.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "JOK",
-    "total_flights": 731,
-    "on_time_arrivals": 696,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "KEJ",
-    "total_flights": 314,
-    "on_time_arrivals": 300,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 11.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "KGD",
-    "total_flights": 731,
-    "on_time_arrivals": 690,
-    "on_time_percentage": 94.4,
-    "avg_delay_minutes": 13.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "KHV",
-    "total_flights": 730,
-    "on_time_arrivals": 691,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 9.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "KRO",
-    "total_flights": 314,
-    "on_time_arrivals": 297,
-    "on_time_percentage": 94.6,
-    "avg_delay_minutes": 13.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "KRR",
-    "total_flights": 730,
-    "on_time_arrivals": 694,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "KUF",
-    "total_flights": 732,
-    "on_time_arrivals": 702,
-    "on_time_percentage": 95.9,
-    "avg_delay_minutes": 10.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "KVX",
-    "total_flights": 731,
-    "on_time_arrivals": 696,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 11.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "KZN",
-    "total_flights": 731,
-    "on_time_arrivals": 680,
-    "on_time_percentage": 93.0,
-    "avg_delay_minutes": 16.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "LED",
-    "total_flights": 2926,
-    "on_time_arrivals": 2783,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "LPK",
-    "total_flights": 313,
-    "on_time_arrivals": 298,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "MCX",
-    "total_flights": 731,
-    "on_time_arrivals": 699,
-    "on_time_percentage": 95.6,
-    "avg_delay_minutes": 11.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "MRV",
-    "total_flights": 731,
-    "on_time_arrivals": 697,
-    "on_time_percentage": 95.3,
-    "avg_delay_minutes": 12.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "NAL",
-    "total_flights": 732,
-    "on_time_arrivals": 692,
-    "on_time_percentage": 94.5,
-    "avg_delay_minutes": 13.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "NJC",
-    "total_flights": 731,
-    "on_time_arrivals": 684,
-    "on_time_percentage": 93.6,
-    "avg_delay_minutes": 15.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "NNM",
-    "total_flights": 313,
-    "on_time_arrivals": 296,
-    "on_time_percentage": 94.6,
-    "avg_delay_minutes": 13.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "NSK",
-    "total_flights": 731,
-    "on_time_arrivals": 686,
-    "on_time_percentage": 93.8,
-    "avg_delay_minutes": 14.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "NUX",
-    "total_flights": 731,
-    "on_time_arrivals": 688,
-    "on_time_percentage": 94.1,
-    "avg_delay_minutes": 14.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "NYM",
-    "total_flights": 731,
-    "on_time_arrivals": 692,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "OVB",
-    "total_flights": 732,
-    "on_time_arrivals": 691,
-    "on_time_percentage": 94.4,
-    "avg_delay_minutes": 13.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "OVS",
-    "total_flights": 1464,
-    "on_time_arrivals": 1401,
-    "on_time_percentage": 95.7,
-    "avg_delay_minutes": 11.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "PES",
-    "total_flights": 731,
-    "on_time_arrivals": 693,
-    "on_time_percentage": 94.8,
-    "avg_delay_minutes": 12.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "PEZ",
-    "total_flights": 1464,
-    "on_time_arrivals": 1398,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 11.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "PKC",
-    "total_flights": 314,
-    "on_time_arrivals": 288,
-    "on_time_percentage": 91.7,
-    "avg_delay_minutes": 16.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "PKV",
-    "total_flights": 313,
-    "on_time_arrivals": 301,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 10.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "ROV",
-    "total_flights": 1461,
-    "on_time_arrivals": 1381,
-    "on_time_percentage": 94.5,
-    "avg_delay_minutes": 13.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "RTW",
-    "total_flights": 732,
-    "on_time_arrivals": 698,
-    "on_time_percentage": 95.4,
-    "avg_delay_minutes": 12.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "SCW",
-    "total_flights": 732,
-    "on_time_arrivals": 690,
-    "on_time_percentage": 94.3,
-    "avg_delay_minutes": 13.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "TBW",
-    "total_flights": 1462,
-    "on_time_arrivals": 1379,
-    "on_time_percentage": 94.3,
-    "avg_delay_minutes": 14.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "TOF",
-    "total_flights": 314,
-    "on_time_arrivals": 304,
-    "on_time_percentage": 96.8,
-    "avg_delay_minutes": 9.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "ULV",
-    "total_flights": 731,
-    "on_time_arrivals": 696,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "URJ",
-    "total_flights": 731,
-    "on_time_arrivals": 687,
-    "on_time_percentage": 94.0,
-    "avg_delay_minutes": 14.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "URS",
-    "total_flights": 732,
-    "on_time_arrivals": 693,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "USK",
-    "total_flights": 105,
-    "on_time_arrivals": 97,
-    "on_time_percentage": 92.4,
-    "avg_delay_minutes": 16.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "UUA",
-    "total_flights": 731,
-    "on_time_arrivals": 698,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 11.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "UUS",
-    "total_flights": 730,
-    "on_time_arrivals": 682,
-    "on_time_percentage": 93.4,
-    "avg_delay_minutes": 13.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "VKT",
-    "total_flights": 730,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 11.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DME",
-    "airport2": "VOZ",
-    "total_flights": 730,
-    "on_time_arrivals": 701,
-    "on_time_percentage": 96.0,
-    "avg_delay_minutes": 10.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DYR",
-    "airport2": "KHV",
-    "total_flights": 104,
-    "on_time_arrivals": 98,
-    "on_time_percentage": 94.2,
-    "avg_delay_minutes": 14.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DYR",
-    "airport2": "SVO",
-    "total_flights": 104,
-    "on_time_arrivals": 99,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "DYR",
-    "airport2": "VKO",
-    "total_flights": 104,
-    "on_time_arrivals": 95,
-    "on_time_percentage": 91.3,
-    "avg_delay_minutes": 20.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "EGO",
-    "airport2": "ROV",
-    "total_flights": 731,
-    "on_time_arrivals": 697,
-    "on_time_percentage": 95.3,
-    "avg_delay_minutes": 11.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ESL",
-    "airport2": "GDZ",
-    "total_flights": 208,
-    "on_time_arrivals": 196,
-    "on_time_percentage": 94.2,
-    "avg_delay_minutes": 13.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ESL",
-    "airport2": "KGD",
-    "total_flights": 208,
-    "on_time_arrivals": 201,
-    "on_time_percentage": 96.6,
-    "avg_delay_minutes": 9.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ESL",
-    "airport2": "LED",
-    "total_flights": 208,
-    "on_time_arrivals": 197,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ESL",
-    "airport2": "REN",
-    "total_flights": 731,
-    "on_time_arrivals": 686,
-    "on_time_percentage": 93.8,
-    "avg_delay_minutes": 15.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ESL",
-    "airport2": "SVO",
-    "total_flights": 732,
-    "on_time_arrivals": 692,
-    "on_time_percentage": 94.5,
-    "avg_delay_minutes": 13.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ESL",
-    "airport2": "UFA",
-    "total_flights": 732,
-    "on_time_arrivals": 696,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "EYK",
-    "airport2": "KRO",
-    "total_flights": 210,
-    "on_time_arrivals": 197,
-    "on_time_percentage": 93.8,
-    "avg_delay_minutes": 14.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "EYK",
-    "airport2": "TJM",
-    "total_flights": 314,
-    "on_time_arrivals": 304,
-    "on_time_percentage": 96.8,
-    "avg_delay_minutes": 8.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "GDX",
-    "airport2": "IKT",
-    "total_flights": 208,
-    "on_time_arrivals": 203,
-    "on_time_percentage": 97.6,
-    "avg_delay_minutes": 7.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "GDX",
-    "airport2": "MRV",
-    "total_flights": 104,
-    "on_time_arrivals": 95,
-    "on_time_percentage": 91.3,
-    "avg_delay_minutes": 18.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "GDX",
-    "airport2": "SCW",
-    "total_flights": 105,
-    "on_time_arrivals": 99,
-    "on_time_percentage": 94.3,
-    "avg_delay_minutes": 14.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "GDZ",
-    "airport2": "ROV",
-    "total_flights": 208,
-    "on_time_arrivals": 202,
-    "on_time_percentage": 97.1,
-    "avg_delay_minutes": 8.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "GDZ",
-    "airport2": "SVO",
-    "total_flights": 314,
-    "on_time_arrivals": 297,
-    "on_time_percentage": 94.6,
-    "avg_delay_minutes": 13.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "GDZ",
-    "airport2": "VKO",
-    "total_flights": 314,
-    "on_time_arrivals": 300,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 11.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "GOJ",
-    "airport2": "KLF",
-    "total_flights": 314,
-    "on_time_arrivals": 290,
-    "on_time_percentage": 92.4,
-    "avg_delay_minutes": 17.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "GOJ",
-    "airport2": "LED",
-    "total_flights": 731,
-    "on_time_arrivals": 702,
-    "on_time_percentage": 96.0,
-    "avg_delay_minutes": 10.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "GOJ",
-    "airport2": "NAL",
-    "total_flights": 732,
-    "on_time_arrivals": 692,
-    "on_time_percentage": 94.5,
-    "avg_delay_minutes": 13.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "GOJ",
-    "airport2": "PEE",
-    "total_flights": 732,
-    "on_time_arrivals": 696,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "GOJ",
-    "airport2": "SVO",
-    "total_flights": 1463,
-    "on_time_arrivals": 1396,
-    "on_time_percentage": 95.4,
-    "avg_delay_minutes": 11.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "HMA",
-    "airport2": "KVX",
-    "total_flights": 731,
-    "on_time_arrivals": 682,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 15.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "HMA",
-    "airport2": "NUX",
-    "total_flights": 1463,
-    "on_time_arrivals": 1378,
-    "on_time_percentage": 94.2,
-    "avg_delay_minutes": 14.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "HMA",
-    "airport2": "OSW",
-    "total_flights": 104,
-    "on_time_arrivals": 100,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 10.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "HMA",
-    "airport2": "OVB",
-    "total_flights": 1463,
-    "on_time_arrivals": 1390,
-    "on_time_percentage": 95.0,
-    "avg_delay_minutes": 12.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "HMA",
-    "airport2": "SVX",
-    "total_flights": 732,
-    "on_time_arrivals": 706,
-    "on_time_percentage": 96.4,
-    "avg_delay_minutes": 9.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "HMA",
-    "airport2": "VKO",
-    "total_flights": 732,
-    "on_time_arrivals": 691,
-    "on_time_percentage": 94.4,
-    "avg_delay_minutes": 13.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "HTA",
-    "airport2": "NUX",
-    "total_flights": 732,
-    "on_time_arrivals": 707,
-    "on_time_percentage": 96.6,
-    "avg_delay_minutes": 9.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "HTA",
-    "airport2": "SGC",
-    "total_flights": 208,
-    "on_time_arrivals": 195,
-    "on_time_percentage": 93.8,
-    "avg_delay_minutes": 15.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "HTA",
-    "airport2": "UFA",
-    "total_flights": 208,
-    "on_time_arrivals": 196,
-    "on_time_percentage": 94.2,
-    "avg_delay_minutes": 14.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "IAR",
-    "airport2": "LED",
-    "total_flights": 731,
-    "on_time_arrivals": 692,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "IAR",
-    "airport2": "TOF",
-    "total_flights": 105,
-    "on_time_arrivals": 99,
-    "on_time_percentage": 94.3,
-    "avg_delay_minutes": 13.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "IJK",
-    "airport2": "SVO",
-    "total_flights": 732,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 94.9,
-    "avg_delay_minutes": 13.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "IKT",
-    "airport2": "KZN",
-    "total_flights": 732,
-    "on_time_arrivals": 698,
-    "on_time_percentage": 95.4,
-    "avg_delay_minutes": 11.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "IKT",
-    "airport2": "LED",
-    "total_flights": 732,
-    "on_time_arrivals": 685,
-    "on_time_percentage": 93.6,
-    "avg_delay_minutes": 15.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "IKT",
-    "airport2": "MJZ",
-    "total_flights": 732,
-    "on_time_arrivals": 700,
-    "on_time_percentage": 95.6,
-    "avg_delay_minutes": 11.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "IKT",
-    "airport2": "NYM",
-    "total_flights": 209,
-    "on_time_arrivals": 199,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 11.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "IKT",
-    "airport2": "SGC",
-    "total_flights": 732,
-    "on_time_arrivals": 697,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "IKT",
-    "airport2": "VVO",
-    "total_flights": 732,
-    "on_time_arrivals": 703,
-    "on_time_percentage": 96.0,
-    "avg_delay_minutes": 10.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "IWA",
-    "airport2": "SVX",
-    "total_flights": 210,
-    "on_time_arrivals": 206,
-    "on_time_percentage": 98.1,
-    "avg_delay_minutes": 6.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "JOK",
-    "airport2": "KRR",
-    "total_flights": 208,
-    "on_time_arrivals": 199,
-    "on_time_percentage": 95.7,
-    "avg_delay_minutes": 11.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "JOK",
-    "airport2": "SVO",
-    "total_flights": 731,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "JOK",
-    "airport2": "VKO",
-    "total_flights": 1464,
-    "on_time_arrivals": 1391,
-    "on_time_percentage": 95.0,
-    "avg_delay_minutes": 12.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KEJ",
-    "airport2": "KYZ",
-    "total_flights": 209,
-    "on_time_arrivals": 197,
-    "on_time_percentage": 94.3,
-    "avg_delay_minutes": 14.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KEJ",
-    "airport2": "PYJ",
-    "total_flights": 105,
-    "on_time_arrivals": 101,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 10.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KEJ",
-    "airport2": "SVO",
-    "total_flights": 210,
-    "on_time_arrivals": 197,
-    "on_time_percentage": 93.8,
-    "avg_delay_minutes": 15.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KEJ",
-    "airport2": "VKO",
-    "total_flights": 208,
-    "on_time_arrivals": 193,
-    "on_time_percentage": 92.8,
-    "avg_delay_minutes": 16.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KGD",
-    "airport2": "KRR",
-    "total_flights": 208,
-    "on_time_arrivals": 191,
-    "on_time_percentage": 91.8,
-    "avg_delay_minutes": 18.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KGD",
-    "airport2": "SVO",
-    "total_flights": 732,
-    "on_time_arrivals": 689,
-    "on_time_percentage": 94.1,
-    "avg_delay_minutes": 14.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KGP",
-    "airport2": "NUX",
-    "total_flights": 732,
-    "on_time_arrivals": 698,
-    "on_time_percentage": 95.4,
-    "avg_delay_minutes": 11.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KGP",
-    "airport2": "SVX",
-    "total_flights": 1464,
-    "on_time_arrivals": 1392,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KHV",
-    "airport2": "LED",
-    "total_flights": 731,
-    "on_time_arrivals": 682,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 12.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KHV",
-    "airport2": "UIK",
-    "total_flights": 314,
-    "on_time_arrivals": 293,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 16.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KHV",
-    "airport2": "UUS",
-    "total_flights": 1464,
-    "on_time_arrivals": 1388,
-    "on_time_percentage": 94.8,
-    "avg_delay_minutes": 13.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KHV",
-    "airport2": "VVO",
-    "total_flights": 732,
-    "on_time_arrivals": 700,
-    "on_time_percentage": 95.6,
-    "avg_delay_minutes": 11.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KJA",
-    "airport2": "KRO",
-    "total_flights": 732,
-    "on_time_arrivals": 703,
-    "on_time_percentage": 96.0,
-    "avg_delay_minutes": 10.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KJA",
-    "airport2": "NOZ",
-    "total_flights": 1464,
-    "on_time_arrivals": 1392,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KJA",
-    "airport2": "NUX",
-    "total_flights": 209,
-    "on_time_arrivals": 198,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KJA",
-    "airport2": "OVB",
-    "total_flights": 1464,
-    "on_time_arrivals": 1409,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 10.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KJA",
-    "airport2": "OVS",
-    "total_flights": 732,
-    "on_time_arrivals": 693,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KJA",
-    "airport2": "SVO",
-    "total_flights": 732,
-    "on_time_arrivals": 699,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 11.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KJA",
-    "airport2": "UIK",
-    "total_flights": 1464,
-    "on_time_arrivals": 1365,
-    "on_time_percentage": 93.2,
-    "avg_delay_minutes": 15.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KJA",
-    "airport2": "UKX",
-    "total_flights": 732,
-    "on_time_arrivals": 694,
-    "on_time_percentage": 94.8,
-    "avg_delay_minutes": 12.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KLF",
-    "airport2": "LED",
-    "total_flights": 732,
-    "on_time_arrivals": 688,
-    "on_time_percentage": 94.0,
-    "avg_delay_minutes": 14.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KLF",
-    "airport2": "OVB",
-    "total_flights": 106,
-    "on_time_arrivals": 96,
-    "on_time_percentage": 90.6,
-    "avg_delay_minutes": 20.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KLF",
-    "airport2": "PES",
-    "total_flights": 313,
-    "on_time_arrivals": 297,
-    "on_time_percentage": 94.9,
-    "avg_delay_minutes": 12.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KRO",
-    "airport2": "OSW",
-    "total_flights": 314,
-    "on_time_arrivals": 305,
-    "on_time_percentage": 97.1,
-    "avg_delay_minutes": 8.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KRO",
-    "airport2": "SVO",
-    "total_flights": 208,
-    "on_time_arrivals": 198,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KRO",
-    "airport2": "VKO",
-    "total_flights": 731,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KRR",
-    "airport2": "NAL",
-    "total_flights": 732,
-    "on_time_arrivals": 696,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KRR",
-    "airport2": "NOZ",
-    "total_flights": 105,
-    "on_time_arrivals": 100,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 13.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KRR",
-    "airport2": "RGK",
-    "total_flights": 104,
-    "on_time_arrivals": 99,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 11.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KRR",
-    "airport2": "ULV",
-    "total_flights": 732,
-    "on_time_arrivals": 710,
-    "on_time_percentage": 97.0,
-    "avg_delay_minutes": 8.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KUF",
-    "airport2": "URS",
-    "total_flights": 732,
-    "on_time_arrivals": 685,
-    "on_time_percentage": 93.6,
-    "avg_delay_minutes": 15.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KVX",
-    "airport2": "KZN",
-    "total_flights": 732,
-    "on_time_arrivals": 694,
-    "on_time_percentage": 94.8,
-    "avg_delay_minutes": 12.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KVX",
-    "airport2": "LED",
-    "total_flights": 732,
-    "on_time_arrivals": 709,
-    "on_time_percentage": 96.9,
-    "avg_delay_minutes": 8.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KVX",
-    "airport2": "OVB",
-    "total_flights": 732,
-    "on_time_arrivals": 699,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 11.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KVX",
-    "airport2": "SVO",
-    "total_flights": 731,
-    "on_time_arrivals": 697,
-    "on_time_percentage": 95.3,
-    "avg_delay_minutes": 11.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KXK",
-    "airport2": "SVX",
-    "total_flights": 208,
-    "on_time_arrivals": 195,
-    "on_time_percentage": 93.8,
-    "avg_delay_minutes": 12.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KYZ",
-    "airport2": "SVX",
-    "total_flights": 104,
-    "on_time_arrivals": 97,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 14.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KZN",
-    "airport2": "LED",
-    "total_flights": 731,
-    "on_time_arrivals": 700,
-    "on_time_percentage": 95.8,
-    "avg_delay_minutes": 11.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KZN",
-    "airport2": "MCX",
-    "total_flights": 208,
-    "on_time_arrivals": 197,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KZN",
-    "airport2": "MQF",
-    "total_flights": 732,
-    "on_time_arrivals": 698,
-    "on_time_percentage": 95.4,
-    "avg_delay_minutes": 11.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KZN",
-    "airport2": "MRV",
-    "total_flights": 209,
-    "on_time_arrivals": 196,
-    "on_time_percentage": 93.8,
-    "avg_delay_minutes": 15.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KZN",
-    "airport2": "PKV",
-    "total_flights": 104,
-    "on_time_arrivals": 97,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 16.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "KZN",
-    "airport2": "ROV",
-    "total_flights": 1462,
-    "on_time_arrivals": 1394,
-    "on_time_percentage": 95.3,
-    "avg_delay_minutes": 12.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "LED",
-    "airport2": "NJC",
-    "total_flights": 730,
-    "on_time_arrivals": 687,
-    "on_time_percentage": 94.1,
-    "avg_delay_minutes": 14.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "LED",
-    "airport2": "NOJ",
-    "total_flights": 208,
-    "on_time_arrivals": 199,
-    "on_time_percentage": 95.7,
-    "avg_delay_minutes": 11.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "LED",
-    "airport2": "OVS",
-    "total_flights": 731,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "LED",
-    "airport2": "PYJ",
-    "total_flights": 106,
-    "on_time_arrivals": 101,
-    "on_time_percentage": 95.3,
-    "avg_delay_minutes": 12.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "LED",
-    "airport2": "REN",
-    "total_flights": 732,
-    "on_time_arrivals": 704,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 10.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "LED",
-    "airport2": "SVO",
-    "total_flights": 3660,
-    "on_time_arrivals": 3476,
-    "on_time_percentage": 95.0,
-    "avg_delay_minutes": 12.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "LED",
-    "airport2": "TBW",
-    "total_flights": 1464,
-    "on_time_arrivals": 1398,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 12.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "LED",
-    "airport2": "TJM",
-    "total_flights": 732,
-    "on_time_arrivals": 684,
-    "on_time_percentage": 93.4,
-    "avg_delay_minutes": 15.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "LED",
-    "airport2": "VKO",
-    "total_flights": 2195,
-    "on_time_arrivals": 2088,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "LED",
-    "airport2": "VKT",
-    "total_flights": 208,
-    "on_time_arrivals": 194,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 16.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "LED",
-    "airport2": "VOZ",
-    "total_flights": 731,
-    "on_time_arrivals": 683,
-    "on_time_percentage": 93.4,
-    "avg_delay_minutes": 15.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "LED",
-    "airport2": "YKS",
-    "total_flights": 731,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "LPK",
-    "airport2": "PES",
-    "total_flights": 209,
-    "on_time_arrivals": 198,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "MCX",
-    "airport2": "MRV",
-    "total_flights": 732,
-    "on_time_arrivals": 699,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 11.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "MCX",
-    "airport2": "SVO",
-    "total_flights": 732,
-    "on_time_arrivals": 697,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "MJZ",
-    "airport2": "OVB",
-    "total_flights": 732,
-    "on_time_arrivals": 706,
-    "on_time_percentage": 96.4,
-    "avg_delay_minutes": 9.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "MJZ",
-    "airport2": "SVO",
-    "total_flights": 732,
-    "on_time_arrivals": 703,
-    "on_time_percentage": 96.0,
-    "avg_delay_minutes": 9.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "MJZ",
-    "airport2": "SVX",
-    "total_flights": 208,
-    "on_time_arrivals": 199,
-    "on_time_percentage": 95.7,
-    "avg_delay_minutes": 11.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "MJZ",
-    "airport2": "YKS",
-    "total_flights": 732,
-    "on_time_arrivals": 696,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "MMK",
-    "airport2": "SVO",
-    "total_flights": 731,
-    "on_time_arrivals": 701,
-    "on_time_percentage": 95.9,
-    "avg_delay_minutes": 10.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "MMK",
-    "airport2": "VKO",
-    "total_flights": 732,
-    "on_time_arrivals": 686,
-    "on_time_percentage": 93.7,
-    "avg_delay_minutes": 14.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "MQF",
-    "airport2": "OVB",
-    "total_flights": 732,
-    "on_time_arrivals": 699,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 11.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "MQF",
-    "airport2": "SVX",
-    "total_flights": 732,
-    "on_time_arrivals": 691,
-    "on_time_percentage": 94.4,
-    "avg_delay_minutes": 13.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "MQF",
-    "airport2": "VKO",
-    "total_flights": 732,
-    "on_time_arrivals": 693,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "MRV",
-    "airport2": "PEE",
-    "total_flights": 732,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 94.9,
-    "avg_delay_minutes": 12.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NBC",
-    "airport2": "OMS",
-    "total_flights": 209,
-    "on_time_arrivals": 202,
-    "on_time_percentage": 96.7,
-    "avg_delay_minutes": 9.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NBC",
-    "airport2": "ROV",
-    "total_flights": 314,
-    "on_time_arrivals": 293,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 15.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NBC",
-    "airport2": "SCW",
-    "total_flights": 1462,
-    "on_time_arrivals": 1392,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 11.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NFG",
-    "airport2": "SVO",
-    "total_flights": 313,
-    "on_time_arrivals": 292,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 15.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NFG",
-    "airport2": "VKO",
-    "total_flights": 208,
-    "on_time_arrivals": 199,
-    "on_time_percentage": 95.7,
-    "avg_delay_minutes": 10.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NJC",
-    "airport2": "OVS",
-    "total_flights": 732,
-    "on_time_arrivals": 682,
-    "on_time_percentage": 93.2,
-    "avg_delay_minutes": 16.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NJC",
-    "airport2": "ULY",
-    "total_flights": 105,
-    "on_time_arrivals": 102,
-    "on_time_percentage": 97.1,
-    "avg_delay_minutes": 8.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NNM",
-    "airport2": "SVO",
-    "total_flights": 732,
-    "on_time_arrivals": 702,
-    "on_time_percentage": 95.9,
-    "avg_delay_minutes": 10.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NNM",
-    "airport2": "TJM",
-    "total_flights": 105,
-    "on_time_arrivals": 97,
-    "on_time_percentage": 92.4,
-    "avg_delay_minutes": 17.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NOJ",
-    "airport2": "NUX",
-    "total_flights": 1464,
-    "on_time_arrivals": 1392,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NOJ",
-    "airport2": "SVO",
-    "total_flights": 209,
-    "on_time_arrivals": 201,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 10.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NOJ",
-    "airport2": "VKO",
-    "total_flights": 313,
-    "on_time_arrivals": 298,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 11.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NOZ",
-    "airport2": "NYM",
-    "total_flights": 208,
-    "on_time_arrivals": 196,
-    "on_time_percentage": 94.2,
-    "avg_delay_minutes": 14.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NOZ",
-    "airport2": "OVB",
-    "total_flights": 1464,
-    "on_time_arrivals": 1398,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 11.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NOZ",
-    "airport2": "TOF",
-    "total_flights": 732,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 94.9,
-    "avg_delay_minutes": 12.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NSK",
-    "airport2": "NYM",
-    "total_flights": 210,
-    "on_time_arrivals": 203,
-    "on_time_percentage": 96.7,
-    "avg_delay_minutes": 9.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NSK",
-    "airport2": "SVX",
-    "total_flights": 732,
-    "on_time_arrivals": 706,
-    "on_time_percentage": 96.4,
-    "avg_delay_minutes": 9.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NUX",
-    "airport2": "SVO",
-    "total_flights": 732,
-    "on_time_arrivals": 686,
-    "on_time_percentage": 93.7,
-    "avg_delay_minutes": 15.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NYA",
-    "airport2": "ROV",
-    "total_flights": 105,
-    "on_time_arrivals": 100,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 13.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NYA",
-    "airport2": "SVO",
-    "total_flights": 104,
-    "on_time_arrivals": 99,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NYA",
-    "airport2": "VKO",
-    "total_flights": 106,
-    "on_time_arrivals": 98,
-    "on_time_percentage": 92.5,
-    "avg_delay_minutes": 17.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "NYM",
-    "airport2": "UUD",
-    "total_flights": 314,
-    "on_time_arrivals": 293,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 16.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OGZ",
-    "airport2": "SVO",
-    "total_flights": 732,
-    "on_time_arrivals": 694,
-    "on_time_percentage": 94.8,
-    "avg_delay_minutes": 12.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OGZ",
-    "airport2": "VKO",
-    "total_flights": 731,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OMS",
-    "airport2": "SVO",
-    "total_flights": 731,
-    "on_time_arrivals": 699,
-    "on_time_percentage": 95.6,
-    "avg_delay_minutes": 11.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OMS",
-    "airport2": "VKO",
-    "total_flights": 732,
-    "on_time_arrivals": 697,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OMS",
-    "airport2": "VKT",
-    "total_flights": 731,
-    "on_time_arrivals": 692,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OSW",
-    "airport2": "ULV",
-    "total_flights": 314,
-    "on_time_arrivals": 300,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 11.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OSW",
-    "airport2": "VKO",
-    "total_flights": 104,
-    "on_time_arrivals": 100,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 9.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OVB",
-    "airport2": "PEE",
-    "total_flights": 732,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 94.9,
-    "avg_delay_minutes": 12.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OVB",
-    "airport2": "PYJ",
-    "total_flights": 106,
-    "on_time_arrivals": 101,
-    "on_time_percentage": 95.3,
-    "avg_delay_minutes": 12.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OVB",
-    "airport2": "RGK",
-    "total_flights": 732,
-    "on_time_arrivals": 691,
-    "on_time_percentage": 94.4,
-    "avg_delay_minutes": 13.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OVB",
-    "airport2": "SGC",
-    "total_flights": 732,
-    "on_time_arrivals": 692,
-    "on_time_percentage": 94.5,
-    "avg_delay_minutes": 13.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OVB",
-    "airport2": "SLY",
-    "total_flights": 732,
-    "on_time_arrivals": 701,
-    "on_time_percentage": 95.8,
-    "avg_delay_minutes": 11.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OVB",
-    "airport2": "SVO",
-    "total_flights": 732,
-    "on_time_arrivals": 697,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OVS",
-    "airport2": "SGC",
-    "total_flights": 731,
-    "on_time_arrivals": 702,
-    "on_time_percentage": 96.0,
-    "avg_delay_minutes": 10.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OVS",
-    "airport2": "SVO",
-    "total_flights": 731,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OVS",
-    "airport2": "TJM",
-    "total_flights": 731,
-    "on_time_arrivals": 701,
-    "on_time_percentage": 95.9,
-    "avg_delay_minutes": 11.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "OVS",
-    "airport2": "UFA",
-    "total_flights": 732,
-    "on_time_arrivals": 692,
-    "on_time_percentage": 94.5,
-    "avg_delay_minutes": 14.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "PEE",
-    "airport2": "SVX",
-    "total_flights": 1463,
-    "on_time_arrivals": 1386,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "PEE",
-    "airport2": "ULV",
-    "total_flights": 732,
-    "on_time_arrivals": 693,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "PEE",
-    "airport2": "VKO",
-    "total_flights": 731,
-    "on_time_arrivals": 699,
-    "on_time_percentage": 95.6,
-    "avg_delay_minutes": 11.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "PES",
-    "airport2": "ROV",
-    "total_flights": 105,
-    "on_time_arrivals": 100,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "PES",
-    "airport2": "SVO",
-    "total_flights": 1463,
-    "on_time_arrivals": 1395,
-    "on_time_percentage": 95.4,
-    "avg_delay_minutes": 12.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "PES",
-    "airport2": "TJM",
-    "total_flights": 732,
-    "on_time_arrivals": 683,
-    "on_time_percentage": 93.3,
-    "avg_delay_minutes": 16.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "PES",
-    "airport2": "VKO",
-    "total_flights": 732,
-    "on_time_arrivals": 702,
-    "on_time_percentage": 95.9,
-    "avg_delay_minutes": 11.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "PEZ",
-    "airport2": "SVO",
-    "total_flights": 731,
-    "on_time_arrivals": 699,
-    "on_time_percentage": 95.6,
-    "avg_delay_minutes": 11.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "PKV",
-    "airport2": "SVO",
-    "total_flights": 731,
-    "on_time_arrivals": 684,
-    "on_time_percentage": 93.6,
-    "avg_delay_minutes": 15.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "REN",
-    "airport2": "UFA",
-    "total_flights": 732,
-    "on_time_arrivals": 699,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 11.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "REN",
-    "airport2": "UUA",
-    "total_flights": 732,
-    "on_time_arrivals": 712,
-    "on_time_percentage": 97.3,
-    "avg_delay_minutes": 8.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "REN",
-    "airport2": "VKO",
-    "total_flights": 732,
-    "on_time_arrivals": 700,
-    "on_time_percentage": 95.6,
-    "avg_delay_minutes": 11.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "RGK",
-    "airport2": "STW",
-    "total_flights": 106,
-    "on_time_arrivals": 102,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 10.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "RGK",
-    "airport2": "SVO",
-    "total_flights": 105,
-    "on_time_arrivals": 102,
-    "on_time_percentage": 97.1,
-    "avg_delay_minutes": 7.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ROV",
-    "airport2": "SVO",
-    "total_flights": 731,
-    "on_time_arrivals": 692,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ROV",
-    "airport2": "TOF",
-    "total_flights": 105,
-    "on_time_arrivals": 99,
-    "on_time_percentage": 94.3,
-    "avg_delay_minutes": 13.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ROV",
-    "airport2": "VOG",
-    "total_flights": 732,
-    "on_time_arrivals": 707,
-    "on_time_percentage": 96.6,
-    "avg_delay_minutes": 9.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "RTW",
-    "airport2": "ULY",
-    "total_flights": 1464,
-    "on_time_arrivals": 1367,
-    "on_time_percentage": 93.4,
-    "avg_delay_minutes": 15.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "RTW",
-    "airport2": "VKO",
-    "total_flights": 732,
-    "on_time_arrivals": 700,
-    "on_time_percentage": 95.6,
-    "avg_delay_minutes": 11.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SCW",
-    "airport2": "SVX",
-    "total_flights": 732,
-    "on_time_arrivals": 687,
-    "on_time_percentage": 93.9,
-    "avg_delay_minutes": 14.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SGC",
-    "airport2": "SVX",
-    "total_flights": 731,
-    "on_time_arrivals": 690,
-    "on_time_percentage": 94.4,
-    "avg_delay_minutes": 13.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SGC",
-    "airport2": "UIK",
-    "total_flights": 104,
-    "on_time_arrivals": 93,
-    "on_time_percentage": 89.4,
-    "avg_delay_minutes": 23.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SGC",
-    "airport2": "URS",
-    "total_flights": 208,
-    "on_time_arrivals": 196,
-    "on_time_percentage": 94.2,
-    "avg_delay_minutes": 14.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SGC",
-    "airport2": "VKT",
-    "total_flights": 1462,
-    "on_time_arrivals": 1394,
-    "on_time_percentage": 95.3,
-    "avg_delay_minutes": 11.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SKX",
-    "airport2": "SVO",
-    "total_flights": 731,
-    "on_time_arrivals": 694,
-    "on_time_percentage": 94.9,
-    "avg_delay_minutes": 12.7,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SKX",
-    "airport2": "VKO",
-    "total_flights": 732,
-    "on_time_arrivals": 704,
-    "on_time_percentage": 96.2,
-    "avg_delay_minutes": 10.4,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SLY",
-    "airport2": "VKO",
-    "total_flights": 732,
-    "on_time_arrivals": 706,
-    "on_time_percentage": 96.4,
-    "avg_delay_minutes": 9.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "STW",
-    "airport2": "SVO",
-    "total_flights": 731,
-    "on_time_arrivals": 692,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "STW",
-    "airport2": "VKO",
-    "total_flights": 313,
-    "on_time_arrivals": 295,
-    "on_time_percentage": 94.2,
-    "avg_delay_minutes": 14.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SVO",
-    "airport2": "SVX",
-    "total_flights": 732,
-    "on_time_arrivals": 691,
-    "on_time_percentage": 94.4,
-    "avg_delay_minutes": 13.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SVO",
-    "airport2": "TJM",
-    "total_flights": 732,
-    "on_time_arrivals": 693,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 13.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SVO",
-    "airport2": "TOF",
-    "total_flights": 732,
-    "on_time_arrivals": 686,
-    "on_time_percentage": 93.7,
-    "avg_delay_minutes": 15.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SVO",
-    "airport2": "UFA",
-    "total_flights": 732,
-    "on_time_arrivals": 697,
-    "on_time_percentage": 95.2,
-    "avg_delay_minutes": 12.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SVO",
-    "airport2": "ULV",
-    "total_flights": 1464,
-    "on_time_arrivals": 1407,
-    "on_time_percentage": 96.1,
-    "avg_delay_minutes": 10.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SVO",
-    "airport2": "ULY",
-    "total_flights": 731,
-    "on_time_arrivals": 690,
-    "on_time_percentage": 94.4,
-    "avg_delay_minutes": 13.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SVO",
-    "airport2": "USK",
-    "total_flights": 106,
-    "on_time_arrivals": 100,
-    "on_time_percentage": 94.3,
-    "avg_delay_minutes": 13.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SVO",
-    "airport2": "UUA",
-    "total_flights": 732,
-    "on_time_arrivals": 702,
-    "on_time_percentage": 95.9,
-    "avg_delay_minutes": 11.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SVO",
-    "airport2": "UUS",
-    "total_flights": 730,
-    "on_time_arrivals": 673,
-    "on_time_percentage": 92.2,
-    "avg_delay_minutes": 12.5,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SVO",
-    "airport2": "VKT",
-    "total_flights": 208,
-    "on_time_arrivals": 192,
-    "on_time_percentage": 92.3,
-    "avg_delay_minutes": 17.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SVO",
-    "airport2": "VOG",
-    "total_flights": 732,
-    "on_time_arrivals": 694,
-    "on_time_percentage": 94.8,
-    "avg_delay_minutes": 13.1,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "SVX",
-    "airport2": "UIK",
-    "total_flights": 210,
-    "on_time_arrivals": 201,
-    "on_time_percentage": 95.7,
-    "avg_delay_minutes": 11.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "TJM",
-    "airport2": "UCT",
-    "total_flights": 732,
-    "on_time_arrivals": 699,
-    "on_time_percentage": 95.5,
-    "avg_delay_minutes": 11.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "TJM",
-    "airport2": "URJ",
-    "total_flights": 732,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 94.9,
-    "avg_delay_minutes": 12.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "TOF",
-    "airport2": "VOG",
-    "total_flights": 105,
-    "on_time_arrivals": 97,
-    "on_time_percentage": 92.4,
-    "avg_delay_minutes": 17.8,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "UCT",
-    "airport2": "UFA",
-    "total_flights": 1464,
-    "on_time_arrivals": 1391,
-    "on_time_percentage": 95.0,
-    "avg_delay_minutes": 12.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "ULV",
-    "airport2": "VKO",
-    "total_flights": 730,
-    "on_time_arrivals": 699,
-    "on_time_percentage": 95.8,
-    "avg_delay_minutes": 11.0,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "UUD",
-    "airport2": "VKO",
-    "total_flights": 314,
-    "on_time_arrivals": 297,
-    "on_time_percentage": 94.6,
-    "avg_delay_minutes": 12.6,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "UUD",
-    "airport2": "YKS",
-    "total_flights": 209,
-    "on_time_arrivals": 196,
-    "on_time_percentage": 93.8,
-    "avg_delay_minutes": 14.9,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "UUS",
-    "airport2": "YKS",
-    "total_flights": 208,
-    "on_time_arrivals": 197,
-    "on_time_percentage": 94.7,
-    "avg_delay_minutes": 12.2,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "VKO",
-    "airport2": "VOG",
-    "total_flights": 731,
-    "on_time_arrivals": 695,
-    "on_time_percentage": 95.1,
-    "avg_delay_minutes": 12.3,
-    "missing_departure_count": 0
-  },
-  {
-    "airport1": "VKO",
-    "airport2": "VVO",
-    "total_flights": 730,
-    "on_time_arrivals": 680,
-    "on_time_percentage": 93.2,
-    "avg_delay_minutes": 13.4,
-    "missing_departure_count": 0
-  }
-]
+[ {
+  "airport_first" : "AAQ",
+  "airport_second" : "EGO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 700,
+  "on_time_percentage" : 95.6,
+  "avg_delay_minutes" : 11.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AAQ",
+  "airport_second" : "NOZ",
+  "total_flights" : 106,
+  "on_time_arrivals" : 99,
+  "on_time_percentage" : 93.4,
+  "avg_delay_minutes" : 13.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AAQ",
+  "airport_second" : "SVO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 696,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ABA",
+  "airport_second" : "ARH",
+  "total_flights" : 104,
+  "on_time_arrivals" : 102,
+  "on_time_percentage" : 98.1,
+  "avg_delay_minutes" : 6.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ABA",
+  "airport_second" : "DME",
+  "total_flights" : 209,
+  "on_time_arrivals" : 199,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ABA",
+  "airport_second" : "GRV",
+  "total_flights" : 105,
+  "on_time_arrivals" : 102,
+  "on_time_percentage" : 97.1,
+  "avg_delay_minutes" : 8.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ABA",
+  "airport_second" : "KYZ",
+  "total_flights" : 210,
+  "on_time_arrivals" : 201,
+  "on_time_percentage" : 95.7,
+  "avg_delay_minutes" : 11.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ABA",
+  "airport_second" : "OVB",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1382,
+  "on_time_percentage" : 94.4,
+  "avg_delay_minutes" : 13.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ABA",
+  "airport_second" : "TOF",
+  "total_flights" : 732,
+  "on_time_arrivals" : 693,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AER",
+  "airport_second" : "EGO",
+  "total_flights" : 1463,
+  "on_time_arrivals" : 1362,
+  "on_time_percentage" : 93.1,
+  "avg_delay_minutes" : 16.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AER",
+  "airport_second" : "GOJ",
+  "total_flights" : 314,
+  "on_time_arrivals" : 306,
+  "on_time_percentage" : 97.5,
+  "avg_delay_minutes" : 8.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AER",
+  "airport_second" : "IAR",
+  "total_flights" : 104,
+  "on_time_arrivals" : 96,
+  "on_time_percentage" : 92.3,
+  "avg_delay_minutes" : 17.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AER",
+  "airport_second" : "IWA",
+  "total_flights" : 209,
+  "on_time_arrivals" : 202,
+  "on_time_percentage" : 96.7,
+  "avg_delay_minutes" : 9.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AER",
+  "airport_second" : "KGP",
+  "total_flights" : 105,
+  "on_time_arrivals" : 99,
+  "on_time_percentage" : 94.3,
+  "avg_delay_minutes" : 14.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AER",
+  "airport_second" : "KJA",
+  "total_flights" : 208,
+  "on_time_arrivals" : 200,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 10.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AER",
+  "airport_second" : "KUF",
+  "total_flights" : 732,
+  "on_time_arrivals" : 692,
+  "on_time_percentage" : 94.5,
+  "avg_delay_minutes" : 13.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AER",
+  "airport_second" : "NOZ",
+  "total_flights" : 209,
+  "on_time_arrivals" : 197,
+  "on_time_percentage" : 94.3,
+  "avg_delay_minutes" : 13.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AER",
+  "airport_second" : "PEZ",
+  "total_flights" : 732,
+  "on_time_arrivals" : 696,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AER",
+  "airport_second" : "ROV",
+  "total_flights" : 1463,
+  "on_time_arrivals" : 1388,
+  "on_time_percentage" : 94.9,
+  "avg_delay_minutes" : 13.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AER",
+  "airport_second" : "SVO",
+  "total_flights" : 730,
+  "on_time_arrivals" : 702,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 10.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "AER",
+  "airport_second" : "VKO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 697,
+  "on_time_percentage" : 95.3,
+  "avg_delay_minutes" : 11.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ARH",
+  "airport_second" : "DME",
+  "total_flights" : 732,
+  "on_time_arrivals" : 702,
+  "on_time_percentage" : 95.9,
+  "avg_delay_minutes" : 10.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ARH",
+  "airport_second" : "HMA",
+  "total_flights" : 208,
+  "on_time_arrivals" : 205,
+  "on_time_percentage" : 98.6,
+  "avg_delay_minutes" : 5.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ARH",
+  "airport_second" : "IKT",
+  "total_flights" : 104,
+  "on_time_arrivals" : 97,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 14.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ARH",
+  "airport_second" : "NNM",
+  "total_flights" : 732,
+  "on_time_arrivals" : 702,
+  "on_time_percentage" : 95.9,
+  "avg_delay_minutes" : 10.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ARH",
+  "airport_second" : "PEE",
+  "total_flights" : 1462,
+  "on_time_arrivals" : 1393,
+  "on_time_percentage" : 95.3,
+  "avg_delay_minutes" : 12.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ARH",
+  "airport_second" : "TJM",
+  "total_flights" : 314,
+  "on_time_arrivals" : 297,
+  "on_time_percentage" : 94.6,
+  "avg_delay_minutes" : 13.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ARH",
+  "airport_second" : "TOF",
+  "total_flights" : 208,
+  "on_time_arrivals" : 200,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 10.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ASF",
+  "airport_second" : "BAX",
+  "total_flights" : 208,
+  "on_time_arrivals" : 194,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 16.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ASF",
+  "airport_second" : "CNN",
+  "total_flights" : 105,
+  "on_time_arrivals" : 99,
+  "on_time_percentage" : 94.3,
+  "avg_delay_minutes" : 11.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ASF",
+  "airport_second" : "DME",
+  "total_flights" : 731,
+  "on_time_arrivals" : 691,
+  "on_time_percentage" : 94.5,
+  "avg_delay_minutes" : 13.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ASF",
+  "airport_second" : "SVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 691,
+  "on_time_percentage" : 94.4,
+  "avg_delay_minutes" : 14.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "BAX",
+  "airport_second" : "DME",
+  "total_flights" : 314,
+  "on_time_arrivals" : 302,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 10.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "BAX",
+  "airport_second" : "KJA",
+  "total_flights" : 732,
+  "on_time_arrivals" : 694,
+  "on_time_percentage" : 94.8,
+  "avg_delay_minutes" : 12.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "BAX",
+  "airport_second" : "SVO",
+  "total_flights" : 208,
+  "on_time_arrivals" : 198,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "BAX",
+  "airport_second" : "VKO",
+  "total_flights" : 314,
+  "on_time_arrivals" : 299,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 11.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "BAX",
+  "airport_second" : "YKS",
+  "total_flights" : 104,
+  "on_time_arrivals" : 97,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 16.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "BQS",
+  "airport_second" : "KHV",
+  "total_flights" : 732,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 94.9,
+  "avg_delay_minutes" : 12.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "BTK",
+  "airport_second" : "DME",
+  "total_flights" : 732,
+  "on_time_arrivals" : 708,
+  "on_time_percentage" : 96.7,
+  "avg_delay_minutes" : 8.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "BZK",
+  "airport_second" : "DME",
+  "total_flights" : 2194,
+  "on_time_arrivals" : 2087,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "BZK",
+  "airport_second" : "EGO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 697,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "BZK",
+  "airport_second" : "SVO",
+  "total_flights" : 2193,
+  "on_time_arrivals" : 2104,
+  "on_time_percentage" : 95.9,
+  "avg_delay_minutes" : 10.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "BZK",
+  "airport_second" : "VKO",
+  "total_flights" : 2195,
+  "on_time_arrivals" : 2088,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CEE",
+  "airport_second" : "LED",
+  "total_flights" : 1462,
+  "on_time_arrivals" : 1395,
+  "on_time_percentage" : 95.4,
+  "avg_delay_minutes" : 11.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CEE",
+  "airport_second" : "NOZ",
+  "total_flights" : 104,
+  "on_time_arrivals" : 100,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 10.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CEK",
+  "airport_second" : "DME",
+  "total_flights" : 732,
+  "on_time_arrivals" : 693,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CEK",
+  "airport_second" : "IKT",
+  "total_flights" : 209,
+  "on_time_arrivals" : 194,
+  "on_time_percentage" : 92.8,
+  "avg_delay_minutes" : 16.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CEK",
+  "airport_second" : "PEE",
+  "total_flights" : 732,
+  "on_time_arrivals" : 692,
+  "on_time_percentage" : 94.5,
+  "avg_delay_minutes" : 13.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CEK",
+  "airport_second" : "SGC",
+  "total_flights" : 1463,
+  "on_time_arrivals" : 1387,
+  "on_time_percentage" : 94.8,
+  "avg_delay_minutes" : 13.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CEK",
+  "airport_second" : "STW",
+  "total_flights" : 314,
+  "on_time_arrivals" : 298,
+  "on_time_percentage" : 94.9,
+  "avg_delay_minutes" : 12.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CEK",
+  "airport_second" : "SWT",
+  "total_flights" : 732,
+  "on_time_arrivals" : 694,
+  "on_time_percentage" : 94.8,
+  "avg_delay_minutes" : 13.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CEK",
+  "airport_second" : "VOG",
+  "total_flights" : 731,
+  "on_time_arrivals" : 693,
+  "on_time_percentage" : 94.8,
+  "avg_delay_minutes" : 12.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CNN",
+  "airport_second" : "DME",
+  "total_flights" : 106,
+  "on_time_arrivals" : 103,
+  "on_time_percentage" : 97.2,
+  "avg_delay_minutes" : 8.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CNN",
+  "airport_second" : "LED",
+  "total_flights" : 105,
+  "on_time_arrivals" : 98,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 16.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CNN",
+  "airport_second" : "MJZ",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1386,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CNN",
+  "airport_second" : "PEE",
+  "total_flights" : 104,
+  "on_time_arrivals" : 98,
+  "on_time_percentage" : 94.2,
+  "avg_delay_minutes" : 14.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CSY",
+  "airport_second" : "LED",
+  "total_flights" : 732,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 94.9,
+  "avg_delay_minutes" : 12.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CSY",
+  "airport_second" : "NBC",
+  "total_flights" : 731,
+  "on_time_arrivals" : 689,
+  "on_time_percentage" : 94.3,
+  "avg_delay_minutes" : 13.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CSY",
+  "airport_second" : "SVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 689,
+  "on_time_percentage" : 94.1,
+  "avg_delay_minutes" : 14.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CSY",
+  "airport_second" : "VKO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 691,
+  "on_time_percentage" : 94.4,
+  "avg_delay_minutes" : 13.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "CSY",
+  "airport_second" : "VOG",
+  "total_flights" : 732,
+  "on_time_arrivals" : 690,
+  "on_time_percentage" : 94.3,
+  "avg_delay_minutes" : 13.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "DYR",
+  "total_flights" : 106,
+  "on_time_arrivals" : 101,
+  "on_time_percentage" : 95.3,
+  "avg_delay_minutes" : 10.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "EGO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 690,
+  "on_time_percentage" : 94.4,
+  "avg_delay_minutes" : 13.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "ESL",
+  "total_flights" : 731,
+  "on_time_arrivals" : 693,
+  "on_time_percentage" : 94.8,
+  "avg_delay_minutes" : 12.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "EYK",
+  "total_flights" : 106,
+  "on_time_arrivals" : 101,
+  "on_time_percentage" : 95.3,
+  "avg_delay_minutes" : 11.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "GDZ",
+  "total_flights" : 314,
+  "on_time_arrivals" : 300,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 11.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "GRV",
+  "total_flights" : 731,
+  "on_time_arrivals" : 697,
+  "on_time_percentage" : 95.3,
+  "avg_delay_minutes" : 12.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "HMA",
+  "total_flights" : 732,
+  "on_time_arrivals" : 692,
+  "on_time_percentage" : 94.5,
+  "avg_delay_minutes" : 13.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "JOK",
+  "total_flights" : 731,
+  "on_time_arrivals" : 696,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "KEJ",
+  "total_flights" : 314,
+  "on_time_arrivals" : 300,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 11.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "KGD",
+  "total_flights" : 731,
+  "on_time_arrivals" : 690,
+  "on_time_percentage" : 94.4,
+  "avg_delay_minutes" : 13.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "KHV",
+  "total_flights" : 730,
+  "on_time_arrivals" : 691,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 9.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "KRO",
+  "total_flights" : 314,
+  "on_time_arrivals" : 297,
+  "on_time_percentage" : 94.6,
+  "avg_delay_minutes" : 13.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "KRR",
+  "total_flights" : 730,
+  "on_time_arrivals" : 694,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "KUF",
+  "total_flights" : 732,
+  "on_time_arrivals" : 702,
+  "on_time_percentage" : 95.9,
+  "avg_delay_minutes" : 10.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "KVX",
+  "total_flights" : 731,
+  "on_time_arrivals" : 696,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 11.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "KZN",
+  "total_flights" : 731,
+  "on_time_arrivals" : 680,
+  "on_time_percentage" : 93.0,
+  "avg_delay_minutes" : 16.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "LED",
+  "total_flights" : 2926,
+  "on_time_arrivals" : 2783,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "LPK",
+  "total_flights" : 313,
+  "on_time_arrivals" : 298,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "MCX",
+  "total_flights" : 731,
+  "on_time_arrivals" : 699,
+  "on_time_percentage" : 95.6,
+  "avg_delay_minutes" : 11.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "MRV",
+  "total_flights" : 731,
+  "on_time_arrivals" : 697,
+  "on_time_percentage" : 95.3,
+  "avg_delay_minutes" : 12.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "NAL",
+  "total_flights" : 732,
+  "on_time_arrivals" : 692,
+  "on_time_percentage" : 94.5,
+  "avg_delay_minutes" : 13.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "NJC",
+  "total_flights" : 731,
+  "on_time_arrivals" : 684,
+  "on_time_percentage" : 93.6,
+  "avg_delay_minutes" : 15.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "NNM",
+  "total_flights" : 313,
+  "on_time_arrivals" : 296,
+  "on_time_percentage" : 94.6,
+  "avg_delay_minutes" : 13.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "NSK",
+  "total_flights" : 731,
+  "on_time_arrivals" : 686,
+  "on_time_percentage" : 93.8,
+  "avg_delay_minutes" : 14.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "NUX",
+  "total_flights" : 731,
+  "on_time_arrivals" : 688,
+  "on_time_percentage" : 94.1,
+  "avg_delay_minutes" : 14.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "NYM",
+  "total_flights" : 731,
+  "on_time_arrivals" : 692,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "OVB",
+  "total_flights" : 732,
+  "on_time_arrivals" : 691,
+  "on_time_percentage" : 94.4,
+  "avg_delay_minutes" : 13.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "OVS",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1401,
+  "on_time_percentage" : 95.7,
+  "avg_delay_minutes" : 11.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "PES",
+  "total_flights" : 731,
+  "on_time_arrivals" : 693,
+  "on_time_percentage" : 94.8,
+  "avg_delay_minutes" : 12.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "PEZ",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1398,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 11.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "PKC",
+  "total_flights" : 314,
+  "on_time_arrivals" : 288,
+  "on_time_percentage" : 91.7,
+  "avg_delay_minutes" : 16.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "PKV",
+  "total_flights" : 313,
+  "on_time_arrivals" : 301,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 10.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "ROV",
+  "total_flights" : 1461,
+  "on_time_arrivals" : 1381,
+  "on_time_percentage" : 94.5,
+  "avg_delay_minutes" : 13.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "RTW",
+  "total_flights" : 732,
+  "on_time_arrivals" : 698,
+  "on_time_percentage" : 95.4,
+  "avg_delay_minutes" : 12.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "SCW",
+  "total_flights" : 732,
+  "on_time_arrivals" : 690,
+  "on_time_percentage" : 94.3,
+  "avg_delay_minutes" : 13.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "TBW",
+  "total_flights" : 1462,
+  "on_time_arrivals" : 1379,
+  "on_time_percentage" : 94.3,
+  "avg_delay_minutes" : 14.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "TOF",
+  "total_flights" : 314,
+  "on_time_arrivals" : 304,
+  "on_time_percentage" : 96.8,
+  "avg_delay_minutes" : 9.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "ULV",
+  "total_flights" : 731,
+  "on_time_arrivals" : 696,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "URJ",
+  "total_flights" : 731,
+  "on_time_arrivals" : 687,
+  "on_time_percentage" : 94.0,
+  "avg_delay_minutes" : 14.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "URS",
+  "total_flights" : 732,
+  "on_time_arrivals" : 693,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "USK",
+  "total_flights" : 105,
+  "on_time_arrivals" : 97,
+  "on_time_percentage" : 92.4,
+  "avg_delay_minutes" : 16.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "UUA",
+  "total_flights" : 731,
+  "on_time_arrivals" : 698,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 11.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "UUS",
+  "total_flights" : 730,
+  "on_time_arrivals" : 682,
+  "on_time_percentage" : 93.4,
+  "avg_delay_minutes" : 13.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "VKT",
+  "total_flights" : 730,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 11.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DME",
+  "airport_second" : "VOZ",
+  "total_flights" : 730,
+  "on_time_arrivals" : 701,
+  "on_time_percentage" : 96.0,
+  "avg_delay_minutes" : 10.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DYR",
+  "airport_second" : "KHV",
+  "total_flights" : 104,
+  "on_time_arrivals" : 98,
+  "on_time_percentage" : 94.2,
+  "avg_delay_minutes" : 14.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DYR",
+  "airport_second" : "SVO",
+  "total_flights" : 104,
+  "on_time_arrivals" : 99,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "DYR",
+  "airport_second" : "VKO",
+  "total_flights" : 104,
+  "on_time_arrivals" : 95,
+  "on_time_percentage" : 91.3,
+  "avg_delay_minutes" : 20.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "EGO",
+  "airport_second" : "ROV",
+  "total_flights" : 731,
+  "on_time_arrivals" : 697,
+  "on_time_percentage" : 95.3,
+  "avg_delay_minutes" : 11.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ESL",
+  "airport_second" : "GDZ",
+  "total_flights" : 208,
+  "on_time_arrivals" : 196,
+  "on_time_percentage" : 94.2,
+  "avg_delay_minutes" : 13.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ESL",
+  "airport_second" : "KGD",
+  "total_flights" : 208,
+  "on_time_arrivals" : 201,
+  "on_time_percentage" : 96.6,
+  "avg_delay_minutes" : 9.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ESL",
+  "airport_second" : "LED",
+  "total_flights" : 208,
+  "on_time_arrivals" : 197,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ESL",
+  "airport_second" : "REN",
+  "total_flights" : 731,
+  "on_time_arrivals" : 686,
+  "on_time_percentage" : 93.8,
+  "avg_delay_minutes" : 15.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ESL",
+  "airport_second" : "SVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 692,
+  "on_time_percentage" : 94.5,
+  "avg_delay_minutes" : 13.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ESL",
+  "airport_second" : "UFA",
+  "total_flights" : 732,
+  "on_time_arrivals" : 696,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "EYK",
+  "airport_second" : "KRO",
+  "total_flights" : 210,
+  "on_time_arrivals" : 197,
+  "on_time_percentage" : 93.8,
+  "avg_delay_minutes" : 14.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "EYK",
+  "airport_second" : "TJM",
+  "total_flights" : 314,
+  "on_time_arrivals" : 304,
+  "on_time_percentage" : 96.8,
+  "avg_delay_minutes" : 8.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "GDX",
+  "airport_second" : "IKT",
+  "total_flights" : 208,
+  "on_time_arrivals" : 203,
+  "on_time_percentage" : 97.6,
+  "avg_delay_minutes" : 7.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "GDX",
+  "airport_second" : "MRV",
+  "total_flights" : 104,
+  "on_time_arrivals" : 95,
+  "on_time_percentage" : 91.3,
+  "avg_delay_minutes" : 18.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "GDX",
+  "airport_second" : "SCW",
+  "total_flights" : 105,
+  "on_time_arrivals" : 99,
+  "on_time_percentage" : 94.3,
+  "avg_delay_minutes" : 14.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "GDZ",
+  "airport_second" : "ROV",
+  "total_flights" : 208,
+  "on_time_arrivals" : 202,
+  "on_time_percentage" : 97.1,
+  "avg_delay_minutes" : 8.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "GDZ",
+  "airport_second" : "SVO",
+  "total_flights" : 314,
+  "on_time_arrivals" : 297,
+  "on_time_percentage" : 94.6,
+  "avg_delay_minutes" : 13.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "GDZ",
+  "airport_second" : "VKO",
+  "total_flights" : 314,
+  "on_time_arrivals" : 300,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 11.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "GOJ",
+  "airport_second" : "KLF",
+  "total_flights" : 314,
+  "on_time_arrivals" : 290,
+  "on_time_percentage" : 92.4,
+  "avg_delay_minutes" : 17.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "GOJ",
+  "airport_second" : "LED",
+  "total_flights" : 731,
+  "on_time_arrivals" : 702,
+  "on_time_percentage" : 96.0,
+  "avg_delay_minutes" : 10.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "GOJ",
+  "airport_second" : "NAL",
+  "total_flights" : 732,
+  "on_time_arrivals" : 692,
+  "on_time_percentage" : 94.5,
+  "avg_delay_minutes" : 13.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "GOJ",
+  "airport_second" : "PEE",
+  "total_flights" : 732,
+  "on_time_arrivals" : 696,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "GOJ",
+  "airport_second" : "SVO",
+  "total_flights" : 1463,
+  "on_time_arrivals" : 1396,
+  "on_time_percentage" : 95.4,
+  "avg_delay_minutes" : 11.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "HMA",
+  "airport_second" : "KVX",
+  "total_flights" : 731,
+  "on_time_arrivals" : 682,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 15.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "HMA",
+  "airport_second" : "NUX",
+  "total_flights" : 1463,
+  "on_time_arrivals" : 1378,
+  "on_time_percentage" : 94.2,
+  "avg_delay_minutes" : 14.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "HMA",
+  "airport_second" : "OSW",
+  "total_flights" : 104,
+  "on_time_arrivals" : 100,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 10.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "HMA",
+  "airport_second" : "OVB",
+  "total_flights" : 1463,
+  "on_time_arrivals" : 1390,
+  "on_time_percentage" : 95.0,
+  "avg_delay_minutes" : 12.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "HMA",
+  "airport_second" : "SVX",
+  "total_flights" : 732,
+  "on_time_arrivals" : 706,
+  "on_time_percentage" : 96.4,
+  "avg_delay_minutes" : 9.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "HMA",
+  "airport_second" : "VKO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 691,
+  "on_time_percentage" : 94.4,
+  "avg_delay_minutes" : 13.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "HTA",
+  "airport_second" : "NUX",
+  "total_flights" : 732,
+  "on_time_arrivals" : 707,
+  "on_time_percentage" : 96.6,
+  "avg_delay_minutes" : 9.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "HTA",
+  "airport_second" : "SGC",
+  "total_flights" : 208,
+  "on_time_arrivals" : 195,
+  "on_time_percentage" : 93.8,
+  "avg_delay_minutes" : 15.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "HTA",
+  "airport_second" : "UFA",
+  "total_flights" : 208,
+  "on_time_arrivals" : 196,
+  "on_time_percentage" : 94.2,
+  "avg_delay_minutes" : 14.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "IAR",
+  "airport_second" : "LED",
+  "total_flights" : 731,
+  "on_time_arrivals" : 692,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "IAR",
+  "airport_second" : "TOF",
+  "total_flights" : 105,
+  "on_time_arrivals" : 99,
+  "on_time_percentage" : 94.3,
+  "avg_delay_minutes" : 13.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "IJK",
+  "airport_second" : "SVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 94.9,
+  "avg_delay_minutes" : 13.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "IKT",
+  "airport_second" : "KZN",
+  "total_flights" : 732,
+  "on_time_arrivals" : 698,
+  "on_time_percentage" : 95.4,
+  "avg_delay_minutes" : 11.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "IKT",
+  "airport_second" : "LED",
+  "total_flights" : 732,
+  "on_time_arrivals" : 685,
+  "on_time_percentage" : 93.6,
+  "avg_delay_minutes" : 15.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "IKT",
+  "airport_second" : "MJZ",
+  "total_flights" : 732,
+  "on_time_arrivals" : 700,
+  "on_time_percentage" : 95.6,
+  "avg_delay_minutes" : 11.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "IKT",
+  "airport_second" : "NYM",
+  "total_flights" : 209,
+  "on_time_arrivals" : 199,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 11.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "IKT",
+  "airport_second" : "SGC",
+  "total_flights" : 732,
+  "on_time_arrivals" : 697,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "IKT",
+  "airport_second" : "VVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 703,
+  "on_time_percentage" : 96.0,
+  "avg_delay_minutes" : 10.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "IWA",
+  "airport_second" : "SVX",
+  "total_flights" : 210,
+  "on_time_arrivals" : 206,
+  "on_time_percentage" : 98.1,
+  "avg_delay_minutes" : 6.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "JOK",
+  "airport_second" : "KRR",
+  "total_flights" : 208,
+  "on_time_arrivals" : 199,
+  "on_time_percentage" : 95.7,
+  "avg_delay_minutes" : 11.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "JOK",
+  "airport_second" : "SVO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "JOK",
+  "airport_second" : "VKO",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1391,
+  "on_time_percentage" : 95.0,
+  "avg_delay_minutes" : 12.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KEJ",
+  "airport_second" : "KYZ",
+  "total_flights" : 209,
+  "on_time_arrivals" : 197,
+  "on_time_percentage" : 94.3,
+  "avg_delay_minutes" : 14.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KEJ",
+  "airport_second" : "PYJ",
+  "total_flights" : 105,
+  "on_time_arrivals" : 101,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 10.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KEJ",
+  "airport_second" : "SVO",
+  "total_flights" : 210,
+  "on_time_arrivals" : 197,
+  "on_time_percentage" : 93.8,
+  "avg_delay_minutes" : 15.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KEJ",
+  "airport_second" : "VKO",
+  "total_flights" : 208,
+  "on_time_arrivals" : 193,
+  "on_time_percentage" : 92.8,
+  "avg_delay_minutes" : 16.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KGD",
+  "airport_second" : "KRR",
+  "total_flights" : 208,
+  "on_time_arrivals" : 191,
+  "on_time_percentage" : 91.8,
+  "avg_delay_minutes" : 18.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KGD",
+  "airport_second" : "SVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 689,
+  "on_time_percentage" : 94.1,
+  "avg_delay_minutes" : 14.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KGP",
+  "airport_second" : "NUX",
+  "total_flights" : 732,
+  "on_time_arrivals" : 698,
+  "on_time_percentage" : 95.4,
+  "avg_delay_minutes" : 11.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KGP",
+  "airport_second" : "SVX",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1392,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KHV",
+  "airport_second" : "LED",
+  "total_flights" : 731,
+  "on_time_arrivals" : 682,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 12.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KHV",
+  "airport_second" : "UIK",
+  "total_flights" : 314,
+  "on_time_arrivals" : 293,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 16.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KHV",
+  "airport_second" : "UUS",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1388,
+  "on_time_percentage" : 94.8,
+  "avg_delay_minutes" : 13.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KHV",
+  "airport_second" : "VVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 700,
+  "on_time_percentage" : 95.6,
+  "avg_delay_minutes" : 11.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KJA",
+  "airport_second" : "KRO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 703,
+  "on_time_percentage" : 96.0,
+  "avg_delay_minutes" : 10.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KJA",
+  "airport_second" : "NOZ",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1392,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KJA",
+  "airport_second" : "NUX",
+  "total_flights" : 209,
+  "on_time_arrivals" : 198,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KJA",
+  "airport_second" : "OVB",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1409,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 10.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KJA",
+  "airport_second" : "OVS",
+  "total_flights" : 732,
+  "on_time_arrivals" : 693,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KJA",
+  "airport_second" : "SVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 699,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 11.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KJA",
+  "airport_second" : "UIK",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1365,
+  "on_time_percentage" : 93.2,
+  "avg_delay_minutes" : 15.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KJA",
+  "airport_second" : "UKX",
+  "total_flights" : 732,
+  "on_time_arrivals" : 694,
+  "on_time_percentage" : 94.8,
+  "avg_delay_minutes" : 12.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KLF",
+  "airport_second" : "LED",
+  "total_flights" : 732,
+  "on_time_arrivals" : 688,
+  "on_time_percentage" : 94.0,
+  "avg_delay_minutes" : 14.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KLF",
+  "airport_second" : "OVB",
+  "total_flights" : 106,
+  "on_time_arrivals" : 96,
+  "on_time_percentage" : 90.6,
+  "avg_delay_minutes" : 20.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KLF",
+  "airport_second" : "PES",
+  "total_flights" : 313,
+  "on_time_arrivals" : 297,
+  "on_time_percentage" : 94.9,
+  "avg_delay_minutes" : 12.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KRO",
+  "airport_second" : "OSW",
+  "total_flights" : 314,
+  "on_time_arrivals" : 305,
+  "on_time_percentage" : 97.1,
+  "avg_delay_minutes" : 8.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KRO",
+  "airport_second" : "SVO",
+  "total_flights" : 208,
+  "on_time_arrivals" : 198,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KRO",
+  "airport_second" : "VKO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KRR",
+  "airport_second" : "NAL",
+  "total_flights" : 732,
+  "on_time_arrivals" : 696,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KRR",
+  "airport_second" : "NOZ",
+  "total_flights" : 105,
+  "on_time_arrivals" : 100,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 13.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KRR",
+  "airport_second" : "RGK",
+  "total_flights" : 104,
+  "on_time_arrivals" : 99,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 11.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KRR",
+  "airport_second" : "ULV",
+  "total_flights" : 732,
+  "on_time_arrivals" : 710,
+  "on_time_percentage" : 97.0,
+  "avg_delay_minutes" : 8.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KUF",
+  "airport_second" : "URS",
+  "total_flights" : 732,
+  "on_time_arrivals" : 685,
+  "on_time_percentage" : 93.6,
+  "avg_delay_minutes" : 15.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KVX",
+  "airport_second" : "KZN",
+  "total_flights" : 732,
+  "on_time_arrivals" : 694,
+  "on_time_percentage" : 94.8,
+  "avg_delay_minutes" : 12.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KVX",
+  "airport_second" : "LED",
+  "total_flights" : 732,
+  "on_time_arrivals" : 709,
+  "on_time_percentage" : 96.9,
+  "avg_delay_minutes" : 8.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KVX",
+  "airport_second" : "OVB",
+  "total_flights" : 732,
+  "on_time_arrivals" : 699,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 11.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KVX",
+  "airport_second" : "SVO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 697,
+  "on_time_percentage" : 95.3,
+  "avg_delay_minutes" : 11.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KXK",
+  "airport_second" : "SVX",
+  "total_flights" : 208,
+  "on_time_arrivals" : 195,
+  "on_time_percentage" : 93.8,
+  "avg_delay_minutes" : 12.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KYZ",
+  "airport_second" : "SVX",
+  "total_flights" : 104,
+  "on_time_arrivals" : 97,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 14.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KZN",
+  "airport_second" : "LED",
+  "total_flights" : 731,
+  "on_time_arrivals" : 700,
+  "on_time_percentage" : 95.8,
+  "avg_delay_minutes" : 11.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KZN",
+  "airport_second" : "MCX",
+  "total_flights" : 208,
+  "on_time_arrivals" : 197,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KZN",
+  "airport_second" : "MQF",
+  "total_flights" : 732,
+  "on_time_arrivals" : 698,
+  "on_time_percentage" : 95.4,
+  "avg_delay_minutes" : 11.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KZN",
+  "airport_second" : "MRV",
+  "total_flights" : 209,
+  "on_time_arrivals" : 196,
+  "on_time_percentage" : 93.8,
+  "avg_delay_minutes" : 15.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KZN",
+  "airport_second" : "PKV",
+  "total_flights" : 104,
+  "on_time_arrivals" : 97,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 16.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "KZN",
+  "airport_second" : "ROV",
+  "total_flights" : 1462,
+  "on_time_arrivals" : 1394,
+  "on_time_percentage" : 95.3,
+  "avg_delay_minutes" : 12.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "LED",
+  "airport_second" : "NJC",
+  "total_flights" : 730,
+  "on_time_arrivals" : 687,
+  "on_time_percentage" : 94.1,
+  "avg_delay_minutes" : 14.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "LED",
+  "airport_second" : "NOJ",
+  "total_flights" : 208,
+  "on_time_arrivals" : 199,
+  "on_time_percentage" : 95.7,
+  "avg_delay_minutes" : 11.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "LED",
+  "airport_second" : "OVS",
+  "total_flights" : 731,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "LED",
+  "airport_second" : "PYJ",
+  "total_flights" : 106,
+  "on_time_arrivals" : 101,
+  "on_time_percentage" : 95.3,
+  "avg_delay_minutes" : 12.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "LED",
+  "airport_second" : "REN",
+  "total_flights" : 732,
+  "on_time_arrivals" : 704,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 10.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "LED",
+  "airport_second" : "SVO",
+  "total_flights" : 3657,
+  "on_time_arrivals" : 3476,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "LED",
+  "airport_second" : "TBW",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1398,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 12.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "LED",
+  "airport_second" : "TJM",
+  "total_flights" : 732,
+  "on_time_arrivals" : 684,
+  "on_time_percentage" : 93.4,
+  "avg_delay_minutes" : 15.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "LED",
+  "airport_second" : "VKO",
+  "total_flights" : 2195,
+  "on_time_arrivals" : 2088,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "LED",
+  "airport_second" : "VKT",
+  "total_flights" : 208,
+  "on_time_arrivals" : 194,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 16.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "LED",
+  "airport_second" : "VOZ",
+  "total_flights" : 731,
+  "on_time_arrivals" : 683,
+  "on_time_percentage" : 93.4,
+  "avg_delay_minutes" : 15.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "LED",
+  "airport_second" : "YKS",
+  "total_flights" : 731,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "LPK",
+  "airport_second" : "PES",
+  "total_flights" : 209,
+  "on_time_arrivals" : 198,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "MCX",
+  "airport_second" : "MRV",
+  "total_flights" : 732,
+  "on_time_arrivals" : 699,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 11.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "MCX",
+  "airport_second" : "SVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 697,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "MJZ",
+  "airport_second" : "OVB",
+  "total_flights" : 732,
+  "on_time_arrivals" : 706,
+  "on_time_percentage" : 96.4,
+  "avg_delay_minutes" : 9.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "MJZ",
+  "airport_second" : "SVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 703,
+  "on_time_percentage" : 96.0,
+  "avg_delay_minutes" : 9.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "MJZ",
+  "airport_second" : "SVX",
+  "total_flights" : 208,
+  "on_time_arrivals" : 199,
+  "on_time_percentage" : 95.7,
+  "avg_delay_minutes" : 11.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "MJZ",
+  "airport_second" : "YKS",
+  "total_flights" : 732,
+  "on_time_arrivals" : 696,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "MMK",
+  "airport_second" : "SVO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 701,
+  "on_time_percentage" : 95.9,
+  "avg_delay_minutes" : 10.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "MMK",
+  "airport_second" : "VKO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 686,
+  "on_time_percentage" : 93.7,
+  "avg_delay_minutes" : 14.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "MQF",
+  "airport_second" : "OVB",
+  "total_flights" : 732,
+  "on_time_arrivals" : 699,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 11.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "MQF",
+  "airport_second" : "SVX",
+  "total_flights" : 732,
+  "on_time_arrivals" : 691,
+  "on_time_percentage" : 94.4,
+  "avg_delay_minutes" : 13.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "MQF",
+  "airport_second" : "VKO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 693,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "MRV",
+  "airport_second" : "PEE",
+  "total_flights" : 732,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 94.9,
+  "avg_delay_minutes" : 12.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NBC",
+  "airport_second" : "OMS",
+  "total_flights" : 209,
+  "on_time_arrivals" : 202,
+  "on_time_percentage" : 96.7,
+  "avg_delay_minutes" : 9.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NBC",
+  "airport_second" : "ROV",
+  "total_flights" : 314,
+  "on_time_arrivals" : 293,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 15.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NBC",
+  "airport_second" : "SCW",
+  "total_flights" : 1462,
+  "on_time_arrivals" : 1392,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 11.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NFG",
+  "airport_second" : "SVO",
+  "total_flights" : 313,
+  "on_time_arrivals" : 292,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 15.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NFG",
+  "airport_second" : "VKO",
+  "total_flights" : 208,
+  "on_time_arrivals" : 199,
+  "on_time_percentage" : 95.7,
+  "avg_delay_minutes" : 10.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NJC",
+  "airport_second" : "OVS",
+  "total_flights" : 732,
+  "on_time_arrivals" : 682,
+  "on_time_percentage" : 93.2,
+  "avg_delay_minutes" : 16.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NJC",
+  "airport_second" : "ULY",
+  "total_flights" : 105,
+  "on_time_arrivals" : 102,
+  "on_time_percentage" : 97.1,
+  "avg_delay_minutes" : 8.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NNM",
+  "airport_second" : "SVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 702,
+  "on_time_percentage" : 95.9,
+  "avg_delay_minutes" : 10.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NNM",
+  "airport_second" : "TJM",
+  "total_flights" : 105,
+  "on_time_arrivals" : 97,
+  "on_time_percentage" : 92.4,
+  "avg_delay_minutes" : 17.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NOJ",
+  "airport_second" : "NUX",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1392,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NOJ",
+  "airport_second" : "SVO",
+  "total_flights" : 209,
+  "on_time_arrivals" : 201,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 10.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NOJ",
+  "airport_second" : "VKO",
+  "total_flights" : 313,
+  "on_time_arrivals" : 298,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 11.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NOZ",
+  "airport_second" : "NYM",
+  "total_flights" : 208,
+  "on_time_arrivals" : 196,
+  "on_time_percentage" : 94.2,
+  "avg_delay_minutes" : 14.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NOZ",
+  "airport_second" : "OVB",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1398,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 11.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NOZ",
+  "airport_second" : "TOF",
+  "total_flights" : 732,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 94.9,
+  "avg_delay_minutes" : 12.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NSK",
+  "airport_second" : "NYM",
+  "total_flights" : 210,
+  "on_time_arrivals" : 203,
+  "on_time_percentage" : 96.7,
+  "avg_delay_minutes" : 9.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NSK",
+  "airport_second" : "SVX",
+  "total_flights" : 732,
+  "on_time_arrivals" : 706,
+  "on_time_percentage" : 96.4,
+  "avg_delay_minutes" : 9.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NUX",
+  "airport_second" : "SVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 686,
+  "on_time_percentage" : 93.7,
+  "avg_delay_minutes" : 15.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NYA",
+  "airport_second" : "ROV",
+  "total_flights" : 105,
+  "on_time_arrivals" : 100,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 13.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NYA",
+  "airport_second" : "SVO",
+  "total_flights" : 104,
+  "on_time_arrivals" : 99,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NYA",
+  "airport_second" : "VKO",
+  "total_flights" : 106,
+  "on_time_arrivals" : 98,
+  "on_time_percentage" : 92.5,
+  "avg_delay_minutes" : 17.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "NYM",
+  "airport_second" : "UUD",
+  "total_flights" : 314,
+  "on_time_arrivals" : 293,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 16.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OGZ",
+  "airport_second" : "SVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 694,
+  "on_time_percentage" : 94.8,
+  "avg_delay_minutes" : 12.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OGZ",
+  "airport_second" : "VKO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OMS",
+  "airport_second" : "SVO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 699,
+  "on_time_percentage" : 95.6,
+  "avg_delay_minutes" : 11.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OMS",
+  "airport_second" : "VKO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 697,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OMS",
+  "airport_second" : "VKT",
+  "total_flights" : 731,
+  "on_time_arrivals" : 692,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OSW",
+  "airport_second" : "ULV",
+  "total_flights" : 314,
+  "on_time_arrivals" : 300,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 11.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OSW",
+  "airport_second" : "VKO",
+  "total_flights" : 104,
+  "on_time_arrivals" : 100,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 9.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OVB",
+  "airport_second" : "PEE",
+  "total_flights" : 732,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 94.9,
+  "avg_delay_minutes" : 12.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OVB",
+  "airport_second" : "PYJ",
+  "total_flights" : 106,
+  "on_time_arrivals" : 101,
+  "on_time_percentage" : 95.3,
+  "avg_delay_minutes" : 12.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OVB",
+  "airport_second" : "RGK",
+  "total_flights" : 732,
+  "on_time_arrivals" : 691,
+  "on_time_percentage" : 94.4,
+  "avg_delay_minutes" : 13.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OVB",
+  "airport_second" : "SGC",
+  "total_flights" : 732,
+  "on_time_arrivals" : 692,
+  "on_time_percentage" : 94.5,
+  "avg_delay_minutes" : 13.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OVB",
+  "airport_second" : "SLY",
+  "total_flights" : 732,
+  "on_time_arrivals" : 701,
+  "on_time_percentage" : 95.8,
+  "avg_delay_minutes" : 11.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OVB",
+  "airport_second" : "SVO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 697,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OVS",
+  "airport_second" : "SGC",
+  "total_flights" : 731,
+  "on_time_arrivals" : 702,
+  "on_time_percentage" : 96.0,
+  "avg_delay_minutes" : 10.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OVS",
+  "airport_second" : "SVO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OVS",
+  "airport_second" : "TJM",
+  "total_flights" : 731,
+  "on_time_arrivals" : 701,
+  "on_time_percentage" : 95.9,
+  "avg_delay_minutes" : 11.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "OVS",
+  "airport_second" : "UFA",
+  "total_flights" : 732,
+  "on_time_arrivals" : 692,
+  "on_time_percentage" : 94.5,
+  "avg_delay_minutes" : 14.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "PEE",
+  "airport_second" : "SVX",
+  "total_flights" : 1463,
+  "on_time_arrivals" : 1386,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "PEE",
+  "airport_second" : "ULV",
+  "total_flights" : 732,
+  "on_time_arrivals" : 693,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "PEE",
+  "airport_second" : "VKO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 699,
+  "on_time_percentage" : 95.6,
+  "avg_delay_minutes" : 11.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "PES",
+  "airport_second" : "ROV",
+  "total_flights" : 105,
+  "on_time_arrivals" : 100,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "PES",
+  "airport_second" : "SVO",
+  "total_flights" : 1463,
+  "on_time_arrivals" : 1395,
+  "on_time_percentage" : 95.4,
+  "avg_delay_minutes" : 12.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "PES",
+  "airport_second" : "TJM",
+  "total_flights" : 732,
+  "on_time_arrivals" : 683,
+  "on_time_percentage" : 93.3,
+  "avg_delay_minutes" : 16.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "PES",
+  "airport_second" : "VKO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 702,
+  "on_time_percentage" : 95.9,
+  "avg_delay_minutes" : 11.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "PEZ",
+  "airport_second" : "SVO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 699,
+  "on_time_percentage" : 95.6,
+  "avg_delay_minutes" : 11.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "PKV",
+  "airport_second" : "SVO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 684,
+  "on_time_percentage" : 93.6,
+  "avg_delay_minutes" : 15.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "REN",
+  "airport_second" : "UFA",
+  "total_flights" : 732,
+  "on_time_arrivals" : 699,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 11.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "REN",
+  "airport_second" : "UUA",
+  "total_flights" : 732,
+  "on_time_arrivals" : 712,
+  "on_time_percentage" : 97.3,
+  "avg_delay_minutes" : 8.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "REN",
+  "airport_second" : "VKO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 700,
+  "on_time_percentage" : 95.6,
+  "avg_delay_minutes" : 11.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "RGK",
+  "airport_second" : "STW",
+  "total_flights" : 106,
+  "on_time_arrivals" : 102,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 10.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "RGK",
+  "airport_second" : "SVO",
+  "total_flights" : 105,
+  "on_time_arrivals" : 102,
+  "on_time_percentage" : 97.1,
+  "avg_delay_minutes" : 7.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ROV",
+  "airport_second" : "SVO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 692,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ROV",
+  "airport_second" : "TOF",
+  "total_flights" : 105,
+  "on_time_arrivals" : 99,
+  "on_time_percentage" : 94.3,
+  "avg_delay_minutes" : 13.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ROV",
+  "airport_second" : "VOG",
+  "total_flights" : 732,
+  "on_time_arrivals" : 707,
+  "on_time_percentage" : 96.6,
+  "avg_delay_minutes" : 9.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "RTW",
+  "airport_second" : "ULY",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1367,
+  "on_time_percentage" : 93.4,
+  "avg_delay_minutes" : 15.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "RTW",
+  "airport_second" : "VKO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 700,
+  "on_time_percentage" : 95.6,
+  "avg_delay_minutes" : 11.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SCW",
+  "airport_second" : "SVX",
+  "total_flights" : 732,
+  "on_time_arrivals" : 687,
+  "on_time_percentage" : 93.9,
+  "avg_delay_minutes" : 14.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SGC",
+  "airport_second" : "SVX",
+  "total_flights" : 731,
+  "on_time_arrivals" : 690,
+  "on_time_percentage" : 94.4,
+  "avg_delay_minutes" : 13.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SGC",
+  "airport_second" : "UIK",
+  "total_flights" : 104,
+  "on_time_arrivals" : 93,
+  "on_time_percentage" : 89.4,
+  "avg_delay_minutes" : 23.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SGC",
+  "airport_second" : "URS",
+  "total_flights" : 208,
+  "on_time_arrivals" : 196,
+  "on_time_percentage" : 94.2,
+  "avg_delay_minutes" : 14.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SGC",
+  "airport_second" : "VKT",
+  "total_flights" : 1462,
+  "on_time_arrivals" : 1394,
+  "on_time_percentage" : 95.3,
+  "avg_delay_minutes" : 11.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SKX",
+  "airport_second" : "SVO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 694,
+  "on_time_percentage" : 94.9,
+  "avg_delay_minutes" : 12.7,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SKX",
+  "airport_second" : "VKO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 704,
+  "on_time_percentage" : 96.2,
+  "avg_delay_minutes" : 10.4,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SLY",
+  "airport_second" : "VKO",
+  "total_flights" : 732,
+  "on_time_arrivals" : 706,
+  "on_time_percentage" : 96.4,
+  "avg_delay_minutes" : 9.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "STW",
+  "airport_second" : "SVO",
+  "total_flights" : 731,
+  "on_time_arrivals" : 692,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "STW",
+  "airport_second" : "VKO",
+  "total_flights" : 313,
+  "on_time_arrivals" : 295,
+  "on_time_percentage" : 94.2,
+  "avg_delay_minutes" : 14.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SVO",
+  "airport_second" : "SVX",
+  "total_flights" : 732,
+  "on_time_arrivals" : 691,
+  "on_time_percentage" : 94.4,
+  "avg_delay_minutes" : 13.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SVO",
+  "airport_second" : "TJM",
+  "total_flights" : 732,
+  "on_time_arrivals" : 693,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 13.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SVO",
+  "airport_second" : "TOF",
+  "total_flights" : 732,
+  "on_time_arrivals" : 686,
+  "on_time_percentage" : 93.7,
+  "avg_delay_minutes" : 15.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SVO",
+  "airport_second" : "UFA",
+  "total_flights" : 732,
+  "on_time_arrivals" : 697,
+  "on_time_percentage" : 95.2,
+  "avg_delay_minutes" : 12.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SVO",
+  "airport_second" : "ULV",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1407,
+  "on_time_percentage" : 96.1,
+  "avg_delay_minutes" : 10.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SVO",
+  "airport_second" : "ULY",
+  "total_flights" : 731,
+  "on_time_arrivals" : 690,
+  "on_time_percentage" : 94.4,
+  "avg_delay_minutes" : 13.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SVO",
+  "airport_second" : "USK",
+  "total_flights" : 106,
+  "on_time_arrivals" : 100,
+  "on_time_percentage" : 94.3,
+  "avg_delay_minutes" : 13.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SVO",
+  "airport_second" : "UUA",
+  "total_flights" : 732,
+  "on_time_arrivals" : 702,
+  "on_time_percentage" : 95.9,
+  "avg_delay_minutes" : 11.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SVO",
+  "airport_second" : "UUS",
+  "total_flights" : 730,
+  "on_time_arrivals" : 673,
+  "on_time_percentage" : 92.2,
+  "avg_delay_minutes" : 12.5,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SVO",
+  "airport_second" : "VKT",
+  "total_flights" : 208,
+  "on_time_arrivals" : 192,
+  "on_time_percentage" : 92.3,
+  "avg_delay_minutes" : 17.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SVO",
+  "airport_second" : "VOG",
+  "total_flights" : 732,
+  "on_time_arrivals" : 694,
+  "on_time_percentage" : 94.8,
+  "avg_delay_minutes" : 13.1,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "SVX",
+  "airport_second" : "UIK",
+  "total_flights" : 210,
+  "on_time_arrivals" : 201,
+  "on_time_percentage" : 95.7,
+  "avg_delay_minutes" : 11.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "TJM",
+  "airport_second" : "UCT",
+  "total_flights" : 732,
+  "on_time_arrivals" : 699,
+  "on_time_percentage" : 95.5,
+  "avg_delay_minutes" : 11.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "TJM",
+  "airport_second" : "URJ",
+  "total_flights" : 732,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 94.9,
+  "avg_delay_minutes" : 12.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "TOF",
+  "airport_second" : "VOG",
+  "total_flights" : 105,
+  "on_time_arrivals" : 97,
+  "on_time_percentage" : 92.4,
+  "avg_delay_minutes" : 17.8,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "UCT",
+  "airport_second" : "UFA",
+  "total_flights" : 1464,
+  "on_time_arrivals" : 1391,
+  "on_time_percentage" : 95.0,
+  "avg_delay_minutes" : 12.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "ULV",
+  "airport_second" : "VKO",
+  "total_flights" : 730,
+  "on_time_arrivals" : 699,
+  "on_time_percentage" : 95.8,
+  "avg_delay_minutes" : 11.0,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "UUD",
+  "airport_second" : "VKO",
+  "total_flights" : 314,
+  "on_time_arrivals" : 297,
+  "on_time_percentage" : 94.6,
+  "avg_delay_minutes" : 12.6,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "UUD",
+  "airport_second" : "YKS",
+  "total_flights" : 209,
+  "on_time_arrivals" : 196,
+  "on_time_percentage" : 93.8,
+  "avg_delay_minutes" : 14.9,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "UUS",
+  "airport_second" : "YKS",
+  "total_flights" : 208,
+  "on_time_arrivals" : 197,
+  "on_time_percentage" : 94.7,
+  "avg_delay_minutes" : 12.2,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "VKO",
+  "airport_second" : "VOG",
+  "total_flights" : 731,
+  "on_time_arrivals" : 695,
+  "on_time_percentage" : 95.1,
+  "avg_delay_minutes" : 12.3,
+  "missing_departure_count" : 0
+}, {
+  "airport_first" : "VKO",
+  "airport_second" : "VVO",
+  "total_flights" : 730,
+  "on_time_arrivals" : 680,
+  "on_time_percentage" : 93.2,
+  "avg_delay_minutes" : 13.4,
+  "missing_departure_count" : 0
+} ]
