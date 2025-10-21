@@ -1,4 +1,4 @@
-package com.rating.punctuality.rating_punctuality.repository;
+package com.rating.punctuality.rating_punctuality.repository.internal;
 
 import java.util.List;
 

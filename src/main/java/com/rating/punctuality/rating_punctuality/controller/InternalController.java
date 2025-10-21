@@ -17,21 +17,21 @@ import com.rating.punctuality.rating_punctuality.model.internal.AirlineDirection
 import com.rating.punctuality.rating_punctuality.model.internal.AirlinePunctuality;
 import com.rating.punctuality.rating_punctuality.model.internal.AirlineRating;
 import com.rating.punctuality.rating_punctuality.model.internal.AirlineRatingResponse;
-import com.rating.punctuality.rating_punctuality.model.internal.Airport;
+import com.rating.punctuality.rating_punctuality.model.internal.InternalAirport;
 import com.rating.punctuality.rating_punctuality.model.internal.CancellationsDistribution;
-import com.rating.punctuality.rating_punctuality.repository.AirlineRatingRepository;
-import com.rating.punctuality.rating_punctuality.repository.AirportRepository;
-import com.rating.punctuality.rating_punctuality.repository.CancellationsDistributionRepository;
-import com.rating.punctuality.rating_punctuality.repository.DepartureDelaysRepository;
+import com.rating.punctuality.rating_punctuality.repository.internal.AirlineRatingRepository;
+import com.rating.punctuality.rating_punctuality.repository.internal.InternalAirportRepository;
+import com.rating.punctuality.rating_punctuality.repository.internal.CancellationsDistributionRepository;
+import com.rating.punctuality.rating_punctuality.repository.internal.DepartureDelaysRepository;
 
 @RestController
 public class InternalController {
     private final AirlineRatingRepository ratingRepository;
-    private final AirportRepository airportRepository;
+    private final InternalAirportRepository airportRepository;
     private final DepartureDelaysRepository delaysRepository;
     private final CancellationsDistributionRepository cancellationsDistributionRepository;
     
-    public InternalController(AirlineRatingRepository ratingRepository, AirportRepository airportRepository, DepartureDelaysRepository delaysRepository
+    public InternalController(AirlineRatingRepository ratingRepository, InternalAirportRepository airportRepository, DepartureDelaysRepository delaysRepository
     ,CancellationsDistributionRepository cancellationsDistributionRepository) {
         this.ratingRepository = ratingRepository;
         this.airportRepository = airportRepository;
@@ -49,8 +49,8 @@ public class InternalController {
     }
 
     @GetMapping("/get_airports")
-    public List<Airport> getAirport() {
-        List<Airport> airports = airportRepository.getAllAirports();
+    public List<InternalAirport> getAirport() {
+        List<InternalAirport> airports = airportRepository.getAllAirports();
         return airports.stream()
                 .map(this::convertToResponse)
                 .collect(Collectors.toList());
@@ -129,8 +129,8 @@ public class InternalController {
         );
     }
 
-    private Airport convertToResponse(Airport airport) {
-        return new Airport(
+    private InternalAirport convertToResponse(InternalAirport airport) {
+        return new InternalAirport(
             airport.getIataCode(),
             airport.getAirportName(),
             airport.getLongitude(),

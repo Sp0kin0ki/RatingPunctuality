@@ -1,21 +1,21 @@
-package com.rating.punctuality.rating_punctuality.repository;
+package com.rating.punctuality.rating_punctuality.repository.internal;
 
 import java.util.List;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.rating.punctuality.rating_punctuality.model.internal.Airport;
+import com.rating.punctuality.rating_punctuality.model.internal.InternalAirport;
 
 @Repository
-public class AirportRepository {
+public class InternalAirportRepository {
     private final JdbcTemplate jdbcTemplate;
     
-    public AirportRepository(JdbcTemplate jdbcTemplate) {
+    public InternalAirportRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    public List<Airport> getAllAirports() {
+    public List<InternalAirport> getAllAirports() {
         String sql = """
             SELECT 
                 a.iata_code as iata_code,
@@ -36,7 +36,7 @@ public class AirportRepository {
             """;
         
         return jdbcTemplate.query(sql, (rs, rowNum) -> {
-            Airport airport = new Airport();
+            InternalAirport airport = new InternalAirport();
             airport.setIataCode(rs.getString("iata_code"));
             airport.setAirportName(rs.getString("airport_name")); 
             airport.setLongitude(rs.getDouble("longitude"));
