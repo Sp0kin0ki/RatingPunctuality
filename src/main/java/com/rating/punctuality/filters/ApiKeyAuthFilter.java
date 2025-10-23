@@ -3,11 +3,9 @@ package com.rating.punctuality.filters;
 import java.io.IOException;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.rating.punctuality.rating_punctuality.model.external.Company;
@@ -41,7 +39,6 @@ public class ApiKeyAuthFilter extends OncePerRequestFilter {
                 .orElse(null);
                 
             if (company != null && company.isActive()) {
-                // Создаем аутентификацию для компании
                 UsernamePasswordAuthenticationToken auth = 
                     new UsernamePasswordAuthenticationToken(
                         company.getNameCompany(),
