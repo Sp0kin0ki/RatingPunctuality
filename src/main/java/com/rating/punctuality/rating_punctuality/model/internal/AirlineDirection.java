@@ -8,8 +8,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AirlineDirection {
-    private String airport1;
-    private String airport2;
+    private String airportFirst;
+    private String airportSecond;
     private int totalFlights;
     private int onTimeArrivals;
     private double onTimePercentage;

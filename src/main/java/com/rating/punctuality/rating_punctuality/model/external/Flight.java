@@ -6,9 +6,13 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class Flight {
     private Long id;
     private String iataCode;

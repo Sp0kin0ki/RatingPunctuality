@@ -1,4 +1,4 @@
-package com.rating.punctuality.filters;
+package com.rating.punctuality.rating_punctuality.filters;
 
 import java.io.IOException;
 import java.util.List;

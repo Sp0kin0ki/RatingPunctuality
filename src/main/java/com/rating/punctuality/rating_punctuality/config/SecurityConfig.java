@@ -8,7 +8,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
-import com.rating.punctuality.filters.ApiKeyAuthFilter;
+import com.rating.punctuality.rating_punctuality.filters.ApiKeyAuthFilter;
 import com.rating.punctuality.rating_punctuality.repository.external.CompanyRepository;
 
 @Configuration
