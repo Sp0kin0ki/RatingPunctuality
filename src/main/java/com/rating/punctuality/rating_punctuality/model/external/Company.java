@@ -19,8 +19,8 @@ public class Company {
     @Column(name = "name_company", unique = true, nullable = false)
     private String nameCompany;
     
-    @Column(name = "api_token", unique = true, nullable = false)
-    private String apiToken;
+    @Column(name = "api_token_hash", unique = true, nullable = false)
+    private String apiTokenHash;
     
     @Column(name = "is_active")
     private boolean isActive = true;

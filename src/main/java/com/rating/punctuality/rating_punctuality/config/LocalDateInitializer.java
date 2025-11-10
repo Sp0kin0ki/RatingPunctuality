@@ -3,7 +3,9 @@ package com.rating.punctuality.rating_punctuality.config;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 
 import org.springframework.boot.CommandLineRunner;
@@ -46,10 +48,12 @@ public class LocalDateInitializer implements CommandLineRunner {
     try {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
+
+        Path templatesPath = Paths.get("src", "main", "resources", "templates");
+        Files.createDirectories(templatesPath);
         
-        
-        mapper.writeValue(new File("/home/vladimir/Загрузки/rating_punctuality/src/main/resources/templates/flight_direction_stats.json"), directions);
-        mapper.writeValue(new File("/home/vladimir/Загрузки/rating_punctuality/src/main/resources/templates/airline_punctuality.json"), punctuality);
+        mapper.writeValue(templatesPath.resolve("flight_direction_stats.json").toFile(), directions);
+        mapper.writeValue(templatesPath.resolve("irline_punctuality.json").toFile(), punctuality);
         
         log.info("Файлы сохранены: directions.json и airline_punctuality.json");
         
