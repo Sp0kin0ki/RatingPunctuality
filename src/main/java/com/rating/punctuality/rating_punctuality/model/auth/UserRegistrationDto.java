@@ -1,7 +1,11 @@
 package com.rating.punctuality.rating_punctuality.model.auth;
 
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
+
 import jakarta.validation.constraints.*;
 
+@JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class UserRegistrationDto {
 
     @NotBlank(message = "Имя пользователя обязательно")

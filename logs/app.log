@@ -1515,3 +1515,468 @@ io.jsonwebtoken.ExpiredJwtException: JWT expired 25388 milliseconds ago at 2025-
 2025-12-03T17:17:55.802+03:00 DEBUG 342962 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
 2025-12-03T17:17:55.804+03:00 DEBUG 342962 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
 2025-12-03T17:17:55.806+03:00 DEBUG 342962 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/auth/me
+2025-12-03T18:19:33.814+03:00  INFO 437992 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : Starting RatingPunctualityApplication using Java 21.0.9 with PID 437992 (/home/vladimir/Загрузки/rating_punctuality/target/classes started by vladimir in /home/vladimir/Загрузки/rating_punctuality)
+2025-12-03T18:19:33.817+03:00 DEBUG 437992 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-12-03T18:19:33.819+03:00  INFO 437992 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-03T18:19:35.800+03:00  INFO 437992 --- [rating_punctuality] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-03T18:19:36.039+03:00  INFO 437992 --- [rating_punctuality] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 203 ms. Found 4 JPA repository interfaces.
+2025-12-03T18:19:37.326+03:00  INFO 437992 --- [rating_punctuality] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-03T18:19:37.357+03:00  INFO 437992 --- [rating_punctuality] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-03T18:19:37.358+03:00  INFO 437992 --- [rating_punctuality] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-12-03T18:19:37.474+03:00  INFO 437992 --- [rating_punctuality] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-03T18:19:37.475+03:00  INFO 437992 --- [rating_punctuality] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3567 ms
+2025-12-03T18:19:37.862+03:00  INFO 437992 --- [rating_punctuality] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-03T18:19:37.995+03:00  INFO 437992 --- [rating_punctuality] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-12-03T18:19:38.070+03:00  INFO 437992 --- [rating_punctuality] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-03T18:19:38.637+03:00  INFO 437992 --- [rating_punctuality] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-03T18:19:38.685+03:00  INFO 437992 --- [rating_punctuality] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-03T18:19:39.340+03:00  INFO 437992 --- [rating_punctuality] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@459e120b
+2025-12-03T18:19:39.342+03:00  INFO 437992 --- [rating_punctuality] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-03T18:19:39.393+03:00  WARN 437992 --- [rating_punctuality] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-03T18:19:39.425+03:00  INFO 437992 --- [rating_punctuality] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-03T18:19:41.080+03:00  INFO 437992 --- [rating_punctuality] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-03T18:19:41.245+03:00  INFO 437992 --- [rating_punctuality] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T18:19:41.739+03:00 DEBUG 437992 --- [rating_punctuality] [main] c.r.p.r.config.JwtFilter                 : Filter 'jwtFilter' configured for use
+2025-12-03T18:19:41.912+03:00  INFO 437992 --- [rating_punctuality] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name appUserDetailsServiceImpl
+2025-12-03T18:19:42.279+03:00  WARN 437992 --- [rating_punctuality] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-03T18:19:42.823+03:00  INFO 437992 --- [rating_punctuality] [main] c.r.p.r.config.AppSecurityConfig         : SecurityFilterChain настроен для JWT
+2025-12-03T18:19:42.863+03:00 DEBUG 437992 --- [rating_punctuality] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-03T18:19:43.607+03:00  INFO 437992 --- [rating_punctuality] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-03T18:19:43.625+03:00  INFO 437992 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : Started RatingPunctualityApplication in 11.012 seconds (process running for 11.932)
+2025-12-03T18:19:43.632+03:00  INFO 437992 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : === ВЫПОЛНЕНИЕ ПРЕДВАРИТЕЛЬНЫХ ОПЕРАЦИЙ С БАЗОЙ ===
+2025-12-03T18:19:43.633+03:00  INFO 437992 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : Начало экспорта данных...
+2025-12-03T18:19:44.552+03:00  INFO 437992 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : Файлы сохранены: directions.json и airline_punctuality.json
+2025-12-03T18:19:44.552+03:00  INFO 437992 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : Экспорт завершен. Записей в direction: 309. Записей в punctuality: 4
+2025-12-03T18:19:44.552+03:00  INFO 437992 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : === ПРЕДВАРИТЕЛЬНЫЕ ОПЕРАЦИИ ЗАВЕРШЕНЫ ===
+2025-12-03T18:19:44.553+03:00  WARN 437992 --- [rating_punctuality] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2025-12-03T18:19:44.554+03:00  WARN 437992 --- [rating_punctuality] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2025-12-03T18:21:43.055+03:00  INFO 437992 --- [rating_punctuality] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-03T18:21:43.055+03:00  INFO 437992 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-03T18:21:43.057+03:00  INFO 437992 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-03T18:21:43.100+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs
+2025-12-03T18:21:43.114+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:21:43.115+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:21:43.119+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs
+2025-12-03T18:21:43.851+03:00  INFO 437992 --- [rating_punctuality] [http-nio-8080-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 668 ms
+2025-12-03T18:21:44.035+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2025-12-03T18:21:44.036+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:21:44.037+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:21:44.038+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2025-12-03T18:21:44.061+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-12-03T18:21:44.062+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2025-12-03T18:21:44.089+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:22:30.555+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /
+2025-12-03T18:22:30.556+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:22:30.557+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:22:30.559+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /
+2025-12-03T18:22:30.571+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-12-03T18:22:30.573+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /error
+2025-12-03T18:22:30.612+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:22:31.627+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui.html
+2025-12-03T18:22:31.633+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:22:31.636+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:22:31.638+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui.html
+2025-12-03T18:22:31.680+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.html
+2025-12-03T18:22:31.681+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:22:31.681+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:22:31.682+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.html
+2025-12-03T18:22:31.722+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui.css
+2025-12-03T18:22:31.723+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:22:31.724+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:22:31.725+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui.css
+2025-12-03T18:22:31.734+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.css
+2025-12-03T18:22:31.738+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-03T18:22:31.738+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:22:31.740+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-initializer.js
+2025-12-03T18:22:31.740+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-bundle.js
+2025-12-03T18:22:31.740+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:22:31.740+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:22:31.741+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:22:31.741+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:22:31.741+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:22:31.741+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.css
+2025-12-03T18:22:31.742+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:22:31.742+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:22:31.742+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-initializer.js
+2025-12-03T18:22:31.742+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-bundle.js
+2025-12-03T18:22:31.742+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-03T18:22:32.066+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs/swagger-config
+2025-12-03T18:22:32.067+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:22:32.067+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:22:32.068+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs/swagger-config
+2025-12-03T18:22:32.069+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/favicon-32x32.png
+2025-12-03T18:22:32.070+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:22:32.070+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:22:32.070+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/favicon-32x32.png
+2025-12-03T18:22:32.100+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs
+2025-12-03T18:22:32.101+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:22:32.101+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:22:32.101+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs
+2025-12-03T18:23:55.209+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2025-12-03T18:23:55.211+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:23:55.212+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:23:55.217+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+2025-12-03T18:23:55.408+03:00  INFO 437992 --- [rating_punctuality] [http-nio-8080-exec-8] c.r.p.r.controller.AuthController        : Попытка входа: admin
+2025-12-03T18:23:56.383+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-12-03T18:23:56.523+03:00  INFO 437992 --- [rating_punctuality] [http-nio-8080-exec-8] c.r.p.r.controller.AuthController        : Успешный вход: admin
+2025-12-03T18:24:26.740+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /get_top3
+2025-12-03T18:24:26.741+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:24:26.741+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:24:26.742+03:00 DEBUG 437992 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /get_top3
+2025-12-03T18:25:53.885+03:00  INFO 437992 --- [rating_punctuality] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-03T18:25:53.903+03:00  INFO 437992 --- [rating_punctuality] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-03T18:25:53.928+03:00  INFO 437992 --- [rating_punctuality] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T18:25:53.942+03:00  INFO 437992 --- [rating_punctuality] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-03T18:25:54.012+03:00  INFO 437992 --- [rating_punctuality] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-03T18:25:56.892+03:00  INFO 446447 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : Starting RatingPunctualityApplication using Java 21.0.9 with PID 446447 (/home/vladimir/Загрузки/rating_punctuality/target/classes started by vladimir in /home/vladimir/Загрузки/rating_punctuality)
+2025-12-03T18:25:56.897+03:00 DEBUG 446447 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-12-03T18:25:56.900+03:00  INFO 446447 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-03T18:25:59.419+03:00  INFO 446447 --- [rating_punctuality] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-03T18:25:59.804+03:00  INFO 446447 --- [rating_punctuality] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 365 ms. Found 4 JPA repository interfaces.
+2025-12-03T18:26:01.541+03:00  INFO 446447 --- [rating_punctuality] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-03T18:26:01.612+03:00  INFO 446447 --- [rating_punctuality] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-03T18:26:01.614+03:00  INFO 446447 --- [rating_punctuality] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-12-03T18:26:01.844+03:00  INFO 446447 --- [rating_punctuality] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-03T18:26:01.847+03:00  INFO 446447 --- [rating_punctuality] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4794 ms
+2025-12-03T18:26:02.291+03:00  INFO 446447 --- [rating_punctuality] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-03T18:26:02.405+03:00  INFO 446447 --- [rating_punctuality] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-12-03T18:26:02.481+03:00  INFO 446447 --- [rating_punctuality] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-03T18:26:02.947+03:00  INFO 446447 --- [rating_punctuality] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-03T18:26:03.033+03:00  INFO 446447 --- [rating_punctuality] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-03T18:26:03.885+03:00  INFO 446447 --- [rating_punctuality] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@34a33343
+2025-12-03T18:26:03.888+03:00  INFO 446447 --- [rating_punctuality] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-03T18:26:03.950+03:00  WARN 446447 --- [rating_punctuality] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-03T18:26:03.991+03:00  INFO 446447 --- [rating_punctuality] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-03T18:26:06.128+03:00  INFO 446447 --- [rating_punctuality] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-03T18:26:06.284+03:00  INFO 446447 --- [rating_punctuality] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T18:26:06.980+03:00 DEBUG 446447 --- [rating_punctuality] [main] c.r.p.r.config.JwtFilter                 : Filter 'jwtFilter' configured for use
+2025-12-03T18:26:07.280+03:00  INFO 446447 --- [rating_punctuality] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name appUserDetailsServiceImpl
+2025-12-03T18:26:07.840+03:00  WARN 446447 --- [rating_punctuality] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-03T18:26:08.724+03:00  INFO 446447 --- [rating_punctuality] [main] c.r.p.r.config.AppSecurityConfig         : SecurityFilterChain настроен для JWT
+2025-12-03T18:26:08.778+03:00 DEBUG 446447 --- [rating_punctuality] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-03T18:26:09.470+03:00  INFO 446447 --- [rating_punctuality] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-03T18:26:09.497+03:00  INFO 446447 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : Started RatingPunctualityApplication in 14.095 seconds (process running for 15.012)
+2025-12-03T18:26:09.512+03:00  INFO 446447 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : === ВЫПОЛНЕНИЕ ПРЕДВАРИТЕЛЬНЫХ ОПЕРАЦИЙ С БАЗОЙ ===
+2025-12-03T18:26:09.513+03:00  INFO 446447 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : Начало экспорта данных...
+2025-12-03T18:26:10.504+03:00  INFO 446447 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : Файлы сохранены: directions.json и airline_punctuality.json
+2025-12-03T18:26:10.504+03:00  INFO 446447 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : Экспорт завершен. Записей в direction: 309. Записей в punctuality: 4
+2025-12-03T18:26:10.505+03:00  INFO 446447 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : === ПРЕДВАРИТЕЛЬНЫЕ ОПЕРАЦИИ ЗАВЕРШЕНЫ ===
+2025-12-03T18:26:10.506+03:00  WARN 446447 --- [rating_punctuality] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2025-12-03T18:26:10.507+03:00  WARN 446447 --- [rating_punctuality] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2025-12-03T18:26:21.105+03:00  INFO 446447 --- [rating_punctuality] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-03T18:26:21.106+03:00  INFO 446447 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-03T18:26:21.111+03:00  INFO 446447 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-03T18:26:21.175+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.html
+2025-12-03T18:26:21.196+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:26:21.198+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:26:21.210+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.html
+2025-12-03T18:26:21.491+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui.css
+2025-12-03T18:26:21.493+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:26:21.494+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:26:21.495+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui.css
+2025-12-03T18:26:21.512+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-03T18:26:21.514+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.css
+2025-12-03T18:26:21.515+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:26:21.515+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:26:21.516+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:26:21.518+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-bundle.js
+2025-12-03T18:26:21.518+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:26:21.516+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-03T18:26:21.519+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:26:21.519+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.css
+2025-12-03T18:26:21.521+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-initializer.js
+2025-12-03T18:26:21.523+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:26:21.520+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:26:21.529+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:26:21.533+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-initializer.js
+2025-12-03T18:26:21.535+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-bundle.js
+2025-12-03T18:26:21.920+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs/swagger-config
+2025-12-03T18:26:21.921+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:26:21.922+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:26:21.923+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs/swagger-config
+2025-12-03T18:26:21.938+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/favicon-32x32.png
+2025-12-03T18:26:21.940+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:26:21.941+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:26:21.942+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/favicon-32x32.png
+2025-12-03T18:26:22.036+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs
+2025-12-03T18:26:22.038+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:26:22.040+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:26:22.041+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs
+2025-12-03T18:26:22.843+03:00  INFO 446447 --- [rating_punctuality] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 760 ms
+2025-12-03T18:26:34.225+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/auth/me
+2025-12-03T18:26:34.226+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:26:34.227+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:26:34.227+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/auth/me
+2025-12-03T18:27:26.912+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /get_all_direction
+2025-12-03T18:27:26.913+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:27:26.914+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:27:26.915+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /get_all_direction
+2025-12-03T18:29:40.604+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /get_airline_punctuality
+2025-12-03T18:29:40.606+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:29:40.606+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:29:40.607+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /get_airline_punctuality
+2025-12-03T18:29:47.960+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /delay_histogram
+2025-12-03T18:29:47.961+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:29:47.962+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:29:47.963+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /delay_histogram
+2025-12-03T18:29:59.150+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /cancellations_distribution
+2025-12-03T18:29:59.151+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:29:59.152+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:29:59.153+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /cancellations_distribution
+2025-12-03T18:30:09.612+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /flights?limit=100
+2025-12-03T18:30:09.613+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:30:09.615+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:30:09.616+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /flights?limit=100
+2025-12-03T18:30:29.983+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /flights/340854
+2025-12-03T18:30:29.985+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:30:29.986+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:30:29.988+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /flights/340854
+2025-12-03T18:30:55.012+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /airports/AAQ/stats
+2025-12-03T18:30:55.014+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:30:55.015+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:30:55.015+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /airports/AAQ/stats
+2025-12-03T18:31:09.951+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /airlines/S7/delay-stats
+2025-12-03T18:31:09.952+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:31:09.953+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:31:09.954+03:00 DEBUG 446447 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /airlines/S7/delay-stats
+2025-12-03T18:31:39.347+03:00  INFO 446447 --- [rating_punctuality] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-03T18:31:39.363+03:00  INFO 446447 --- [rating_punctuality] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-03T18:31:39.388+03:00  INFO 446447 --- [rating_punctuality] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T18:31:39.400+03:00  INFO 446447 --- [rating_punctuality] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-03T18:31:39.466+03:00  INFO 446447 --- [rating_punctuality] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-03T18:31:42.294+03:00  INFO 454237 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : Starting RatingPunctualityApplication using Java 21.0.9 with PID 454237 (/home/vladimir/Загрузки/rating_punctuality/target/classes started by vladimir in /home/vladimir/Загрузки/rating_punctuality)
+2025-12-03T18:31:42.298+03:00 DEBUG 454237 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-12-03T18:31:42.300+03:00  INFO 454237 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-03T18:31:44.679+03:00  INFO 454237 --- [rating_punctuality] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-03T18:31:44.900+03:00  INFO 454237 --- [rating_punctuality] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 199 ms. Found 4 JPA repository interfaces.
+2025-12-03T18:31:46.902+03:00  INFO 454237 --- [rating_punctuality] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-03T18:31:46.947+03:00  INFO 454237 --- [rating_punctuality] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-03T18:31:46.948+03:00  INFO 454237 --- [rating_punctuality] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-12-03T18:31:47.157+03:00  INFO 454237 --- [rating_punctuality] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-03T18:31:47.159+03:00  INFO 454237 --- [rating_punctuality] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4726 ms
+2025-12-03T18:31:47.601+03:00  INFO 454237 --- [rating_punctuality] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-03T18:31:47.846+03:00  INFO 454237 --- [rating_punctuality] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-12-03T18:31:47.921+03:00  INFO 454237 --- [rating_punctuality] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-03T18:31:48.594+03:00  INFO 454237 --- [rating_punctuality] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-03T18:31:48.691+03:00  INFO 454237 --- [rating_punctuality] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-03T18:31:49.421+03:00  INFO 454237 --- [rating_punctuality] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4946485c
+2025-12-03T18:31:49.425+03:00  INFO 454237 --- [rating_punctuality] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-03T18:31:49.488+03:00  WARN 454237 --- [rating_punctuality] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-03T18:31:49.556+03:00  INFO 454237 --- [rating_punctuality] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-03T18:31:52.091+03:00  INFO 454237 --- [rating_punctuality] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-03T18:31:52.284+03:00  INFO 454237 --- [rating_punctuality] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T18:31:52.999+03:00 DEBUG 454237 --- [rating_punctuality] [main] c.r.p.r.config.JwtFilter                 : Filter 'jwtFilter' configured for use
+2025-12-03T18:31:53.251+03:00  INFO 454237 --- [rating_punctuality] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name appUserDetailsServiceImpl
+2025-12-03T18:31:53.856+03:00  WARN 454237 --- [rating_punctuality] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-03T18:31:54.661+03:00  INFO 454237 --- [rating_punctuality] [main] c.r.p.r.config.AppSecurityConfig         : SecurityFilterChain настроен для JWT
+2025-12-03T18:31:54.702+03:00 DEBUG 454237 --- [rating_punctuality] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-03T18:31:55.762+03:00  INFO 454237 --- [rating_punctuality] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-03T18:31:55.789+03:00  INFO 454237 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : Started RatingPunctualityApplication in 14.654 seconds (process running for 15.878)
+2025-12-03T18:31:55.796+03:00  INFO 454237 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : === ВЫПОЛНЕНИЕ ПРЕДВАРИТЕЛЬНЫХ ОПЕРАЦИЙ С БАЗОЙ ===
+2025-12-03T18:31:55.796+03:00  INFO 454237 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : Начало экспорта данных...
+2025-12-03T18:31:56.601+03:00  INFO 454237 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : Файлы сохранены: directions.json и airline_punctuality.json
+2025-12-03T18:31:56.602+03:00  INFO 454237 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : Экспорт завершен. Записей в direction: 309. Записей в punctuality: 4
+2025-12-03T18:31:56.602+03:00  INFO 454237 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : === ПРЕДВАРИТЕЛЬНЫЕ ОПЕРАЦИИ ЗАВЕРШЕНЫ ===
+2025-12-03T18:31:56.603+03:00  WARN 454237 --- [rating_punctuality] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2025-12-03T18:31:56.604+03:00  WARN 454237 --- [rating_punctuality] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2025-12-03T18:31:58.237+03:00  INFO 454237 --- [rating_punctuality] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-03T18:31:58.238+03:00  INFO 454237 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-03T18:31:58.242+03:00  INFO 454237 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-03T18:31:58.286+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.html
+2025-12-03T18:31:58.306+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:31:58.308+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:31:58.316+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.html
+2025-12-03T18:31:58.517+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui.css
+2025-12-03T18:31:58.520+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:31:58.524+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:31:58.527+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.css
+2025-12-03T18:31:58.528+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:31:58.529+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:31:58.531+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.css
+2025-12-03T18:31:58.528+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui.css
+2025-12-03T18:31:58.549+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-03T18:31:58.551+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-initializer.js
+2025-12-03T18:31:58.557+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:31:58.557+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-bundle.js
+2025-12-03T18:31:58.551+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:31:58.560+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:31:58.561+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-03T18:31:58.560+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:31:58.565+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:31:58.558+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:31:58.568+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-bundle.js
+2025-12-03T18:31:58.569+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-initializer.js
+2025-12-03T18:31:59.199+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs/swagger-config
+2025-12-03T18:31:59.204+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:31:59.207+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:31:59.213+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs/swagger-config
+2025-12-03T18:31:59.386+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs
+2025-12-03T18:31:59.389+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:31:59.393+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:31:59.395+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs
+2025-12-03T18:32:00.865+03:00  INFO 454237 --- [rating_punctuality] [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1404 ms
+2025-12-03T18:32:18.297+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /get_all_direction
+2025-12-03T18:32:18.300+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:32:18.300+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:32:18.301+03:00 DEBUG 454237 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /get_all_direction
+2025-12-03T18:33:56.064+03:00  INFO 454237 --- [rating_punctuality] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-03T18:33:56.082+03:00  INFO 454237 --- [rating_punctuality] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-03T18:33:56.139+03:00  INFO 454237 --- [rating_punctuality] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T18:33:56.156+03:00  INFO 454237 --- [rating_punctuality] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-03T18:33:56.221+03:00  INFO 454237 --- [rating_punctuality] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-03T18:33:59.329+03:00  INFO 457302 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : Starting RatingPunctualityApplication using Java 21.0.9 with PID 457302 (/home/vladimir/Загрузки/rating_punctuality/target/classes started by vladimir in /home/vladimir/Загрузки/rating_punctuality)
+2025-12-03T18:33:59.334+03:00 DEBUG 457302 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-12-03T18:33:59.337+03:00  INFO 457302 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-03T18:34:01.773+03:00  INFO 457302 --- [rating_punctuality] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-03T18:34:01.968+03:00  INFO 457302 --- [rating_punctuality] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 165 ms. Found 4 JPA repository interfaces.
+2025-12-03T18:34:03.917+03:00  INFO 457302 --- [rating_punctuality] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-03T18:34:03.946+03:00  INFO 457302 --- [rating_punctuality] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-03T18:34:03.948+03:00  INFO 457302 --- [rating_punctuality] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-12-03T18:34:04.062+03:00  INFO 457302 --- [rating_punctuality] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-03T18:34:04.063+03:00  INFO 457302 --- [rating_punctuality] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4591 ms
+2025-12-03T18:34:04.341+03:00  INFO 457302 --- [rating_punctuality] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-03T18:34:04.430+03:00  INFO 457302 --- [rating_punctuality] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-12-03T18:34:04.497+03:00  INFO 457302 --- [rating_punctuality] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-03T18:34:05.158+03:00  INFO 457302 --- [rating_punctuality] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-03T18:34:05.236+03:00  INFO 457302 --- [rating_punctuality] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-03T18:34:06.025+03:00  INFO 457302 --- [rating_punctuality] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4946485c
+2025-12-03T18:34:06.030+03:00  INFO 457302 --- [rating_punctuality] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-03T18:34:06.105+03:00  WARN 457302 --- [rating_punctuality] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-03T18:34:06.174+03:00  INFO 457302 --- [rating_punctuality] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-03T18:34:08.354+03:00  INFO 457302 --- [rating_punctuality] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-03T18:34:08.645+03:00  INFO 457302 --- [rating_punctuality] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T18:34:09.394+03:00 DEBUG 457302 --- [rating_punctuality] [main] c.r.p.r.config.JwtFilter                 : Filter 'jwtFilter' configured for use
+2025-12-03T18:34:09.621+03:00  INFO 457302 --- [rating_punctuality] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name appUserDetailsServiceImpl
+2025-12-03T18:34:10.156+03:00  WARN 457302 --- [rating_punctuality] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-03T18:34:10.894+03:00  INFO 457302 --- [rating_punctuality] [main] c.r.p.r.config.AppSecurityConfig         : SecurityFilterChain настроен для JWT
+2025-12-03T18:34:10.942+03:00 DEBUG 457302 --- [rating_punctuality] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-03T18:34:11.888+03:00  INFO 457302 --- [rating_punctuality] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-03T18:34:11.915+03:00  INFO 457302 --- [rating_punctuality] [main] c.r.p.r.RatingPunctualityApplication     : Started RatingPunctualityApplication in 14.05 seconds (process running for 15.343)
+2025-12-03T18:34:11.925+03:00  INFO 457302 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : === ВЫПОЛНЕНИЕ ПРЕДВАРИТЕЛЬНЫХ ОПЕРАЦИЙ С БАЗОЙ ===
+2025-12-03T18:34:11.925+03:00  INFO 457302 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : Начало экспорта данных...
+2025-12-03T18:34:12.775+03:00  INFO 457302 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : Файлы сохранены: directions.json и airline_punctuality.json
+2025-12-03T18:34:12.776+03:00  INFO 457302 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : Экспорт завершен. Записей в direction: 309. Записей в punctuality: 4
+2025-12-03T18:34:12.776+03:00  INFO 457302 --- [rating_punctuality] [main] c.r.p.r.config.LocalDateInitializer      : === ПРЕДВАРИТЕЛЬНЫЕ ОПЕРАЦИИ ЗАВЕРШЕНЫ ===
+2025-12-03T18:34:12.778+03:00  WARN 457302 --- [rating_punctuality] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2025-12-03T18:34:12.779+03:00  WARN 457302 --- [rating_punctuality] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2025-12-03T18:34:21.219+03:00  INFO 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-03T18:34:21.220+03:00  INFO 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-03T18:34:21.223+03:00  INFO 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-03T18:34:21.280+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.html
+2025-12-03T18:34:21.303+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:34:21.305+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:34:21.313+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.html
+2025-12-03T18:34:21.449+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui.css
+2025-12-03T18:34:21.451+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:34:21.452+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:34:21.454+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui.css
+2025-12-03T18:34:21.466+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-03T18:34:21.467+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:34:21.468+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:34:21.469+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-03T18:34:21.470+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-bundle.js
+2025-12-03T18:34:21.471+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:34:21.472+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.css
+2025-12-03T18:34:21.472+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:34:21.473+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-bundle.js
+2025-12-03T18:34:21.473+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:34:21.475+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-initializer.js
+2025-12-03T18:34:21.474+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:34:21.476+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.css
+2025-12-03T18:34:21.482+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:34:21.483+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:34:21.485+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-initializer.js
+2025-12-03T18:34:21.851+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs/swagger-config
+2025-12-03T18:34:21.852+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:34:21.854+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:34:21.856+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs/swagger-config
+2025-12-03T18:34:21.864+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/favicon-32x32.png
+2025-12-03T18:34:21.866+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:34:21.867+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:34:21.868+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/favicon-32x32.png
+2025-12-03T18:34:21.982+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs
+2025-12-03T18:34:21.983+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:34:21.984+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:34:21.984+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs
+2025-12-03T18:34:22.764+03:00  INFO 457302 --- [rating_punctuality] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 742 ms
+2025-12-03T18:34:26.907+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /get_all_direction
+2025-12-03T18:34:26.909+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:34:26.910+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:34:26.911+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /get_all_direction
+2025-12-03T18:34:38.445+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /get_airline_punctuality
+2025-12-03T18:34:38.447+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:34:38.447+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:34:38.448+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /get_airline_punctuality
+2025-12-03T18:34:47.055+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /delay_histogram
+2025-12-03T18:34:47.056+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:34:47.057+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:34:47.058+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /delay_histogram
+2025-12-03T18:34:55.407+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /cancellations_distribution
+2025-12-03T18:34:55.409+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:34:55.411+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:34:55.412+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /cancellations_distribution
+2025-12-03T18:35:16.560+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.html
+2025-12-03T18:35:16.562+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:35:16.562+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:35:16.563+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.html
+2025-12-03T18:35:16.646+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui.css
+2025-12-03T18:35:16.647+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:35:16.648+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:35:16.649+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui.css
+2025-12-03T18:35:16.657+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.css
+2025-12-03T18:35:16.663+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:35:16.665+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:35:16.665+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-03T18:35:16.665+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.css
+2025-12-03T18:35:16.666+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:35:16.668+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-initializer.js
+2025-12-03T18:35:16.667+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-bundle.js
+2025-12-03T18:35:16.669+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:35:16.670+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:35:16.672+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:35:16.674+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-initializer.js
+2025-12-03T18:35:16.670+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:35:16.675+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:35:16.676+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-bundle.js
+2025-12-03T18:35:16.671+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-03T18:35:16.952+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs/swagger-config
+2025-12-03T18:35:16.954+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:35:16.954+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:35:16.955+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs/swagger-config
+2025-12-03T18:35:16.982+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs
+2025-12-03T18:35:16.984+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T18:35:16.985+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 80CBFBA959CBC3652B35D79C22FB288C
+2025-12-03T18:35:16.986+03:00 DEBUG 457302 --- [rating_punctuality] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs
+2025-12-03T18:35:26.673+03:00  INFO 457302 --- [rating_punctuality] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-03T18:35:26.679+03:00  INFO 457302 --- [rating_punctuality] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-03T18:35:26.693+03:00  INFO 457302 --- [rating_punctuality] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T18:35:26.702+03:00  INFO 457302 --- [rating_punctuality] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-03T18:35:26.739+03:00  INFO 457302 --- [rating_punctuality] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
