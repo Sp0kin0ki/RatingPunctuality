@@ -11,14 +11,21 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
 import com.rating.punctuality.rating_punctuality.model.auth.LoginRequest;
 import com.rating.punctuality.rating_punctuality.model.auth.UserRegistrationDto;
 import com.rating.punctuality.rating_punctuality.model.entities.User;
+import com.rating.punctuality.rating_punctuality.model.entities.Flight;
 import com.rating.punctuality.rating_punctuality.services.AuthService;
 import com.rating.punctuality.rating_punctuality.services.JwtService;
+import com.rating.punctuality.rating_punctuality.services.UploadDataService;
 
+import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -29,7 +36,8 @@ public class AuthController {
 
     private final AuthenticationManager authenticationManager;
     private final JwtService jwtService;
-    private final AuthService authService; // Ваш существующий сервис
+    private final AuthService authService;
+    private final UploadDataService uploadDataService;
 
     /**
      * Вход пользователя
@@ -115,6 +123,61 @@ public class AuthController {
         }
     }
 
+    @PostMapping("/upload-data")
+    public ResponseEntity<?> uploadData(
+            @RequestParam("file") MultipartFile file,
+            Authentication authentication) {
+
+        try {
+            if (file.isEmpty()) {
+                return ResponseEntity.badRequest().body("Файл пустой");
+            }
+
+            String username = authentication.getName();
+            log.info("Пользователь {} загружает файл: {}", username, file.getOriginalFilename());
+
+            if (!Objects.requireNonNull(file.getOriginalFilename()).toLowerCase().endsWith(".csv")) {
+                return ResponseEntity.badRequest().body("Только CSV файлы разрешены");
+            }
+
+            List<Flight> csvData = uploadDataService.parseCsvFileSimple(file);
+
+            boolean isSave = uploadDataService.saveFlights(csvData);
+
+            Map<String, Object> response = new HashMap<>();
+            HttpStatus status;
+        
+            if (isSave) {
+                status = HttpStatus.OK;
+                response.put("message", "Файл успешно загружен");
+                response.put("filename", file.getOriginalFilename());
+                response.put("uploadedBy", username);
+                response.put("rowsProcessed", csvData.size());
+                log.info("Пользователь {} успешно загрузил {} рейсов", username, csvData.size());
+            } else {
+                status = HttpStatus.BAD_REQUEST;
+                response.put("message", "Файл не загружен (ошибка сохранения)");
+                response.put("filename", file.getOriginalFilename());
+                response.put("uploadedBy", username);
+                response.put("rowsProcessed", csvData.size());
+                log.error("Ошибка сохранения файла от пользователя {}", username);
+            }
+            
+            return ResponseEntity.status(status).body(response);
+
+        } catch (IOException e) {
+            log.error("Ошибка чтения файла: {}", e.getMessage());
+            return ResponseEntity.internalServerError()
+                .body("Ошибка чтения файла: " + e.getMessage());
+        } catch (Exception e) {
+            log.error("Ошибка при обработке файла: {}", e.getMessage());
+            return ResponseEntity.internalServerError()
+                .body("Ошибка обработки: " + e.getMessage());
+        }
+        
+
+    }
+
     /**
      * Проверка токена / информация о текущем пользователе
      * GET /api/auth/me
@@ -137,4 +200,6 @@ public class AuthController {
         
         return ResponseEntity.ok(response);
     }
+
+    
 }
