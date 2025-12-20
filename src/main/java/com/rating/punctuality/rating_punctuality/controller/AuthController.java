@@ -39,16 +39,11 @@ public class AuthController {
     private final AuthService authService;
     private final UploadDataService uploadDataService;
 
-    /**
-     * Вход пользователя
-     * POST /api/auth/login
-     */
     @PostMapping("/login")
     public ResponseEntity<?> login(@Valid @RequestBody LoginRequest loginRequest) {
         log.info("Попытка входа: {}", loginRequest.getUsername());
         
         try {
-            // 1. Аутентифицируем пользователя (проверяем логин/пароль)
             Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                     loginRequest.getUsername(),
@@ -56,13 +51,10 @@ public class AuthController {
                 )
             );
             
-            // 2. Получаем UserDetails
             UserDetails userDetails = (UserDetails) authentication.getPrincipal();
             
-            // 3. Генерируем JWT токен
             String token = jwtService.generateToken(userDetails);
             
-            // 4. Формируем ответ
             Map<String, Object> response = new HashMap<>();
             response.put("token", token);
             response.put("username", userDetails.getUsername());
@@ -81,20 +73,15 @@ public class AuthController {
         }
     }
 
-    /**
-     * Регистрация нового пользователя
-     * POST /api/auth/add-user
-     */
+
     @PostMapping("/add-user")
     public ResponseEntity<?> register(@Valid @RequestBody UserRegistrationDto userRegistrationDto) {
         log.info("Регистрация пользователя: {}", userRegistrationDto.getUsername());
         
         try {
-            // 1. Регистрируем пользователя (ваш существующий метод)
             User registeredUser = 
                 authService.register(userRegistrationDto);
             
-            // 2. Автоматически аутентифицируем нового пользователя
             Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                     userRegistrationDto.getUsername(),
@@ -102,11 +89,9 @@ public class AuthController {
                 )
             );
             
-            // 3. Генерируем токен
             UserDetails userDetails = (UserDetails) authentication.getPrincipal();
             String token = jwtService.generateToken(userDetails);
             
-            // 4. Формируем ответ
             Map<String, Object> response = new HashMap<>();
             response.put("token", token);
             response.put("username", registeredUser.getUsername());
@@ -178,10 +163,6 @@ public class AuthController {
 
     }
 
-    /**
-     * Проверка токена / информация о текущем пользователе
-     * GET /api/auth/me
-     */
     @GetMapping("/me")
     public ResponseEntity<?> getCurrentUser(Authentication authentication) {
         if (authentication == null || !authentication.isAuthenticated()) {
@@ -200,6 +181,4 @@ public class AuthController {
         
         return ResponseEntity.ok(response);
     }
-
-    
 }
