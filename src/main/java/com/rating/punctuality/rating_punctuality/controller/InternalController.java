@@ -9,6 +9,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.core.io.Resource;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -98,7 +99,7 @@ public class InternalController {
     @GetMapping("/get_airline_punctuality")
     public ResponseEntity<?> getAirlinePunctuality() {
         try {
-            org.springframework.core.io.Resource resource = 
+            Resource resource = 
                 new ClassPathResource("templates/airline_punctuality.json");
             
             if (!resource.exists()) {
