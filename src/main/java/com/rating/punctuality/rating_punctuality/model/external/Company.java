@@ -11,17 +11,17 @@ import jakarta.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Company {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+
     @Column(name = "name_company", unique = true, nullable = false)
     private String nameCompany;
-    
+
     @Column(name = "api_token", unique = true, nullable = false)
     private String apiToken;
-    
+
     @Column(name = "is_active")
     private boolean isActive = true;
 }

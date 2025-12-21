@@ -25,36 +25,37 @@ public class LocalDateInitializer implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         log.info("=== ВЫПОЛНЕНИЕ ПРЕДВАРИТЕЛЬНЫХ ОПЕРАЦИЙ С БАЗОЙ ===");
-        
+
         performInitialQueries();
-        
+
         log.info("=== ПРЕДВАРИТЕЛЬНЫЕ ОПЕРАЦИИ ЗАВЕРШЕНЫ ===");
     }
-    
+
     private void performInitialQueries() {
         log.info("Начало экспорта данных...");
-        
+
         List<CalculateFlightDirection> directions = calculateRepository.getFlightDirection();
         List<CalculateAirlinePunctuality> punctuality = calculateRepository.getAirlinePunctuality();
 
         exportToJson(directions, punctuality);
-        
-        log.info("Экспорт завершен. Записей в direction: {}. Записей в punctuality: {}", directions.size(), punctuality.size());
+
+        log.info("Экспорт завершен. Записей в direction: {}. Записей в punctuality: {}", directions.size(),
+                punctuality.size());
     }
 
-    private void exportToJson(List<CalculateFlightDirection> directions, List<CalculateAirlinePunctuality> punctuality) {
-    try {
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.enable(SerializationFeature.INDENT_OUTPUT);
-        
-        
-        mapper.writeValue(new File("/home/vladimir/Загрузки/rating_punctuality/src/main/resources/templates/flight_direction_stats.json"), directions);
-        mapper.writeValue(new File("/home/vladimir/Загрузки/rating_punctuality/src/main/resources/templates/airline_punctuality.json"), punctuality);
-        
-        log.info("Файлы сохранены: directions.json и airline_punctuality.json");
-        
-    } catch (Exception e) {
-        log.error("Ошибка при сохранении JSON файлов", e);
+    private void exportToJson(List<CalculateFlightDirection> directions,
+            List<CalculateAirlinePunctuality> punctuality) {
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.enable(SerializationFeature.INDENT_OUTPUT);
+
+            mapper.writeValue(new File("src/main/resources/templates/flight_direction_stats.json"), directions);
+            mapper.writeValue(new File("src/main/resources/templates/airline_punctuality.json"), punctuality);
+
+            log.info("Файлы сохранены: directions.json и airline_punctuality.json");
+
+        } catch (Exception e) {
+            log.error("Ошибка при сохранении JSON файлов", e);
+        }
     }
-}
 }

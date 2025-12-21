@@ -10,5 +10,6 @@ import com.rating.punctuality.rating_punctuality.model.external.Company;
 @Repository
 public interface CompanyRepository extends JpaRepository<Company, Long> {
     Optional<Company> findByApiToken(String apiToken);
+
     boolean existsByApiToken(String apiToken);
 }

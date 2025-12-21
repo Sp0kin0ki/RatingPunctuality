@@ -7,4 +7,5 @@ import com.rating.punctuality.rating_punctuality.model.external.UploadData;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 @Repository
-public interface UploadDataRepository extends JpaRepository<UploadData, Long>{}
+public interface UploadDataRepository extends JpaRepository<UploadData, Long> {
+}

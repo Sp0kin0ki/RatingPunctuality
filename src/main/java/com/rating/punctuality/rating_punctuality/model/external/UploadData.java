@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UploadData {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -31,7 +31,7 @@ public class UploadData {
 
     @Column(name = "departure_airport", nullable = false)
     private String departureAirport;
-    
+
     @Column(name = "arrival_airport", nullable = false)
     private String arrivalAirport;
 
