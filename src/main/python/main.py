@@ -1,5 +1,5 @@
 import pandas as pd
-from main.python.utils import get_db_connection
+from utils import get_db_connection
 import numpy as np
 from mlxtend.frequent_patterns import apriori, association_rules
 from mlxtend.preprocessing import TransactionEncoder
@@ -7,7 +7,7 @@ from scipy.sparse import csr_matrix
 import asyncio
 
 
-RULES_FILE = 'src/main/resources/templates/flight_delay_rules.csv'
+RULES_FILE = '/app/out/flight_delay_rules.csv'
         
 async def async_load_data_from_db():
     """Асинхронная загрузка данных из БД"""
