@@ -72,7 +72,7 @@ public class AuthController {
             return ResponseEntity.ok(response);
 
         } catch (Exception e) {
-            log.warn("Ошибка входа для {}: {}", loginRequest.getUsername(), e.getMessage());
+            log.warn("Ошибка входа: {}", e.getMessage());
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
                     .body(Map.of("error", "Неверное имя пользователя или пароль"));
         }
