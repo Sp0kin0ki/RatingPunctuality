@@ -16,6 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.rating.punctuality.rating_punctuality.model.auth.LoginRequest;
 import com.rating.punctuality.rating_punctuality.model.auth.UserRegistrationDto;
 import com.rating.punctuality.rating_punctuality.model.entities.User;
+import com.rating.punctuality.rating_punctuality.model.enums.UserRoles;
 import com.rating.punctuality.rating_punctuality.model.entities.Flight;
 import com.rating.punctuality.rating_punctuality.services.AuthService;
 import com.rating.punctuality.rating_punctuality.services.JwtService;
@@ -176,6 +177,19 @@ public class AuthController {
         response.put("email", authService.getUser(userDetails.getUsername()).getEmail());
         response.put("authenticated", true);
 
+        return ResponseEntity.ok(response);
+    }
+
+    @GetMapping("/count-users")
+    public ResponseEntity<?> getCount(Authentication authentication) {
+        if (authentication == null || !authentication.isAuthenticated()) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                    .body(Map.of("error", "Не авторизован"));
+        }
+
+        Map<String, Object> response = new HashMap<>();
+        response.put("countUsers", authService.getCountUsers(UserRoles.USER));
+        response.put("countAdmin", authService.getCountUsers(UserRoles.ADMIN));
         return ResponseEntity.ok(response);
     }
 }

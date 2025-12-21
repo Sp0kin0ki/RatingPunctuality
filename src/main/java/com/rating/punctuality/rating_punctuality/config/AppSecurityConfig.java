@@ -42,7 +42,7 @@ public class AppSecurityConfig implements WebMvcConfigurer {
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/api/auth/upload-data").authenticated()
 
-                        .requestMatchers("/api/auth/add-user").hasRole("ADMIN")
+                        .requestMatchers("/api/auth/add-user", "/api/auth/count-users").hasRole("ADMIN")
 
                         .anyRequest().permitAll())
 

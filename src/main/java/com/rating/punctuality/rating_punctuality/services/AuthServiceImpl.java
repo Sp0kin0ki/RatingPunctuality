@@ -59,4 +59,9 @@ public class AuthServiceImpl implements AuthService {
         return userRepository.findByUsername(username)
                 .orElseThrow(() -> new UsernameNotFoundException(username + " was not found!"));
     }
+
+    @Override
+    public Integer getCountUsers(UserRoles role) {
+        return userRepository.countByRolesName(role);
+    }
 }
