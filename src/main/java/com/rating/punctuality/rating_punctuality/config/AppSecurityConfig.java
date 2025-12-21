@@ -40,7 +40,7 @@ public class AppSecurityConfig implements WebMvcConfigurer {
                 .csrf(csrf -> csrf.disable())
 
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/api/auth/upload-data").authenticated()
+                        .requestMatchers("/api/auth/upload-data", "/api/auth/user-files").authenticated()
 
                         .requestMatchers("/api/auth/add-user", "/api/auth/count-users").hasRole("ADMIN")
 

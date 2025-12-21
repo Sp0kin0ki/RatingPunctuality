@@ -16,14 +16,18 @@ import org.springframework.web.multipart.MultipartFile;
 import com.rating.punctuality.rating_punctuality.model.auth.LoginRequest;
 import com.rating.punctuality.rating_punctuality.model.auth.UserRegistrationDto;
 import com.rating.punctuality.rating_punctuality.model.entities.User;
+import com.rating.punctuality.rating_punctuality.model.entities.UserFiles;
 import com.rating.punctuality.rating_punctuality.model.enums.UserRoles;
+import com.rating.punctuality.rating_punctuality.repository.UserFilesRepository;
 import com.rating.punctuality.rating_punctuality.model.entities.Flight;
 import com.rating.punctuality.rating_punctuality.services.AuthService;
 import com.rating.punctuality.rating_punctuality.services.JwtService;
 import com.rating.punctuality.rating_punctuality.services.UploadDataService;
+import com.rating.punctuality.rating_punctuality.services.UserFilesService;
 import com.rating.punctuality.rating_punctuality.utils.DockerRunner;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -40,6 +44,7 @@ public class AuthController {
     private final JwtService jwtService;
     private final AuthService authService;
     private final UploadDataService uploadDataService;
+    private final UserFilesService userFilesService;
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@Valid @RequestBody LoginRequest loginRequest) {
@@ -135,6 +140,19 @@ public class AuthController {
                 response.put("uploadedBy", username);
                 response.put("rowsProcessed", csvData.size());
                 log.info("Пользователь {} успешно загрузил {} рейсов", username, csvData.size());
+
+                UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+                
+                UserFiles userFile = new UserFiles();
+                userFile.setUserId(authService.getUser(userDetails.getUsername()).getId());
+                userFile.setFileName(file.getOriginalFilename());
+                userFile.setFileSize(file.getSize());
+                userFile.setUploadDate(LocalDateTime.now());
+
+                UserFiles savedFile = userFilesService.saveFile(userFile);
+                log.info("Сохранена информация о файле {} для пользователя {}",
+                        savedFile.getFileName(), username);
+
                 DockerRunner.runContainer();
             } else {
                 status = HttpStatus.BAD_REQUEST;
@@ -190,6 +208,20 @@ public class AuthController {
         Map<String, Object> response = new HashMap<>();
         response.put("countUsers", authService.getCountUsers(UserRoles.USER));
         response.put("countAdmin", authService.getCountUsers(UserRoles.ADMIN));
+        return ResponseEntity.ok(response);
+    }
+
+    @GetMapping("/user-files")
+    public ResponseEntity<?> getAllUserFiles(Authentication authentication) {
+        if (authentication == null || !authentication.isAuthenticated()) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                    .body(Map.of("error", "Не авторизован"));
+        }
+
+        Map<String, Object> response = new HashMap<>();
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+
+        response.put("userFiles", userFilesService.getAllUserFiles(authService.getUser(userDetails.getUsername()).getId()));
         return ResponseEntity.ok(response);
     }
 }
