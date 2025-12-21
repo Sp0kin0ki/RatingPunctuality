@@ -20,6 +20,7 @@ import com.rating.punctuality.rating_punctuality.model.entities.Flight;
 import com.rating.punctuality.rating_punctuality.services.AuthService;
 import com.rating.punctuality.rating_punctuality.services.JwtService;
 import com.rating.punctuality.rating_punctuality.services.UploadDataService;
+import com.rating.punctuality.rating_punctuality.utils.DockerRunner;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -42,69 +43,63 @@ public class AuthController {
     @PostMapping("/login")
     public ResponseEntity<?> login(@Valid @RequestBody LoginRequest loginRequest) {
         log.info("Попытка входа: {}", loginRequest.getUsername());
-        
+
         try {
             Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(
-                    loginRequest.getUsername(),
-                    loginRequest.getPassword()
-                )
-            );
-            
+                    new UsernamePasswordAuthenticationToken(
+                            loginRequest.getUsername(),
+                            loginRequest.getPassword()));
+
             UserDetails userDetails = (UserDetails) authentication.getPrincipal();
-            
+
             String token = jwtService.generateToken(userDetails);
-            
+
             Map<String, Object> response = new HashMap<>();
             response.put("token", token);
             response.put("username", userDetails.getUsername());
             response.put("roles", userDetails.getAuthorities().stream()
-                .map(GrantedAuthority::getAuthority)
-                .collect(Collectors.toList()));
+                    .map(GrantedAuthority::getAuthority)
+                    .collect(Collectors.toList()));
             response.put("message", "Вход выполнен успешно");
-            
+
             log.info("Успешный вход: {}", loginRequest.getUsername());
             return ResponseEntity.ok(response);
-            
+
         } catch (Exception e) {
             log.warn("Ошибка входа для {}: {}", loginRequest.getUsername(), e.getMessage());
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
-                .body(Map.of("error", "Неверное имя пользователя или пароль"));
+                    .body(Map.of("error", "Неверное имя пользователя или пароль"));
         }
     }
-
 
     @PostMapping("/add-user")
     public ResponseEntity<?> register(@Valid @RequestBody UserRegistrationDto userRegistrationDto) {
         log.info("Регистрация пользователя: {}", userRegistrationDto.getUsername());
-        
+
         try {
-            User registeredUser = 
-                authService.register(userRegistrationDto);
-            
+            User registeredUser = authService.register(userRegistrationDto);
+
             Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(
-                    userRegistrationDto.getUsername(),
-                    userRegistrationDto.getPassword()
-                )
-            );
-            
+                    new UsernamePasswordAuthenticationToken(
+                            userRegistrationDto.getUsername(),
+                            userRegistrationDto.getPassword()));
+
             UserDetails userDetails = (UserDetails) authentication.getPrincipal();
             String token = jwtService.generateToken(userDetails);
-            
+
             Map<String, Object> response = new HashMap<>();
             response.put("token", token);
             response.put("username", registeredUser.getUsername());
             response.put("email", registeredUser.getEmail());
             response.put("message", "Пользователь успешно зарегистрирован");
-            
+
             log.info("Успешная регистрация: {}", registeredUser.getUsername());
             return ResponseEntity.status(HttpStatus.CREATED).body(response);
-            
+
         } catch (Exception e) {
             log.error("Ошибка регистрации: {}", e.getMessage());
             return ResponseEntity.badRequest()
-                .body(Map.of("error", "Ошибка регистрации: " + e.getMessage()));
+                    .body(Map.of("error", "Ошибка регистрации: " + e.getMessage()));
         }
     }
 
@@ -131,7 +126,7 @@ public class AuthController {
 
             Map<String, Object> response = new HashMap<>();
             HttpStatus status;
-        
+
             if (isSave) {
                 status = HttpStatus.OK;
                 response.put("message", "Файл успешно загружен");
@@ -139,6 +134,7 @@ public class AuthController {
                 response.put("uploadedBy", username);
                 response.put("rowsProcessed", csvData.size());
                 log.info("Пользователь {} успешно загрузил {} рейсов", username, csvData.size());
+                DockerRunner.runContainer();
             } else {
                 status = HttpStatus.BAD_REQUEST;
                 response.put("message", "Файл не загружен (ошибка сохранения)");
@@ -147,19 +143,18 @@ public class AuthController {
                 response.put("rowsProcessed", csvData.size());
                 log.error("Ошибка сохранения файла от пользователя {}", username);
             }
-            
+
             return ResponseEntity.status(status).body(response);
 
         } catch (IOException e) {
             log.error("Ошибка чтения файла: {}", e.getMessage());
             return ResponseEntity.internalServerError()
-                .body("Ошибка чтения файла: " + e.getMessage());
+                    .body("Ошибка чтения файла: " + e.getMessage());
         } catch (Exception e) {
             log.error("Ошибка при обработке файла: {}", e.getMessage());
             return ResponseEntity.internalServerError()
-                .body("Ошибка обработки: " + e.getMessage());
+                    .body("Ошибка обработки: " + e.getMessage());
         }
-        
 
     }
 
@@ -167,18 +162,20 @@ public class AuthController {
     public ResponseEntity<?> getCurrentUser(Authentication authentication) {
         if (authentication == null || !authentication.isAuthenticated()) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
-                .body(Map.of("error", "Не авторизован"));
+                    .body(Map.of("error", "Не авторизован"));
         }
-        
+
         UserDetails userDetails = (UserDetails) authentication.getPrincipal();
-        
+
         Map<String, Object> response = new HashMap<>();
         response.put("username", userDetails.getUsername());
         response.put("roles", userDetails.getAuthorities().stream()
-            .map(GrantedAuthority::getAuthority)
-            .collect(Collectors.toList()));
+                .map(GrantedAuthority::getAuthority)
+                .collect(Collectors.toList()));
+        response.put("description", authService.getUser(userDetails.getUsername()).getDescription());
+        response.put("email", authService.getUser(userDetails.getUsername()).getEmail());
         response.put("authenticated", true);
-        
+
         return ResponseEntity.ok(response);
     }
 }

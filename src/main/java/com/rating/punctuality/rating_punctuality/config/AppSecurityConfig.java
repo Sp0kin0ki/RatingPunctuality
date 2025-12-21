@@ -21,38 +21,36 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableMethodSecurity
 @RequiredArgsConstructor
 public class AppSecurityConfig {
-    
+
     private final JwtFilter jwtFilter;
-    
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-            .csrf(csrf -> csrf.disable())
-            
-            .authorizeHttpRequests(authorize -> authorize
-                .requestMatchers("/api/auth/add-user", "/api/auth/upload-data").authenticated()
-                
-                .requestMatchers("/api/auth/add-user").hasRole("ADMIN")
-                
-                .anyRequest().permitAll()
-            )
-            
-            .sessionManagement(session -> session
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-            )
-            
-            .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
-        
+                .csrf(csrf -> csrf.disable())
+
+                .authorizeHttpRequests(authorize -> authorize
+                        .requestMatchers("/api/auth/add-user", "/api/auth/upload-data").authenticated()
+
+                        .requestMatchers("/api/auth/add-user").hasRole("ADMIN")
+
+                        .anyRequest().permitAll())
+
+                .sessionManagement(session -> session
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+
+                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
+
         log.info("SecurityFilterChain настроен для JWT");
         return http.build();
     }
-    
+
     @Bean
     public AuthenticationManager authenticationManager(
             AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
-    
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();

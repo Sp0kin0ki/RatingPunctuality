@@ -18,18 +18,27 @@ public class UserRegistrationDto {
     @Size(max = 50, message = "Email слишком длинный")
     private String email;
 
+    @Size(max = 255, message = "Описание слишком длинное")
+    private String description;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     @NotBlank(message = "Пароль обязателен")
     @Size(min = 8, message = "Пароль должен быть не менее 8 символов")
-    @Pattern(
-        regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).+$", 
-        message = "Пароль должен содержать хотя бы одну строчную букву, одну заглавную букву и одну цифру"
-    )
+    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).+$", message = "Пароль должен содержать хотя бы одну строчную букву, одну заглавную букву и одну цифру")
     private String password;
 
     @NotBlank(message = "Подтверждение пароля обязательно")
     private String confirmPassword;
 
-    public UserRegistrationDto() {}
+    public UserRegistrationDto() {
+    }
 
     public String getUsername() {
         return username;

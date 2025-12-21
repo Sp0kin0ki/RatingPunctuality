@@ -4,7 +4,6 @@ import com.rating.punctuality.rating_punctuality.model.enums.UserRoles;
 
 import jakarta.persistence.*;
 
-
 @Entity
 @Table(name = "roles")
 public class Role extends BaseEntity {

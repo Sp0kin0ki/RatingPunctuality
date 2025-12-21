@@ -3,11 +3,13 @@ package com.rating.punctuality.rating_punctuality.controller;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.core.io.Resource;
 
@@ -22,6 +24,7 @@ import com.rating.punctuality.rating_punctuality.model.internal.InternalAirport;
 import com.rating.punctuality.rating_punctuality.model.internal.CancellationsDistribution;
 import com.rating.punctuality.rating_punctuality.repository.internal.AirlineRatingRepository;
 import com.rating.punctuality.rating_punctuality.repository.internal.InternalAirportRepository;
+import com.rating.punctuality.rating_punctuality.utils.CsvProcessor;
 import com.rating.punctuality.rating_punctuality.repository.internal.CancellationsDistributionRepository;
 import com.rating.punctuality.rating_punctuality.repository.internal.DepartureDelaysRepository;
 
@@ -31,9 +34,11 @@ public class InternalController {
     private final InternalAirportRepository airportRepository;
     private final DepartureDelaysRepository delaysRepository;
     private final CancellationsDistributionRepository cancellationsDistributionRepository;
-    
-    public InternalController(AirlineRatingRepository ratingRepository, InternalAirportRepository airportRepository, DepartureDelaysRepository delaysRepository
-    ,CancellationsDistributionRepository cancellationsDistributionRepository) {
+    private static final String filePath = "src/main/resources/templates/flight_delay_rules.csv";
+
+    public InternalController(AirlineRatingRepository ratingRepository, InternalAirportRepository airportRepository,
+            DepartureDelaysRepository delaysRepository,
+            CancellationsDistributionRepository cancellationsDistributionRepository) {
         this.ratingRepository = ratingRepository;
         this.airportRepository = airportRepository;
         this.delaysRepository = delaysRepository;
@@ -43,7 +48,7 @@ public class InternalController {
     @GetMapping("/get_top3")
     public List<AirlineRatingResponse> getTopThree() {
         List<AirlineRating> ratings = ratingRepository.findTopAirlines(3);
-        
+
         return ratings.stream()
                 .map(this::convertToResponse)
                 .collect(Collectors.toList());
@@ -64,90 +69,97 @@ public class InternalController {
 
     @GetMapping("/cancellations_distribution")
     public List<CancellationsDistribution> getCancellationsDistribution() {
-        List<CancellationsDistribution> cancellationsDistributions = cancellationsDistributionRepository.getCancellationsDistribution();
+        List<CancellationsDistribution> cancellationsDistributions = cancellationsDistributionRepository
+                .getCancellationsDistribution();
 
         return cancellationsDistributions.stream()
-            .map(this::convertToResponse)
-            .collect(Collectors.toList());
+                .map(this::convertToResponse)
+                .collect(Collectors.toList());
     }
 
     @GetMapping("/get_all_direction")
     public ResponseEntity<?> getAllDirections() {
-         try {
-            org.springframework.core.io.Resource resource = 
-                new ClassPathResource("templates/flight_direction_stats.json");
-            
+        try {
+            org.springframework.core.io.Resource resource = new ClassPathResource(
+                    "templates/flight_direction_stats.json");
+
             if (!resource.exists()) {
                 return ResponseEntity.status(404).body("File not found in templates");
-        }
+            }
 
             ObjectMapper mapper = new ObjectMapper();
             mapper.setPropertyNamingStrategy(PropertyNamingStrategies.SNAKE_CASE);
             List<AirlineDirection> directions = mapper.readValue(
-                resource.getInputStream(), 
-                new TypeReference<List<AirlineDirection>>() {}
-            );
-            
+                    resource.getInputStream(),
+                    new TypeReference<List<AirlineDirection>>() {
+                    });
+
             return ResponseEntity.ok(directions);
-            
+
         } catch (Exception e) {
             return ResponseEntity.status(500).body("Error reading file: " + e.getMessage());
         }
-        
+
     }
 
     @GetMapping("/get_airline_punctuality")
     public ResponseEntity<?> getAirlinePunctuality() {
         try {
-            Resource resource = 
-                new ClassPathResource("templates/airline_punctuality.json");
-            
+            Resource resource = new ClassPathResource("templates/airline_punctuality.json");
+
             if (!resource.exists()) {
                 return ResponseEntity.status(404).body("File not found in templates");
-        }
+            }
 
             ObjectMapper mapper = new ObjectMapper();
             mapper.setPropertyNamingStrategy(PropertyNamingStrategies.SNAKE_CASE);
             List<AirlinePunctuality> directions = mapper.readValue(
-                resource.getInputStream(), 
-                new TypeReference<List<AirlinePunctuality>>() {}
-            );
-            
+                    resource.getInputStream(),
+                    new TypeReference<List<AirlinePunctuality>>() {
+                    });
+
             return ResponseEntity.ok(directions);
-            
+
         } catch (Exception e) {
             return ResponseEntity.status(500).body("Error reading file: " + e.getMessage());
         }
     }
 
+    @GetMapping("/delay-rules/top")
+    public ResponseEntity<?> getDelayRules(@RequestParam(defaultValue = "5") Integer topN) {
+
+        try {
+            List<Map<String, Object>> results = CsvProcessor.getTopDelayRules(filePath, topN);
+            return ResponseEntity.ok(results);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("Ошибка: " + e.getMessage());
+        }
+    }
+
     private AirlineRatingResponse convertToResponse(AirlineRating rating) {
         return new AirlineRatingResponse(
-            rating.getAirlineIataCode(),
-            rating.getAirlineName(),
-            rating.getRatingDeparture(),
-            rating.getRatingArrival(),
-            formatDateTime(rating.getCreatedAt())
-        );
+                rating.getAirlineIataCode(),
+                rating.getAirlineName(),
+                rating.getRatingDeparture(),
+                rating.getRatingArrival(),
+                formatDateTime(rating.getCreatedAt()));
     }
 
     private InternalAirport convertToResponse(InternalAirport airport) {
         return new InternalAirport(
-            airport.getIataCode(),
-            airport.getAirportName(),
-            airport.getLongitude(),
-            airport.getLatitude(),
-            airport.getCountDeparture(),
-            airport.getCountArrival()
-        );
+                airport.getIataCode(),
+                airport.getAirportName(),
+                airport.getLongitude(),
+                airport.getLatitude(),
+                airport.getCountDeparture(),
+                airport.getCountArrival());
     }
 
     private CancellationsDistribution convertToResponse(CancellationsDistribution cancellationsDistribution) {
         return new CancellationsDistribution(
-            cancellationsDistribution.getAirline(),
-            cancellationsDistribution.getCancellations()
-        );
+                cancellationsDistribution.getAirline(),
+                cancellationsDistribution.getCancellations());
     }
-
 
     public static String formatDateTime(LocalDateTime dateTime) {
         if (dateTime == null) {

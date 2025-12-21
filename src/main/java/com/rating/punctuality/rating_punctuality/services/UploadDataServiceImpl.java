@@ -27,10 +27,10 @@ public class UploadDataServiceImpl implements UploadDataService {
     @Override
     public boolean saveFlights(List<Flight> flights) {
         // for (int i = 0; i < flights.size(); i++) {
-        //     log.info(flights.get(i).getIataCode(), flights.get(i));
+        // log.info(flights.get(i).getIataCode(), flights.get(i));
         // }
         // return true;
-        if(flightsRepository.saveAll(flights).size() != 0) {
+        if (flightsRepository.saveAll(flights).size() != 0) {
             return true;
         }
         return false;
@@ -42,10 +42,10 @@ public class UploadDataServiceImpl implements UploadDataService {
         List<Flight> flights = new ArrayList<>();
         String content = new String(file.getBytes());
         String[] lines = content.split("\n");
-        
+
         for (int i = 1; i < lines.length; i++) {
             String[] values = lines[i].split(",");
-            
+
             if (values.length >= 8) {
                 Flight flight = new Flight();
 
@@ -57,11 +57,11 @@ public class UploadDataServiceImpl implements UploadDataService {
                 flight.setPlanArrival(parseDateTime(values[5].trim()));
                 flight.setFactDeparture(parseDateTime(values[6].trim()));
                 flight.setFactArrival(parseDateTime(values[7].trim()));
-                
+
                 flights.add(flight);
             }
         }
-        
+
         return flights;
     }
 
@@ -69,7 +69,7 @@ public class UploadDataServiceImpl implements UploadDataService {
         if (dateStr == null || dateStr.isEmpty() || dateStr.equalsIgnoreCase("null")) {
             return null;
         }
-        
+
         try {
             return LocalDateTime.parse(dateStr, DateTimeFormatter.ISO_LOCAL_DATE_TIME);
         } catch (DateTimeParseException e) {

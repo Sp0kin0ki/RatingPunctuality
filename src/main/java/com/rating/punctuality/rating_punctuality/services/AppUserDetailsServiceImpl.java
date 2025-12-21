@@ -27,7 +27,7 @@ public class AppUserDetailsServiceImpl implements UserDetailsService, AppUserDet
                         u.getPassword(),
                         u.getRoles().stream()
                                 .map(r -> new SimpleGrantedAuthority("ROLE_" + r.getName().name()))
-                                .collect(Collectors.toList())
-                )).orElseThrow(() -> new UsernameNotFoundException(username + " was not found!"));
+                                .collect(Collectors.toList())))
+                .orElseThrow(() -> new UsernameNotFoundException(username + " was not found!"));
     }
 }

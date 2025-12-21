@@ -21,7 +21,8 @@ public class AuthServiceImpl implements AuthService {
     private final UserRoleRepository userRoleRepository;
     private final PasswordEncoder passwordEncoder;
 
-    public AuthServiceImpl(UserRepository userRepository, UserRoleRepository userRoleRepository, PasswordEncoder passwordEncoder) {
+    public AuthServiceImpl(UserRepository userRepository, UserRoleRepository userRoleRepository,
+            PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.userRoleRepository = userRoleRepository;
@@ -43,8 +44,8 @@ public class AuthServiceImpl implements AuthService {
         User user = new User(
                 registrationDTO.getUsername(),
                 passwordEncoder.encode(registrationDTO.getPassword()),
-                registrationDTO.getEmail()
-        );
+                registrationDTO.getEmail(),
+                registrationDTO.getDescription());
 
         user.setRoles(List.of(userRole));
 

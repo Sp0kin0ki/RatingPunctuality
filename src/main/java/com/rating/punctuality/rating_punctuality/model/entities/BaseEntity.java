@@ -9,12 +9,13 @@ import java.time.LocalDateTime;
 
 /**
  * Базовая сущность с аудитом.
- * Все entity наследуются от этого класса и получают ID, дату создания и изменения.
+ * Все entity наследуются от этого класса и получают ID, дату создания и
+ * изменения.
  */
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 public abstract class BaseEntity {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;

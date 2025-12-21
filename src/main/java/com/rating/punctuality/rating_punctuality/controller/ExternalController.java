@@ -45,8 +45,7 @@ public class ExternalController {
 
     @GetMapping("/airlines/top")
     public List<AirlineRatingResponse> getTopAirlines(
-        @RequestParam(defaultValue = "3") int limit
-    ) {
+            @RequestParam(defaultValue = "3") int limit) {
         List<AirlineRating> ratings = airlineRating.findTopAirlines(limit);
         System.out.println(limit);
         return ratings.stream()
@@ -56,15 +55,13 @@ public class ExternalController {
 
     @GetMapping("/airports/{iataCode}/stats")
     public Object getStats(
-        @PathVariable("iataCode") String iataCode
-    ) {
+            @PathVariable("iataCode") String iataCode) {
         return airportStatRepository.getStats(iataCode);
     }
 
     @GetMapping("/airlines/{iataCode}/delay-stats")
     public List<DelayStats> getDelayStats(
-        @PathVariable("iataCode") String iataCode
-    ) {
+            @PathVariable("iataCode") String iataCode) {
         List<DelayStats> delayStats = delayStatsRepository.getDelayStats(iataCode);
 
         return delayStats;
@@ -72,8 +69,7 @@ public class ExternalController {
 
     @GetMapping("/airports")
     public List<Airport> getAirports(
-        @RequestParam(defaultValue = "default") String city
-    ){
+            @RequestParam(defaultValue = "default") String city) {
         return airportRepository.getAirports(city);
     }
 
@@ -86,17 +82,15 @@ public class ExternalController {
             @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate dateTo,
             @RequestParam(required = false) Integer minDelay,
             @RequestParam(required = false) Integer maxDelay,
-            @RequestParam(defaultValue = "100") int limit
-    ) {
-        return flightRepository.searchFlights(airline, 
-            departureAirport, arrivalAirport, dateFrom, 
-            dateTo, minDelay, maxDelay, limit);
+            @RequestParam(defaultValue = "100") int limit) {
+        return flightRepository.searchFlights(airline,
+                departureAirport, arrivalAirport, dateFrom,
+                dateTo, minDelay, maxDelay, limit);
     }
 
     @GetMapping("/flights/{flightId}")
     public List<FlightDetails> getFlightDetails(
-        @PathVariable("flightId") int flightId
-    ){
+            @PathVariable("flightId") int flightId) {
         List<FlightDetails> flightDetails = flightDetailsRepository.getDetails(flightId);
 
         return flightDetails;
@@ -104,11 +98,10 @@ public class ExternalController {
 
     private AirlineRatingResponse convertToResponse(AirlineRating rating) {
         return new AirlineRatingResponse(
-            rating.getAirlineIataCode(),
-            rating.getAirlineName(),
-            rating.getRatingDeparture(),
-            rating.getRatingArrival(),
-            InternalController.formatDateTime(rating.getCreatedAt())
-        );
+                rating.getAirlineIataCode(),
+                rating.getAirlineName(),
+                rating.getRatingDeparture(),
+                rating.getRatingArrival(),
+                InternalController.formatDateTime(rating.getCreatedAt()));
     }
 }

@@ -27,12 +27,23 @@ public class User extends BaseEntity implements Serializable {
     )
     private List<Role> roles = new ArrayList<>();
 
+    private String description;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public User() {}
 
-    public User(String username, String password, String email) {
+    public User(String username, String password, String email, String description) {
         this.username = username;
         this.password = password;
         this.email = email;
+        this.description = description;
     }
 
     public String getUsername() {
