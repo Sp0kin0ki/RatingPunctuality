@@ -23,6 +23,7 @@ import com.rating.punctuality.rating_punctuality.model.internal.AirlineRatingRes
 import com.rating.punctuality.rating_punctuality.model.internal.InternalAirport;
 import com.rating.punctuality.rating_punctuality.model.internal.CancellationsDistribution;
 import com.rating.punctuality.rating_punctuality.repository.internal.AirlineRatingRepository;
+import com.rating.punctuality.rating_punctuality.repository.internal.CalculateRepository;
 import com.rating.punctuality.rating_punctuality.repository.internal.InternalAirportRepository;
 import com.rating.punctuality.rating_punctuality.utils.CsvProcessor;
 import com.rating.punctuality.rating_punctuality.repository.internal.CancellationsDistributionRepository;
@@ -34,15 +35,18 @@ public class InternalController {
     private final InternalAirportRepository airportRepository;
     private final DepartureDelaysRepository delaysRepository;
     private final CancellationsDistributionRepository cancellationsDistributionRepository;
+    private final CalculateRepository calculateRepository;
     private static final String filePath = "src/main/resources/templates/flight_delay_rules.csv";
 
     public InternalController(AirlineRatingRepository ratingRepository, InternalAirportRepository airportRepository,
             DepartureDelaysRepository delaysRepository,
-            CancellationsDistributionRepository cancellationsDistributionRepository) {
+            CancellationsDistributionRepository cancellationsDistributionRepository,
+            CalculateRepository calculateRepository) {
         this.ratingRepository = ratingRepository;
         this.airportRepository = airportRepository;
         this.delaysRepository = delaysRepository;
         this.cancellationsDistributionRepository = cancellationsDistributionRepository;
+        this.calculateRepository = calculateRepository;
     }
 
     @GetMapping("/get_top3")
@@ -52,6 +56,19 @@ public class InternalController {
         return ratings.stream()
                 .map(this::convertToResponse)
                 .collect(Collectors.toList());
+    }
+
+    @GetMapping("/get-all-punctuality")
+    public ResponseEntity<Map<String, Object>> getPunctuality() {
+        return ResponseEntity.ok(
+                Map.of("punctualityPercentage",
+                        calculateRepository.getOverallPunctualityPercentage()));
+    }
+
+    @GetMapping("/get-avg-delay")
+    public ResponseEntity<?> getAvgDelay() {
+        return ResponseEntity.ok(
+                Map.of("avgDelay", calculateRepository.getAverageDelayMinutes()));
     }
 
     @GetMapping("/get_airports")

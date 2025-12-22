@@ -18,7 +18,6 @@ import com.rating.punctuality.rating_punctuality.model.auth.UserRegistrationDto;
 import com.rating.punctuality.rating_punctuality.model.entities.User;
 import com.rating.punctuality.rating_punctuality.model.entities.UserFiles;
 import com.rating.punctuality.rating_punctuality.model.enums.UserRoles;
-import com.rating.punctuality.rating_punctuality.repository.UserFilesRepository;
 import com.rating.punctuality.rating_punctuality.model.entities.Flight;
 import com.rating.punctuality.rating_punctuality.services.AuthService;
 import com.rating.punctuality.rating_punctuality.services.JwtService;
