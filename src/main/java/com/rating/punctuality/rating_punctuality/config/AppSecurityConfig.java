@@ -23,6 +23,7 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
 @Slf4j
 @Configuration
@@ -37,14 +38,35 @@ public class AppSecurityConfig implements WebMvcConfigurer {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
-                .csrf(csrf -> csrf.disable())
+                .csrf(csrf -> csrf
+                        .ignoringRequestMatchers("/api/auth/login")
+                        .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+                )
 
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/api/auth/upload-data", "/api/auth/user-files").authenticated()
+                .requestMatchers(
+                            "/airlines/**",
+                            "/airports/**",
+                            "/flights/**"
+                    ).permitAll()
+                    
 
-                        .requestMatchers("/api/auth/add-user", "/api/auth/count-users").hasRole("ADMIN")
+                    .requestMatchers(
+                            "/api/auth/me",
+                            "/api/auth/user-files",
+                            "/api/auth/upload-data"
+                    ).hasRole("USER")
 
-                        .anyRequest().permitAll())
+                    .requestMatchers("/api/operator/**").hasRole("OPERATOR")
+
+                    .requestMatchers(
+                            "/api/auth/add-user",
+                            "/api/auth/count-users"
+                    ).hasRole("ADMIN")
+
+                    .requestMatchers("/api/auth/login").permitAll()
+                    
+                    .anyRequest().permitAll())
 
                 .sessionManagement(session -> session
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))

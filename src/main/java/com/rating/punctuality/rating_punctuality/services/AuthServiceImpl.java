@@ -1,6 +1,7 @@
 package com.rating.punctuality.rating_punctuality.services;
 
 import java.util.List;
+import java.util.Locale;
 
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -47,6 +48,13 @@ public class AuthServiceImpl implements AuthService {
                 registrationDTO.getEmail(),
                 registrationDTO.getDescription());
 
+        String countryCode = registrationDTO.getCountryCode();
+        if (countryCode == null || countryCode.isBlank()) {
+            countryCode = "ZZ";
+        } else {
+            countryCode = countryCode.toUpperCase(Locale.ROOT);
+        }
+        user.setCountryCode(countryCode);
         user.setRoles(List.of(userRole));
 
         userRepository.save(user);

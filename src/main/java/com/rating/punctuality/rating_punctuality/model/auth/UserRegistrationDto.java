@@ -2,6 +2,7 @@ package com.rating.punctuality.rating_punctuality.model.auth;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
+import com.fasterxml.jackson.annotation.JsonAlias;
 
 import jakarta.validation.constraints.*;
 
@@ -21,12 +22,24 @@ public class UserRegistrationDto {
     @Size(max = 255, message = "Описание слишком длинное")
     private String description;
 
+    @JsonAlias({"countryCode", "country_code"})
+    @Pattern(regexp = "RU|BY|KZ|ZZ", message = "Код страны должен быть RU, BY, KZ или ZZ")
+    private String countryCode;
+
     public String getDescription() {
         return description;
     }
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getCountryCode() {
+        return countryCode;
+    }
+
+    public void setCountryCode(String countryCode) {
+        this.countryCode = countryCode;
     }
 
     @NotBlank(message = "Пароль обязателен")

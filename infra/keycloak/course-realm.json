@@ -1,0 +1,131 @@
+{
+  "realm": "course",
+  "enabled": true,
+  "displayName": "Course OAuth Lab",
+  "registrationAllowed": false,
+  "rememberMe": false,
+  "verifyEmail": false,
+  "resetPasswordAllowed": false,
+  "sslRequired": "NONE",
+  "roles": {
+    "realm": [
+      {
+        "name": "service",
+        "description": "Machine-to-machine service role"
+      },
+      {
+        "name": "operator",
+        "description": "Operations and diagnostics role"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "course-service-client",
+      "name": "Course Service Client",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "course-service-secret",
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": true,
+      "publicClient": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "recommendation-service-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "recommendation-service",
+            "id.token.claim": "false",
+            "access.token.claim": "true"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "course-ops-client",
+      "name": "Course Ops Client",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "course-ops-secret",
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": true,
+      "publicClient": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "recommendation-service-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "recommendation-service",
+            "id.token.claim": "false",
+            "access.token.claim": "true"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "course-other-client",
+      "name": "Course Other API Client",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "course-other-secret",
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": true,
+      "publicClient": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "other-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "other-api",
+            "id.token.claim": "false",
+            "access.token.claim": "true"
+          }
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "service-account-course-service-client",
+      "enabled": true,
+      "serviceAccountClientId": "course-service-client",
+      "realmRoles": [
+        "service"
+      ]
+    },
+    {
+      "username": "service-account-course-ops-client",
+      "enabled": true,
+      "serviceAccountClientId": "course-ops-client",
+      "realmRoles": [
+        "operator"
+      ]
+    },
+    {
+      "username": "service-account-course-other-client",
+      "enabled": true,
+      "serviceAccountClientId": "course-other-client",
+      "realmRoles": [
+        "service"
+      ]
+    }
+  ]
+}

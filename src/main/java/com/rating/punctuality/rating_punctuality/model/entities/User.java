@@ -29,12 +29,23 @@ public class User extends BaseEntity implements Serializable {
 
     private String description;
 
+    @Column(name = "country_code", length = 2, nullable = false)
+    private String countryCode;
+
     public String getDescription() {
         return description;
     }
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getCountryCode() {
+        return countryCode;
+    }
+
+    public void setCountryCode(String countryCode) {
+        this.countryCode = countryCode;
     }
 
     public User() {}

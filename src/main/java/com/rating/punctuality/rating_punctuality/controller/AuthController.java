@@ -1,6 +1,10 @@
 package com.rating.punctuality.rating_punctuality.controller;
 
 import jakarta.validation.Valid;
+import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseCookie;
+import java.time.Duration;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -68,13 +72,40 @@ public class AuthController {
             response.put("message", "Вход выполнен успешно");
 
             log.info("Успешный вход: {}", loginRequest.getUsername());
-            return ResponseEntity.ok(response);
+
+            log.info("Успешный вход: {}", loginRequest.getUsername());
+
+            return ResponseEntity.ok()
+                    .header("Set-Cookie",
+                            "JWT=" + token +
+                            "; Path=/" +
+                            "; Max-Age=" + (30) +
+                            "; HttpOnly" +
+                            "; SameSite=Lax")
+                    .body(response);
 
         } catch (Exception e) {
             log.warn("Ошибка входа: {}", e.getMessage());
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
                     .body(Map.of("error", "Неверное имя пользователя или пароль"));
         }
+    }
+
+    @PostMapping("/logout")
+    public ResponseEntity<?> logout(HttpServletResponse response) {
+        ResponseCookie cookie = ResponseCookie.from("JWT", "")
+                .httpOnly(true)
+                .secure(false)
+                .path("/")
+                .maxAge(Duration.ZERO)
+                .sameSite("Lax")
+                .build();
+
+        response.addHeader(HttpHeaders.SET_COOKIE, cookie.toString());
+
+        return ResponseEntity.ok(Map.of(
+                "message", "Выход выполнен успешно"
+        ));
     }
 
     @PostMapping("/add-user")
@@ -96,6 +127,7 @@ public class AuthController {
             response.put("token", token);
             response.put("username", registeredUser.getUsername());
             response.put("email", registeredUser.getEmail());
+            response.put("countryCode", registeredUser.getCountryCode());
             response.put("message", "Пользователь успешно зарегистрирован");
 
             log.info("Успешная регистрация: {}", registeredUser.getUsername());
@@ -190,8 +222,10 @@ public class AuthController {
         response.put("roles", userDetails.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority)
                 .collect(Collectors.toList()));
-        response.put("description", authService.getUser(userDetails.getUsername()).getDescription());
-        response.put("email", authService.getUser(userDetails.getUsername()).getEmail());
+        User currentUser = authService.getUser(userDetails.getUsername());
+        response.put("description", currentUser.getDescription());
+        response.put("email", currentUser.getEmail());
+        response.put("countryCode", currentUser.getCountryCode());
         response.put("authenticated", true);
 
         return ResponseEntity.ok(response);
