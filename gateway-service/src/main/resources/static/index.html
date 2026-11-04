@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Gateway & BFF Demo - RatingPunctuality</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0F172A;
+            color: #F8FAFC;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 3rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            color: #94A3B8;
+            font-size: 1.125rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .card {
+            background: #1E293B;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #38BDF8;
+        }
+        
+        .status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .status.success {
+            background: rgba(34, 197, 94, 0.1);
+            color: #4ADE80;
+        }
+        
+        .status.error {
+            background: rgba(239, 68, 68, 0.1);
+            color: #F87171;
+        }
+        
+        button {
+            background: #38BDF8;
+            color: #0F172A;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        button:hover {
+            background: #22D3EE;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(56, 189, 248, 0.3);
+        }
+        
+        button.secondary {
+            background: #F97316;
+        }
+        
+        button.secondary:hover {
+            background: #FB923C;
+            box-shadow: 0 6px 12px rgba(249, 115, 22, 0.3);
+        }
+        
+        pre {
+            background: #0B0E14;
+            border: 1px solid #1E293B;
+            border-radius: 8px;
+            padding: 1rem;
+            overflow-x: auto;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-top: 1rem;
+        }
+        
+        .info {
+            color: #94A3B8;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+        
+        .response {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>API Gateway & BFF Demo</h1>
+            <p class="subtitle">Практическая работа № 5: Управление авиарейсами и аэропортами</p>
+        </header>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>Аутентификация</h2>
+                <p class="info">OAuth 2.0 Authorization Code через Keycloak</p>
+                <button onclick="login()">Войти через Keycloak</button>
+                <button class="secondary" onclick="checkAuth()">Проверить сессию</button>
+                <div id="authStatus" class="response"></div>
+            </div>
+            
+            <div class="card">
+                <h2>CSRF Token</h2>
+                <p class="info">Получение токена для безопасных операций</p>
+                <button onclick="getCsrf()">Получить CSRF токен</button>
+                <div id="csrfStatus" class="response"></div>
+            </div>
+            
+            <div class="card">
+                <h2>Рейсы (GET)</h2>
+                <p class="info">Чтение данных через Token Relay</p>
+                <button onclick="getFlights()">Загрузить список рейсов</button>
+                <div id="flightsStatus" class="response"></div>
+            </div>
+            
+            <div class="card">
+                <h2>Аэропорты (POST)</h2>
+                <p class="info">Создание записи с CSRF защитой</p>
+                <button class="secondary" onclick="createAirport()">Создать аэропорт</button>
+                <div id="airportStatus" class="response"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Логи операций</h2>
+            <pre id="logs">Ожидание операций...</pre>
+        </div>
+    </div>
+    
+    <script>
+        let csrfToken = null;
+        
+        function log(message) {
+            const logs = document.getElementById('logs');
+            const timestamp = new Date().toLocaleTimeString();
+            logs.textContent = `[${timestamp}] ${message}\n` + logs.textContent;
+        }
+        
+        function login() {
+            log('Перенаправление на страницу входа Keycloak...');
+            window.location.href = '/oauth2/authorization/keycloak';
+        }
+        
+        async function checkAuth() {
+            try {
+                log('Проверка текущей сессии...');
+                const response = await fetch('/bff/me', {
+                    credentials: 'same-origin'
+                });
+                const data = await response.json();
+                
+                const statusDiv = document.getElementById('authStatus');
+                if (data.authenticated) {
+                    statusDiv.innerHTML = `
+                        <span class="status success">Авторизован</span>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `;
+                    log(`✓ Пользователь авторизован: ${data.username}`);
+                } else {
+                    statusDiv.innerHTML = '<span class="status error">Не авторизован</span>';
+                    log('✗ Пользователь не авторизован');
+                }
+            } catch (error) {
+                log(`✗ Ошибка проверки сессии: ${error.message}`);
+                document.getElementById('authStatus').innerHTML = 
+                    `<span class="status error">Ошибка</span><pre>${error.message}</pre>`;
+            }
+        }
+        
+        async function getCsrf() {
+            try {
+                log('Запрос CSRF токена...');
+                const response = await fetch('/bff/csrf', {
+                    credentials: 'same-origin'
+                });
+                csrfToken = await response.json();
+                
+                document.getElementById('csrfStatus').innerHTML = `
+                    <span class="status success">Получен</span>
+                    <pre>${JSON.stringify(csrfToken, null, 2)}</pre>
+                `;
+                log(`✓ CSRF токен получен: ${csrfToken.headerName}`);
+            } catch (error) {
+                log(`✗ Ошибка получения CSRF токена: ${error.message}`);
+                document.getElementById('csrfStatus').innerHTML = 
+                    `<span class="status error">Ошибка</span><pre>${error.message}</pre>`;
+            }
+        }
+        
+        async function getFlights() {
+            try {
+                log('Запрос списка рейсов через API Gateway...');
+                const response = await fetch('/api/flights', {
+                    credentials: 'same-origin'
+                });
+                
+                if (response.status === 401) {
+                    log('✗ Требуется авторизация (401)');
+                    document.getElementById('flightsStatus').innerHTML = 
+                        '<span class="status error">Требуется авторизация</span>';
+                    return;
+                }
+                
+                const flights = await response.json();
+                document.getElementById('flightsStatus').innerHTML = `
+                    <span class="status success">${response.status} OK</span>
+                    <pre>${JSON.stringify(flights, null, 2)}</pre>
+                `;
+                log(`✓ Получено рейсов: ${flights.length}`);
+            } catch (error) {
+                log(`✗ Ошибка загрузки рейсов: ${error.message}`);
+                document.getElementById('flightsStatus').innerHTML = 
+                    `<span class="status error">Ошибка</span><pre>${error.message}</pre>`;
+            }
+        }
+        
+        async function createAirport() {
+            try {
+                if (!csrfToken) {
+                    log('! Сначала получите CSRF токен');
+                    alert('Сначала получите CSRF токен');
+                    return;
+                }
+                
+                const airportData = {
+                    code: 'VKO',
+                    name: 'Vnukovo International Airport',
+                    city: 'Moscow'
+                };
+                log(`Создание аэропорта "${airportData.code}" с CSRF защитой...`);
+                
+                const response = await fetch('/api/airports', {
+                    method: 'POST',
+                    credentials: 'same-origin',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        [csrfToken.headerName]: csrfToken.token
+                    },
+                    body: JSON.stringify(airportData)
+                });
+                
+                if (response.status === 403) {
+                    log('✗ Доступ запрещён (403) - проверьте роль пользователя или CSRF токен');
+                    document.getElementById('airportStatus').innerHTML = 
+                        '<span class="status error">403 Forbidden</span>';
+                    return;
+                }
+                
+                if (response.status === 401) {
+                    log('✗ Требуется авторизация (401)');
+                    document.getElementById('airportStatus').innerHTML = 
+                        '<span class="status error">401 Unauthorized</span>';
+                    return;
+                }
+                
+                const airport = await response.json();
+                document.getElementById('airportStatus').innerHTML = `
+                    <span class="status success">${response.status} Created</span>
+                    <pre>${JSON.stringify(airport, null, 2)}</pre>
+                `;
+                log(`✓ Аэропорт создан: ${airport.code} (ID: ${airport.id})`);
+            } catch (error) {
+                log(`✗ Ошибка создания аэропорта: ${error.message}`);
+                document.getElementById('airportStatus').innerHTML = 
+                    `<span class="status error">Ошибка</span><pre>${error.message}</pre>`;
+            }
+        }
+        
+        // Проверка авторизации при загрузке страницы
+        window.addEventListener('load', () => {
+            log('Страница загружена. Проверка сессии...');
+            checkAuth();
+        });
+    </script>
+</body>
+</html>

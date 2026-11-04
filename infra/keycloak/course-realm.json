@@ -16,6 +16,14 @@
       {
         "name": "operator",
         "description": "Operations and diagnostics role"
+      },
+      {
+        "name": "reader",
+        "description": "Read-only access role"
+      },
+      {
+        "name": "editor",
+        "description": "Full access role for editing data"
       }
     ]
   },
@@ -100,6 +108,97 @@
           }
         }
       ]
+    },
+    {
+      "clientId": "recommendation-service",
+      "name": "Flight Recommendation Service",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "recommendation-service-secret",
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": false,
+      "publicClient": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "email",
+        "profile",
+        "roles"
+      ],
+      "attributes": {
+        "oauth2.device.authorization.grant.enabled": "false",
+        "oidc.ciba.grant.enabled": "false"
+      }
+    },
+    {
+      "clientId": "library-service",
+      "name": "Flight Service M2M Client",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "library-service-secret",
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": true,
+      "publicClient": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "email",
+        "profile",
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "recommendation-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "recommendation-service",
+            "id.token.claim": "false",
+            "access.token.claim": "true"
+          }
+        }
+      ],
+      "attributes": {
+        "oauth2.device.authorization.grant.enabled": "false",
+        "oidc.ciba.grant.enabled": "false"
+      }
+    },
+    {
+      "clientId": "course-bff",
+      "name": "Course BFF Client",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "course-bff-secret",
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": false,
+      "publicClient": false,
+      "redirectUris": [
+        "http://localhost:8088/login/oauth2/code/keycloak",
+        "http://localhost:8088/*"
+      ],
+      "webOrigins": [
+        "http://localhost:8088"
+      ],
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "email",
+        "profile",
+        "roles",
+        "web-origins"
+      ],
+      "protocolMappers": [
+        {
+          "name": "flight-service-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "flight-service",
+            "id.token.claim": "false",
+            "access.token.claim": "true"
+          }
+        }
+      ]
     }
   ],
   "users": [
@@ -125,6 +224,43 @@
       "serviceAccountClientId": "course-other-client",
       "realmRoles": [
         "service"
+      ]
+    },
+    {
+      "username": "student",
+      "enabled": true,
+      "email": "student@example.com",
+      "emailVerified": true,
+      "firstName": "Student",
+      "lastName": "User",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "student",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "reader"
+      ]
+    },
+    {
+      "username": "editor",
+      "enabled": true,
+      "email": "editor@example.com",
+      "emailVerified": true,
+      "firstName": "Editor",
+      "lastName": "User",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "editor",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "reader",
+        "editor"
       ]
     }
   ]
