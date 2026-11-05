@@ -25,22 +25,21 @@ public class OAuth2ClientHttpRequestInterceptor implements ClientHttpRequestInte
     public ClientHttpResponse intercept(HttpRequest request, byte[] body,
                                         ClientHttpRequestExecution execution) throws IOException {
 
-        Authentication principal = SecurityContextHolder.getContext().getAuthentication();
-        if (principal == null) {
-            principal = new AnonymousAuthentication();
-        }
-
         OAuth2AuthorizeRequest authorizeRequest = OAuth2AuthorizeRequest
                 .withClientRegistrationId("recommendation-client")
-                .principal(principal)
+                .principal("library-service")
                 .build();
 
         OAuth2AuthorizedClient authorizedClient = manager.authorize(authorizeRequest);
 
-        if (authorizedClient != null) {
-            OAuth2AccessToken accessToken = authorizedClient.getAccessToken();
-            request.getHeaders().setBearerAuth(accessToken.getTokenValue());
+        if (authorizedClient == null) {
+            throw new IllegalStateException(
+                    "Could not obtain OAuth2 access token for recommendation-client"
+            );
         }
+
+        OAuth2AccessToken accessToken = authorizedClient.getAccessToken();
+        request.getHeaders().setBearerAuth(accessToken.getTokenValue());
 
         return execution.execute(request, body);
     }

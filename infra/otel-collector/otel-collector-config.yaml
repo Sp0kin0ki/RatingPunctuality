@@ -16,12 +16,12 @@ exporters:
     endpoint: tempo:4317
     tls:
       insecure: true
-  logging:
-    loglevel: info
+  debug:
+    verbosity: normal
 
 service:
   pipelines:
     traces:
       receivers: [otlp]
       processors: [batch]
-      exporters: [otlp, logging]
+      exporters: [otlp, debug]
